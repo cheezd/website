@@ -15,4 +15,7 @@ export const siteConfig = {
   linkedInHref: process.env.NEXT_PUBLIC_LINKEDIN_URL ?? null,
 
   calHref: process.env.NEXT_PUBLIC_BOOKING_URL ?? null,
+
+  /** Absolute URL or root-relative path e.g. `/Marc-Cheatham-Chart-Room-AI.pdf` */
+  resumeHref: process.env.NEXT_PUBLIC_RESUME_URL ?? null,
 } as const;

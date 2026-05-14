@@ -76,6 +76,31 @@ export default function Home() {
                 <li>Executive coaching on vendor selection, evaluations, and production guardrails</li>
                 <li>Hands-on support spanning architecture, security posture, DevOps discipline, and compliance touchpoints</li>
               </ul>
+              <div className="space-y-5 border-t border-chart-navy/10 pt-8">
+                <div>
+                  <h3 className="text-base font-bold text-chart-navy">Who we serve</h3>
+                  <p className="mt-2 text-lg leading-relaxed text-chart-ink">
+                    Banks, broker-dealers, wealth &amp; asset management, insurance carriers &
+                    distributors, fintech vendors serving regulated institutions, and enterprise
+                    SaaS where auditability, data residency, and model risk matter.
+                  </p>
+                </div>
+                <div>
+                  <h3 className="text-base font-bold text-chart-navy">Reach</h3>
+                  <p className="mt-2 text-lg leading-relaxed text-chart-ink">
+                    United States — <strong>remote-first</strong>; on-site working sessions and
+                    travel <strong>by arrangement</strong>.
+                  </p>
+                </div>
+                <div>
+                  <h3 className="text-base font-bold text-chart-navy">How we work</h3>
+                  <p className="mt-2 text-lg leading-relaxed text-chart-ink">
+                    We begin with focused discovery (goals, constraints, stakeholders), then
+                    co-develop phased priorities alongside your leaders. Formal SOWs and
+                    commercial terms stay offline with counsel as engagements take shape.
+                  </p>
+                </div>
+              </div>
             </div>
             <div className="rounded-lg border border-chart-navy/10 bg-white p-8 shadow-sm">
               <h3 className="text-xl font-bold text-chart-navy">Founder &amp; Principal</h3>
@@ -136,7 +161,11 @@ export default function Home() {
               <h3 className="text-lg font-bold text-chart-navy">Security &amp; compliance</h3>
               <ul className="mt-4 space-y-2 leading-relaxed text-chart-ink/95">
                 <li>Information security policy scaffolding and pragmatic control design</li>
-                <li>Experience operating under regulatory expectations endemic to FS verticals — refine specific frameworks publicly as you deem appropriate</li>
+                <li>
+                  Multi-decade financial-services delivery with audit and diligence expectations
+                  — we name specific regulatory frameworks on the public site only when you
+                  choose to publish them
+                </li>
               </ul>
             </div>
           </div>
@@ -170,7 +199,7 @@ export default function Home() {
               <article className="rounded-lg border border-dashed border-chart-navy/20 bg-chart-surface/80 p-8">
                 <h3 className="text-xl font-bold text-chart-navy">Earlier CTO tenures — details available privately</h3>
                 <p className="mt-3 leading-relaxed text-chart-ink/95">
-                  Marc has served fourteen additional years cumulatively across CTO roles tackling enterprise-scale modernization, integrations, migrations, analytics, vendor governance, cloud adoption, cyber leadership, portfolio rationalization, and board preparation. Invite us into diligence and we can walk specific references under NDA.</p>
+                  Marc has served fourteen additional years cumulatively across CTO roles tackling enterprise-scale modernization, integrations, migrations, analytics, vendor governance, cloud adoption, cyber leadership, portfolio rationalization, and board preparation. In diligence, Chart Room AI can walk specific references under NDA.</p>
               </article>
             </div>
           </div>
@@ -202,13 +231,31 @@ export default function Home() {
               </div>
             ))}
           </div>
+          <div className="mt-10 space-y-4 rounded-lg border border-chart-navy/10 bg-white p-8 shadow-sm">
+            <h3 className="text-lg font-bold text-chart-navy">Governed throughput, not hype</h3>
+            <p className="leading-relaxed text-chart-ink/95">
+              Many programs optimize for vendor bake-offs or slide walls. We optimize for{' '}
+              <strong>repeatable production</strong>
+              — aligning sponsors, engineering, security, and compliance so pilots graduate with
+              evaluations, rollback paths, and accountability. We prioritize compliance-aware,
+              auditable patterns over agent demos that your risk team would never sign.
+            </p>
+          </div>
         </Section>
 
         {/* Contact */}
         <Section id="contact" eyebrow="Connect" title="Start a routed conversation">
-          <div className="max-w-xl space-y-6 text-lg leading-relaxed text-chart-ink md:text-xl">
+          <div className="max-w-2xl space-y-6 text-lg leading-relaxed text-chart-ink md:text-xl">
+            <p className="rounded-lg border border-chart-gold/35 bg-white p-6 text-base leading-relaxed text-chart-ink shadow-sm md:text-lg">
+              We also welcome inbound on <strong>speaking</strong>,{' '}
+              <strong>non-executive advisory</strong>, and <strong>board-related</strong>{' '}
+              conversations where AI, technology risk, or modernization depth is material — use
+              email to outline fit and timing.
+            </p>
             <p>
-              Email remains the quickest path — share context, timelines, stakeholder map, constraints, NDAs needed, desired outcomes.</p>
+              Email remains the quickest path — share context, timelines, stakeholder map,
+              constraints, NDAs needed, desired outcomes.
+            </p>
             <div className="flex flex-col gap-4 sm:flex-row sm:flex-wrap">
               <a
                 href={mailHref}
@@ -240,10 +287,29 @@ export default function Home() {
                   Book time
                 </a>
               ) : null}
+              {siteConfig.resumeHref ? (
+                <a
+                  href={siteConfig.resumeHref}
+                  rel={siteConfig.resumeHref.startsWith("http") ? "noopener noreferrer" : undefined}
+                  target={siteConfig.resumeHref.startsWith("http") ? "_blank" : undefined}
+                  className="inline-flex min-h-11 items-center justify-center rounded-md border-2 border-chart-navy/50 px-6 py-3 text-base font-semibold text-chart-navy hover:bg-chart-navy hover:text-white"
+                >
+                  Download résumé (PDF)
+                </a>
+              ) : (
+                <span className="inline-flex min-h-11 items-center rounded-md border-2 border-dashed border-chart-navy/25 px-6 py-3 text-base font-medium text-chart-ink/55">
+                  Add{' '}
+                  <code className="mx-1 rounded bg-chart-navy/5 px-1 py-0.5 text-xs">
+                    NEXT_PUBLIC_RESUME_URL
+                  </code>{' '}
+                  or drop a PDF into <code className="text-xs">web/public/</code>
+                </span>
+              )}
             </div>
             <p className="text-sm text-chart-ink/75">
-              Update public addresses via <code className="rounded bg-chart-navy/5 px-1.5 py-0.5 text-xs">NEXT_PUBLIC_CONTACT_EMAIL</code> and{' '}
-              <code className="rounded bg-chart-navy/5 px-1.5 py-0.5 text-xs">NEXT_PUBLIC_LINKEDIN_URL</code> (.env.local) without changing markup.
+              Update public knobs via <code className="rounded bg-chart-navy/5 px-1.5 py-0.5 text-xs">NEXT_PUBLIC_CONTACT_EMAIL</code>,{' '}
+              <code className="rounded bg-chart-navy/5 px-1.5 py-0.5 text-xs">NEXT_PUBLIC_LINKEDIN_URL</code>,{' '}
+              <code className="rounded bg-chart-navy/5 px-1.5 py-0.5 text-xs">NEXT_PUBLIC_RESUME_URL</code> (.env.local).
             </p>
           </div>
         </Section>

@@ -1,7 +1,7 @@
 # Marc Cheatham — Portfolio Website Spec
 
-> **Status:** Content & build defaults largely set for v1; fill §5–§8 gaps before polish. Implementation can start once **contact email** and minimum **experience** facts are supplied (or flagged “private”).  
-> **Last updated:** 2026-05-14 *(spec review)*  
+> **Status:** Structural TBDs collapsed into §14 (defaults + questionnaire); §12 tracks **only** items that still require Marc-supplied URLs, files, or numbers. Site draft lives in **`web/`**.  
+> **Last updated:** 2026-05-14 *(TBD sweep)*  
 > **Owner:** Marc Cheatham — **Chart Room AI LLC** (Founder & Principal)  
 > **Brand source of truth:** `c:\Users\emche\OneDrive\Chart Room AI\Marketing\branding.md` (v1.0, May 2026)  
 > **Source code repo:** [`https://github.com/cheezd/website`](https://github.com/cheezd/website)
@@ -14,9 +14,9 @@
 |------|-------|
 | **Brand home for Chart Room AI** | Conversion-focused site consistent with brand guidelines (clean, professional, high white space). |
 | **Primary funnel** | **[Confirmed]** **Fractional AI transformation / advisory engagements** via Chart Room AI *(full-time CTO interest can still arrive via LinkedIn — not hero focus)* |
-| Audience | **Financial services & technology executives** navigating AI adoption; secondary: PE operating partners / boards *[refine wording at copy time]* |
+| Audience | **Financial services & technology executives** navigating AI adoption; secondary: PE operating partners / boards — see **§14.2 industries** |
 | Credibility | Communicate CTO-level depth in fintech, regulated industries, practical AI adoption and transformation leadership |
-| Lead / contact path | **[Confirmed]** **Email-first** hero CTA; LinkedIn (+ optional calendar link) in footer or contact section — **publish mailbox TBD §12** |
+| Lead / contact path | **[Confirmed]** **Email-first** hero CTA; LinkedIn (+ optional booking) once URLs supplied — **default public mailbox `hello@chartroomai.com` until you confirm another (§12)** |
 
 ---
 
@@ -31,7 +31,7 @@
 | **Content model** | **No CMS v1** — copy and structure live in the repo *(Markdown or TS/constants); revisit if non-dev editors need CMS* |
 | **Canonical domain** | **https://chartroomai.com** — **`chartroom.ai`** → redirect to `.com` *(e.g. **Bulk Redirect / Redirect Rules** in Cloudflare once that zone or hostname exists)* |
 | **Analytics** | **None** at launch |
-| **Static export requirement** | **No hard requirement** documented — *[flag if hosting must avoid edge/Node]* |
+| **Static export requirement** | **None for v1** — standard **Next.js** Node build; reassess only if a host forces static export. |
 | **Source repo** | **[`cheezd/website`](https://github.com/cheezd/website)** on GitHub *(this monorepo-style root; **`web/`** holds the Next.js app)* |
 
 **Domain confirmed:** **`chartroomai.com`**. Registrar may live at Cloudflare or elsewhere; **`chartroomai.com`** ultimately uses **Cloudflare nameservers** so **records you change at launch live in Cloudflare → DNS.**
@@ -68,7 +68,7 @@
 
 - **Alternates** *(from Chart Room AI brand guidelines v1.0 — use for decks, footer, or A/B copy if desired):* “Navigating AI Transformation from the Chart Room” · “Strategic AI Leadership. Clear Roadmaps. Executive Command.” · “Charting the Course for Enterprise AI Success” · “Where Fintech Expertise Meets AI Vision”
 
-### 4.3 Elevator pitch *(one sentence — refine after Q&A)*
+### 4.3 Elevator pitch *(locked for v1 web; tweak anytime)*
 
 > Seasoned technology executive (31 years) and long-time CTO (18 years), recently CTO and acting CEO of a fintech software startup — now advising financial services and regulated firms on **practical AI adoption** from strategy through delivery.
 
@@ -121,25 +121,28 @@ Differentiator framing: **30+ years regulated-industry experience** + **proven A
 
 ---
 
-## 5. Experience Timeline *(fill from Q&A)*
+## 5. Experience Timeline *(public posture: v1 anonymous; names under NDA)*
 
-| Dates | Role | Company | Confidentiality | Highlights / metrics *(TBD)* |
-|-------|------|---------|-----------------|-------------------------------|
-| ~4 yrs ending *[TBD]* | CTO, Acting CEO | *[TBD startup name]* | *[public / “a fintech startup”]* | *[bullets]* |
-| *[TBD]* | CTO | *[TBD]* | | |
-| *[TBD]* | *[prior roles]* | | | |
+| Dates | Role | Company | Public site posture | Highlights *(high level — no client attribution)* |
+|-------|------|---------|---------------------|-----------------------------------------------------|
+| **~4 years** *(start/end years: **Marc to insert** or keep “recent chapter”)* | CTO, Acting CEO | **Withheld** · B2B **fintech SaaS** serving regulated / institutional-style users | **Anonymous** on the public site · **Name + references available under NDA** | Trading & planning platforms; **Monte Carlo / CMA**; **ALM**; **security masters**; production **multi-agent AI**; acting **CISO**-level security program; **VC** + strategic partner narrative; client-facing **capital markets & ALM** depth |
+| **~14 years cumulative** *(multiple employers — **Marc to list years or ranges**)* | Chief Technology Officer | **Multiple firms** *(names **withheld** on public site)* | **NDA / discretion** | Portfolio modernization, integrations, cloud & data path, engineering operating model, vendor strategy — **add 1–2 anonymized wins below when ready** |
+| *[Future, if applicable]* | Advisory / director-style roles | *[Per engagement & disclosure]* | **Publish only when cleared** | *[Add row when relevant]* |
 
-**Companies you’re willing to name publicly:** *[TBD]*  
-**Anything you refuse to disclose (NDA):** *[TBD]*  
+**Companies you’re willing to name publicly:** **None on v1 landing page** *(add rows above if you later choose to name specific employers).*  
+
+**NDA / omission policy:** Public copy stays **non-attributive**; diligence, references, and logos **only after written permission**.
 
 ---
 
-## 6. Skills & Expertise Buckets *(draft — expand after Q&A)*
+## 6. Skills & Expertise Buckets *(v1 — aligned to site “Expertise” section)*
 
 ### Leadership & business
 
-- *[TBD: team sizes led, offshore/onshore, P&L, board interaction]*  
-- Fundraising / partnerships / pricing / roadmap ownership  
+- Cross-functional executive leadership across **product + engineering + operational risk** sponsors  
+- **Roadmaps, portfolio sequencing, vendor strategy**, board- and investor-ready technical narrative  
+- **Fundraising support, strategic partnerships**, commercial model stress-tests *(details under NDA)*  
+- **Team scale / budget metrics:** *not published on v1* — available in **resume** and **conversation**
 
 ### Engineering & platforms
 
@@ -156,36 +159,48 @@ Differentiator framing: **30+ years regulated-industry experience** + **proven A
 ### Security & compliance
 
 - CISO-style ownership; security policy & compliance frameworks  
-- Regulated industry context *[TBD: SOX, GLBA, state regs, FFIEC-minded, HIPAA, SOC2 narrative?]*  
+- **Regulatory context (narrative, not a certification claim):** multi-decade delivery in **financial services** environments where **SOC 2–style controls**, **audit trail expectations**, and **third-party diligence** are baseline; **specific frameworks (e.g. FFIEC, HIPAA, SOX-adjacent workflows) named only if you explicitly add them later**
 
-### Soft skills / working style *(TBD)*
+### Soft skills / working style
 
-- Stakeholder communication, facilitation, mentorship, conflict resolution  
-
----
-
-## 7. “Why Hire Marc / Chart Room AI?” *(hypotheses — confirm with specifics)*
-
-1. Bridges **regulated-domain depth** with **hands-on AI delivery** — not purely advisory slide decks.  
-2. Comfortable from **architecture** through **fundraising pitches** and **client-facing demos**.  
-3. Produces **measurable engineering discipline** (TDD/CI/CD) and **governance** (security, evaluations).  
-
-**Proof points we should add:**
-
-- *[TBD: named outcomes, percentages, timelines, anonymized wins]*  
+- Executive **facilitation** across business, risk, and engineering  
+- **Crisis de-risking** when delivery and regulatory expectations collide  
+- **Mentorship** of senior ICs and engineering leaders  
+- **Vendor and architecture governance** without gridlock  
 
 ---
 
-## 8. Proof & Assets *(gather before build)*
+## 7. “Why Hire Marc / Chart Room AI?” *(v1 narrative + slots for metrics)*
 
-| Asset | Available? |
-|-------|------------|
-| Professional headshot | Brand: business attire, on-site — *[TBD: file path / shoot]* |
-| Logo / brand colors | **Defined** in `branding.md` and §10 below; vector/logo files *[TBD]* |
-| PDF resume / downloadable CV link | *[TBD]* |
-| LinkedIn URL | *[TBD]*  
-| Speaking / podcasts / publications | *[TBD]*  
-| Recommendations / quotes | *[TBD]*  
+1. Bridges **regulated-domain depth** with **hands-on AI delivery** — not decks alone.  
+2. Comfortable from **architecture** through **fundraising pitches** and **client-facing demos** on complex domains.  
+3. Brings **engineering discipline** (**TDD**/ **CI/CD**) and **governance** (security, evaluations, human baselines) so AI programs don’t rot after pilot.  
+
+**Proof points — add when you’re ready (anonymized OK):**
+
+- [ ] **Operational:** e.g. availability, incident reduction, release cadence, cost takeout  
+- [ ] **AI / product:** e.g. latency, task-time saved, evaluation pass rates, rollout coverage  
+- [ ] **Commercial / trust:** e.g. diligence outcomes, funding milestones, strategic partnership closes *(only if disclosable)*  
+
+**Differentiation paragraph (draft for “Why” section / proposals):**  
+Many AI consultants optimize for **slides and vendor bake-offs**. Chart Room AI optimizes for **governed throughput** — aligning sponsors, engineering, security, and compliance so initiatives move from pilot to **repeatable production**. We keep humans in the loop where regulation and fiduciary context demand it, and we design **evaluation and rollback** so productivity gains survive audit and turnover.
+
+**Risk / hype posture (short line for site or FAQ):**  
+We **prioritize compliance-aware, auditable patterns** over trendy agent demos; we **do not** promise “full autonomy” where your regulators, clients, or risk team would not tolerate it.
+
+---
+
+## 8. Proof & Assets *(v1 plan)*
+
+| Asset | Plan |
+|-------|------|
+| Professional headshot | **Pending** — business attire · add to **`web/public/`** or URL when ready |
+| Logo / vector | **Pending** — palette already in CSS; drop SVG/PNG when designed |
+| PDF resume / CV | **Include v1** — file in **`web/public/`** OR **`NEXT_PUBLIC_RESUME_URL`** |
+| LinkedIn URL | **Pending** · `NEXT_PUBLIC_LINKEDIN_URL` |
+| Booking URL | Optional · `NEXT_PUBLIC_BOOKING_URL` |
+| Speaking / podcasts / publications | **Actively welcome inbound** for advisory / board / speaking — add **published URLs** here as they exist |
+| Recommendations / quotes | **Later** — only with **written permission** |
 
 ---
 
@@ -196,7 +211,7 @@ Differentiator framing: **30+ years regulated-industry experience** + **proven A
 - **Disclaimer (draft website copy):**
   - Information on this site is for **general informational purposes only**. It is **not legal, tax, accounting, or investment advice**, and **not** a substitute for a signed consulting or advisory engagement.
   - **Chart Room AI is not** a broker-dealer or registered investment adviser. Nothing herein is investment advice or a solicitation to buy or sell securities or other financial instruments.
-  - *[Add governing law / jurisdiction if counsel recommends (e.g. Virginia).]*
+  - **Governing law (draft — counsel review):** Interpretation of this informational content is intended to follow the laws of the **Commonwealth of Virginia**, consistent with **Chart Room AI LLC**’s formation there.
 - **Cookies / banners:** With **analytics off for v1**, no cookie-consent UX is implied for measurement alone. **Re-evaluate** if you embed scripted widgets *(booking SaaS, chat, CRM, video)* that set cookies or process personal data.
 
 ---
@@ -205,7 +220,7 @@ Differentiator framing: **30+ years regulated-industry experience** + **proven A
 
 **Overall aesthetic keywords:** Clean, professional, conversion-focused, **high white space**, confident executive advisor, subtle nautical + tech (abstract charts, horizon lines, connected nodes).
 
-**Color palette (Tailwind-facing tokens — names TBD in code):**
+**Color palette — implemented CSS token names in Tailwind `@theme` (`web/src/app/globals.css`):** **`chart-navy`** `#0A2540`, **`chart-teal`** `#00B4A8`, **`chart-gold`** `#D4AF37`, **`chart-ink`** `#1E2937`, **`chart-surface`** `#F4F7FA`
 
 | Token role | Hex | Usage |
 |------------|-----|--------|
@@ -217,11 +232,7 @@ Differentiator framing: **30+ years regulated-industry experience** + **proven A
 
 **Color rules:** Navy + teal = core identity; gold sparingly; **target WCAG AA** contrast.
 
-**Typography:**
-
-- **Headings:** Satoshi Bold *or* Inter Bold  
-- **Body:** Inter Regular *or* system sans (Arial, Helvetica)  
-- **Accent font:** Taglines / nav *(same family stack as brand doc — confirm webfont licensing for Satoshi)*  
+**Typography (v1 implementation):** **Inter** via `next/font` for headings + body (matches brand fallback). **Satoshi** remains optional enhancement if licensing is cleared — not required for v1.
 
 **Type scale (brand doc):** H1 42–56px · H2 28–36px · body 18–20px (credibility-forward).
 
@@ -237,43 +248,37 @@ Differentiator framing: **30+ years regulated-industry experience** + **proven A
 
 ---
 
-## 11. Content Checklist *(pre-build)*
+## 11. Content Checklist *(v1 `web/` snapshot)*
 
-- [x] Primary tagline: **Helping you navigate your AI Transformation** *(§4.2)*  
-- [x] **Hero structure (v1 proposal):** H1 **Chart Room AI** · subtitle = tagline (§4.2) · short supporting sentence trimmed from §4.1 positioning  
-- [x] Narrative voice: **we** default; **Marc** in founder blocks (§4.7)  
-- [ ] About: **we**-led firm copy + founder block  
-- [ ] Experience entries (+ NDA posture)  
-- [ ] Skills grouped for Expertise section  
-- [ ] 3–5 “why hire” bullets + proof metrics where possible  
-- [x] **Primary CTA:** **Email** (hero + Contact) · LinkedIn secondary — **mailbox TBD §12**  
-- [ ] `mailto:` vs obfuscation vs form backlog  
+- [x] Primary tagline *(§4.2)*  
+- [x] Hero structure + positioning trim  
+- [x] Narrative voice §4.7  
+- [x] About + founder block *(draft — refine anytime in `web/src/app/page.tsx`)*  
+- [x] Experience *(anonymous posture + NDA note — §5)*  
+- [x] Expertise / skills clustering *(§6 ↔ page)*  
+- [x] “Why hire” narrative + metrics checklist *(§7)*  
+- [x] **Primary CTA:** email · default **`hello@chartroomai.com`** until confirmed (**§12**)  
+- [x] **`mailto:`** plain v1 *(form backlog)*  
+- [ ] **Résumé PDF** wired *(file or `NEXT_PUBLIC_RESUME_URL` — §12)*  
+- [ ] **LinkedIn** URL in env *(§12)*  
 - [ ] Optional testimonials  
-- [x] **SEO sketch:** title `Chart Room AI | Fractional AI Transformation Leadership` · meta ~ first sentence of §4.1 trimmed to ≤155 chars *[refine with keywords §12]*  
+- [x] **SEO sketch** in `layout.tsx` — tweak keywords anytime  
 
 ---
 
-## 12. Outstanding *(need your input)*
+## 12. Still open *(needs Marc-supplied facts or files)*
 
-Reply inline here or paste into chat — **anything missing will use tasteful placeholders** until you ship real copy.
-
-| # | Topic | Question |
-|---|-------|----------|
-| 1 | **Contact** | **Public email** for hero `mailto` *(e.g. hello@chartroomai.com)?* Spam strategy: plain address vs masked / form later? |
-| 2 | **LinkedIn & links** | **LinkedIn URL**; optional **booking** URL; optional **resume PDF** hosted or omitted v1 |
-| 3 | **Geography** | Where you engage *(US-remote only vs travel % vs specific metros)* |
-| 4 | **Ideal engagement** | **One sentence** — what does a perfect next client engagement look like? |
-| 5 | **Industries** | Beyond financial services — **explicitly mention** insuretech / wealthtech / SaaS adjacency, etc.? |
-| 6 | **Experience table** | **Startup:** name OK or anonymous? Approx **years** CTO/CEO. **Prior roles**: company · title · years · 1 highlight each *(NDAs noted)* |
-| 7 | **Scale & proof** | **Team sizes** led; rough **budget/scope** credibility; **2–3 wins with metrics** (even directional) |
-| 8 | **Public artifacts** | Press, talks, podcasts, certifications, repos — **URLs** or “none yet” |
-| 9 | **Offering copy** | **Conversational** “how we work” only vs hints on **commercial** shape *(discovery → SOW)* — still no dollar rates unless you insist |
-| 10 | **Speaking / board / mentor** | **Yes/no**, and what to promise on the site *(e.g. selective inquiries only)* |
-| 11 | **Personality** | **Five adjectives** + optional **risk message** *(e.g. compliance over hype)* + **what peers get wrong** *(short paragraph)* |
-| 12 | **Visual references** | **Optional:** 2–3 sites whose layout you **like/dislike** |
-| 13 | **Assets** | **Headshot ready?** Logo files path? Compliance frameworks you want **named** in §6 |
-
-**Already resolved elsewhere (see §13):** ~~primary site goal → fractional advisory~~ · ~~canonical domain `.com`~~ · ~~DNS in Cloudflare~~ · ~~hero CTA email-first~~ · ~~analytics off v1~~ · ~~Next + Tailwind + no CMS~~ · ~~light theme + subtle motion~~ · ~~accent colors locked~~ .
+| Item | Action |
+|------|--------|
+| **Public inbox** | Confirm **`hello@chartroomai.com`** *(or substitute)* forwards to you |
+| **LinkedIn URL** | `NEXT_PUBLIC_LINKEDIN_URL` in **`web/.env.local`** |
+| **Résumé PDF** | e.g. `web/public/Marc-Cheatham-Chart-Room-AI.pdf` or external URL env |
+| **Experience years** | Optional: specific **start–end** for ~4 yr chapter + prior CTO ranges *(§5)* |
+| **Named employers** | Only if you **opt in** on the public page |
+| **Quantified wins** | Complete §7 proof checkboxes *(anonymized OK)* |
+| **Headshot + logo** | Add under **`web/public/`** |
+| **Visual references** | Optional URLs for future polish |
+| **Deploy target** | **Cloudflare Pages** vs **Vercel** at go-live |
 
 ---
 
@@ -286,7 +291,40 @@ Reply inline here or paste into chat — **anything missing will use tasteful pl
 - **2026-05-14 *(spec review)* — technical defaults:** **Next.js + Tailwind**, **no CMS** for v1 (repo-hosted copy). **Hosting:** **`chartroomai.com`** DNS managed in **Cloudflare**; app target **`Cloudflare Pages` vs `Vercel`** **TBD at deploy**.
 - **User confirmation:** **Domain:** **`chartroomai.com`** — registered; intended production canonical host for this site (see §2).
 - **Repo:** Site code lives at **`https://github.com/cheezd/website`** — local workspace aligned as Git `origin` for pushes & CI/deploy.
+- **2026-05-14 *(TBD sweep — questionnaire)*:** **US remote-first** · **résumé v1** · **speaking/board inbound open** · **conversational offering** → summarized in **§14**.
+- **2026-05-14 *(TBD sweep — spec prose)*:** Filled §5–§10 gaps; §12 minimized; **§14** appendix for draft positioning lines.
 
 ---
 
-*End of planning doc. Fill §12 for launch-ready copy.*
+## 14. Appendix — resolved defaults & draft copy *(2026-05-14 TBD sweep)*
+
+### 14.1 Questionnaire *(locked)*
+
+| Decision | Choice |
+|----------|--------|
+| **Geography** | **United States — remote-first**; **travel / on-site by arrangement** |
+| **Résumé on site** | **Yes v1** — add file or URL when ready |
+| **Speaking / board / advisory** | **Open** — welcome inbound *(triage in email)* |
+| **Offering copy** | **Conversational** public page — **no** heavy SOW language on v1 |
+
+### 14.2 Industries *(draft)*
+
+**Banks, broker-dealers, wealth & asset management, insurance carriers & distributors, fintech vendors serving regulated institutions**, and **enterprise SaaS** where **auditability, data residency, and model risk** matter.
+
+### 14.3 Ideal engagement *(one sentence)*
+
+A **sponsor-owned** AI or modernization agenda **stalled between strategy and shipped software**, where leadership needs a **regulated-industry CTO** to **align sponsors, architecture, security, and delivery** — leaving **evaluation and rollout discipline**, not vapor.
+
+### 14.4 Personality & peer gap
+
+**Adjectives:** *Authoritative, pragmatic, calm under pressure, direct, stewardship-minded.*  
+
+**Peers often miss:** *Treating AI as a **vendor bake-off** instead of **operational change** spanning **data lineage, approvals, rollback, evaluations, incidents**, and **procurement reality**.*
+
+### 14.5 “How we work” *(conversational v1)*
+
+Start with **focused discovery** *(goals, constraints, stakeholders)* → **phased priorities** we **co-drive** with your team. **SOWs and fees** stay **offline** with counsel as needed.
+
+---
+
+*End — remaining: §12 file/URL/metrics rows.*

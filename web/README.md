@@ -22,6 +22,6 @@ Optional environment variables (see `.env.example`):
 
 - `NEXT_PUBLIC_CONTACT_EMAIL`
 - `NEXT_PUBLIC_LINKEDIN_URL`
-- `NEXT_PUBLIC_BOOKING_URL`
+- `NEXT_PUBLIC_RESUME_URL` (e.g. `/marc-cheatham-resume.pdf` or `https://…`)
 
 Higher-level IA, positioning, and brand tokens are documented at the repo root: `marc-cheatham-portfolio-spec.md`.
