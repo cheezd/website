@@ -177,29 +177,179 @@ export default function Home() {
           eyebrow="Leadership trajectory"
           title="Experience calibrated for regulated AI scale"
         >
-          <div className="space-y-8">
-            <p className="max-w-2xl text-lg leading-relaxed text-chart-ink md:text-xl">
-              We selectively publish timelines that respect confidentiality commitments. Narrative edits or additional organizations can be surfaced here as your disclosure posture evolves.
-            </p>
-            <div className="space-y-6">
-              <article className="rounded-lg border-s-4 border-chart-teal bg-white p-8 shadow-sm">
+          <div className="space-y-10">
+            <div className="max-w-3xl space-y-4 text-lg leading-relaxed text-chart-ink md:text-xl">
+              <p>
+                The work below reflects the kind of environments where AI, data, and software
+                intersect with <strong>capital markets literacy</strong>,{' '}
+                <strong>fiduciary-style duty of care</strong>, and{' '}
+                <strong>long-horizon operational risk</strong>. We stay non-attributive on the
+                public site; org names, logos, and granular timelines are reserved for{' '}
+                <strong>NDA-governed</strong> diligence and reference conversations.
+              </p>
+              <p className="text-base text-chart-ink/90 md:text-lg">
+                When you engage Chart Room AI, you are working with someone who has{' '}
+                <strong>sat in the operating chair</strong>: prioritizing roadmaps under
+                constrained capacity, defending architecture to risk and compliance stakeholders,
+                and shipping through volatile funding and macro cycles—not only advising from the
+                sidelines.
+              </p>
+            </div>
+
+            <div className="space-y-8">
+              <article className="rounded-lg border-s-4 border-chart-teal bg-white p-8 shadow-sm md:p-10">
                 <p className="text-sm font-semibold uppercase tracking-[0.16em] text-chart-teal">
                   Recent decade focus
                 </p>
-                <h3 className="mt-3 text-xl font-bold text-chart-navy">
+                <h3 className="mt-3 text-xl font-bold text-chart-navy md:text-2xl">
                   Chief Technology Officer &amp; Acting CEO — fintech SaaS venture
                 </h3>
-                <p className="mt-2 text-chart-ink/80">Approx. four-year chapter · United States · clients in regulated domains</p>
-                <ul className="mt-4 list-disc space-y-2 ps-6 leading-relaxed text-chart-ink/95">
-                  <li>Orchestrated product and engineering for trading, stochastic simulation engines, holistic planning tooling, ALM workloads, and security-master databases</li>
-                  <li>Ran diligence-facing architecture reviews, investor-grade narrative, security policy ownership, and client-facing demos on capital markets nuance</li>
-                  <li>Introduced disciplined AI-assisted delivery without compromising resilience or accountability</li>
-                </ul>
+                <p className="mt-2 font-medium text-chart-ink">
+                  Approx. four-year chapter · United States · client base in regulated and
+                  institutionally discerning segments
+                </p>
+                <p className="mt-5 leading-relaxed text-chart-ink/95">
+                  Dual CTO and acting chief executive accountability for{' '}
+                  <strong>product direction</strong>, <strong>engineering throughput</strong>,{' '}
+                  <strong>security posture</strong>, and{' '}
+                  <strong>revenue-bearing client delivery</strong>—with continuous exposure to how
+                  buyers evaluate depth on <strong>capital markets mechanics</strong>,{' '}
+                  <strong>solvency-style analytics</strong>, and{' '}
+                  <strong>data integrity</strong>.
+                </p>
+
+                <div className="mt-8 grid gap-8 lg:grid-cols-2">
+                  <div>
+                    <h4 className="text-xs font-semibold uppercase tracking-[0.2em] text-chart-navy">
+                      Platform &amp; engineering
+                    </h4>
+                    <ul className="mt-3 list-disc space-y-2 ps-5 text-chart-ink/95">
+                      <li>
+                        Directed build-out of sophisticated <strong>trading workflows</strong>,{' '}
+                        <strong>holistic wealth &amp; planning</strong> experiences,{' '}
+                        <strong>Monte Carlo / capital-market-assumption engines</strong>,{' '}
+                        <strong>ALM-capable analytics</strong>, and adjoining execution paths that
+                        had to survive <strong>skeptical quant and advisor review</strong>.
+                      </li>
+                      <li>
+                        Owned <strong>reliability, observability,</strong> and{' '}
+                        <strong>release discipline</strong> across teams juggling feature velocity
+                        alongside production stability for paying institutions—not slide-ware proofs.
+                      </li>
+                      <li>
+                        Grounded modernization in <strong>pragmatic SDLC norms</strong> (strong
+                        test discipline, pipelines, repeatable deploys) so speed did not abandon
+                        auditability or rollback.
+                      </li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h4 className="text-xs font-semibold uppercase tracking-[0.2em] text-chart-navy">
+                      Data foundations
+                    </h4>
+                    <ul className="mt-3 list-disc space-y-2 ps-5 text-chart-ink/95">
+                      <li>
+                        Stood up and evolved <strong>broad securities &amp; instrument masters</strong>{' '}
+                        covering equities, fixed income, funds, ETFs, commodities, derivatives,
+                        annuities-related constructs—and the <strong>SQL-heavy ingestion and
+                          validation</strong> required to trust downstream analytics.
+                      </li>
+                      <li>
+                        Partnered tightly with SMEs on <strong>corporate actions</strong>, pricing
+                        hygiene, lineage concerns, and <strong>diligence questionnaires</strong> that
+                        accompany institutional adoption.
+                      </li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h4 className="text-xs font-semibold uppercase tracking-[0.2em] text-chart-navy">
+                      Production AI &amp; productivity
+                    </h4>
+                    <ul className="mt-3 list-disc space-y-2 ps-5 text-chart-ink/95">
+                      <li>
+                        Shipped <strong>multi-agent workflows</strong> that accelerated staff and
+                        client-facing analyses—areas such as <strong>cash-flow exploration</strong>,{' '}
+                        tax-aware scenario thinking, forecasting, and similar decision support—
+                        with <strong>guardrails</strong> appropriate to regulated narratives.
+                      </li>
+                      <li>
+                        Built an <strong>agentic evaluation framework</strong>: automated gates plus{' '}
+                        <strong>human-verified baselines</strong>, versioned prompts and outputs, and
+                        discipline meant to curb silent regression as models churned.
+                      </li>
+                      <li>
+                        Used AI thoughtfully inside <strong>engineering and operational loops</strong>{' '}
+                        (code, tests, deployments) to raise throughput without tossing aside review
+                        culture.
+                      </li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h4 className="text-xs font-semibold uppercase tracking-[0.2em] text-chart-navy">
+                      Commercial narrative, VC &amp; security leadership
+                    </h4>
+                    <ul className="mt-3 list-disc space-y-2 ps-5 text-chart-ink/95">
+                      <li>
+                        Repeatedly the <strong>front-line technical voice</strong> in{' '}
+                        <strong>sponsor-facing</strong>, <strong>investor-facing</strong>, and{' '}
+                        <strong>large-prospect demos</strong> where ALM framing, stochastic engine
+                        intuition, security-master credibility, or AI restraint had to land with
+                        domain experts—not generic IT theater.
+                      </li>
+                      <li>
+                        Helped articulate <strong>business model evolution</strong>, partnership
+                        strategy, and <strong>pitch coherence</strong> across technical diligence and
+                        business diligence threads.
+                      </li>
+                      <li>
+                        Assumed <strong>acting CEO</strong> responsibilities during transitional
+                        periods—keeping delivery, stakeholder confidence, and internal alignment{' '}
+                        <strong>tightly coupled</strong>.
+                      </li>
+                      <li>
+                        Established and maintained{' '}
+                        <strong>enterprise information security policies</strong>—the practical bridge
+                        between aspiration and audit-friendly behavior while teams moved fast.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <p className="mt-8 rounded-md border border-chart-navy/10 bg-chart-surface/80 px-4 py-3 text-sm leading-relaxed text-chart-ink">
+                  Specific <strong>outcome metrics</strong>, <strong>headcount timelines</strong>, and{' '}
+                  <strong>employer nomenclature</strong> are deliberately omitted here; we add them when
+                  you authorize public disclosure—or walk through them privately under agreement.
+                </p>
               </article>
-              <article className="rounded-lg border border-dashed border-chart-navy/20 bg-chart-surface/80 p-8">
-                <h3 className="text-xl font-bold text-chart-navy">Earlier CTO tenures — details available privately</h3>
-                <p className="mt-3 leading-relaxed text-chart-ink/95">
-                  Marc has served fourteen additional years cumulatively across CTO roles tackling enterprise-scale modernization, integrations, migrations, analytics, vendor governance, cloud adoption, cyber leadership, portfolio rationalization, and board preparation. In diligence, Chart Room AI can walk specific references under NDA.</p>
+
+              <article className="rounded-lg border border-dashed border-chart-navy/25 bg-chart-surface/80 p-8 md:p-10">
+                <h3 className="text-xl font-bold text-chart-navy md:text-2xl">
+                  Earlier CTO tenure — cumulative depth before this chapter
+                </h3>
+                <p className="mt-4 leading-relaxed text-chart-ink/95">
+                  Across roughly <strong>fourteen additional CTO-years</strong> at multiple employers,
+                  Marc led programs typical of <strong>modernization under live revenue</strong>:{' '}
+                  portfolio consolidation, integrations and migrations,
+                  analytics &amp; data platforms, <strong>cloud adoption choreography</strong>, vendor
+                  governance, cyber-incident preparedness, profitability-driven rationalization,
+                  and <strong>board-ready technology narrative</strong> during stress or inflection.
+                </p>
+                <ul className="mt-5 list-disc space-y-2 ps-5 leading-relaxed text-chart-ink/95">
+                  <li>
+                    Recurring <strong>bridge role</strong> between executive sponsors skeptical of ETA
+                    promises and engineers tired of brittle deadlines—establishing phased truth on
+                    capacity, architectural debt, and risk acceptance.
+                  </li>
+                  <li>
+                    Built trust with <strong>Risk</strong>, <strong>Internal Audit</strong>, and vendor
+                    ecosystems so initiatives did not stall in perpetual “exceptions” queues.
+                  </li>
+                </ul>
+                <p className="mt-5 text-chart-ink/90">
+                  In diligence, <strong>Chart Room AI</strong> can connect you with
+                  context-appropriate references and artifacts—within the boundaries of prior
+                  agreements.
+                </p>
               </article>
             </div>
           </div>

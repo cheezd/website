@@ -293,6 +293,7 @@ We **prioritize compliance-aware, auditable patterns** over trendy agent demos; 
 - **Repo:** Site code lives at **`https://github.com/cheezd/website`** — local workspace aligned as Git `origin` for pushes & CI/deploy.
 - **2026-05-14 *(TBD sweep — questionnaire)*:** **US remote-first** · **résumé v1** · **speaking/board inbound open** · **conversational offering** → summarized in **§14**.
 - **2026-05-14 *(TBD sweep — spec prose)*:** Filled §5–§10 gaps; §12 minimized; **§14** appendix for draft positioning lines.
+- **2026-05-14:** **Experience** section on the public site (`web` / `#experience`) expanded: grouped subsections (platform, data, AI, commercial & security) plus stronger NDA framing intro; **§5** timeline table remains canonical for names/dates when you add them.
 
 ---
 
