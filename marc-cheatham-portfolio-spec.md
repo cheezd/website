@@ -121,17 +121,18 @@ Differentiator framing: **30+ years regulated-industry experience** + **proven A
 
 ---
 
-## 5. Experience Timeline *(public posture: v1 anonymous; names under NDA)*
+## 5. Experience Timeline *(mixed public attribution: SaaS CTO/CEO withheld; Riverfront CTO named)*
 
-| Dates | Role | Company | Public site posture | Highlights *(high level — no client attribution)* |
-|-------|------|---------|---------------------|-----------------------------------------------------|
-| **~4 years** *(start/end years: **Marc to insert** or keep “recent chapter”)* | CTO, Acting CEO | **Withheld** · B2B **fintech SaaS** serving regulated / institutional-style users | **Anonymous** on the public site · **Name + references available under NDA** | Trading & planning platforms; **Monte Carlo / CMA**; **ALM**; **security masters**; production **multi-agent AI**; acting **CISO**-level security program; **VC** + strategic partner narrative; client-facing **capital markets & ALM** depth |
-| **~14 years cumulative** *(multiple employers — **Marc to list years or ranges**)* | Chief Technology Officer | **Multiple firms** *(names **withheld** on public site)* | **NDA / discretion** | Portfolio modernization, integrations, cloud & data path, engineering operating model, vendor strategy — **add 1–2 anonymized wins below when ready** |
-| *[Future, if applicable]* | Advisory / director-style roles | *[Per engagement & disclosure]* | **Publish only when cleared** | *[Add row when relevant]* |
+| Dates | Role | Company | Public site posture | Highlights *(themes — attribution split on live site)* |
+|-------|------|---------|---------------------|------------------------------------------------------------|
+| **~4 yrs** *(calendar years: Marc may add)* | CTO, Acting CEO | **Independent B2B fintech SaaS** *(name withheld publicly)* | **Anonymous** publicly · specifics under NDA | Venture-scale product & engineering; VC / diligence narration; interim **acting chief executive stretches**; multi-agent workflows & evaluation scaffolding; hardened security-policy posture |
+| *[Years TBD]* | Chief Technology Officer | **Riverfront** *(wealth / investment-management technology context)* | **Named** publicly · deeper timelines on request | Platform depth across trading-esque workflows, stochastic / capital-market tooling, holistic planning interoperability, expansive securities-master hygiene, modernization discipline |
+| *[Further CTO-span across other firms]* | Chief Technology Officer | **Additional employers — unnamed on site** | **Private absent agreement** | Cloud / modernization, portfolio consolidation, integrations, vendor & audit rhythm—see **`#experience`** “Additional CTO depth…” card |
+| *[Future]* | Advisory / director-style roles | *[When applicable]* | **Publish after clearance** | *[Add rows when relevant]* |
 
-**Companies you’re willing to name publicly:** **None on v1 landing page** *(add rows above if you later choose to name specific employers).*  
+**Companies you’re willing to name publicly:** **Riverfront** *(CTO tenure)* · **recent independent SaaS remains unnamed** *(for now).*  
 
-**NDA / omission policy:** Public copy stays **non-attributive**; diligence, references, and logos **only after written permission**.
+**NDA / omission policy:** Employer-specific metrics, timelines, or attributions publish only after **written approval**.
 
 ---
 
@@ -254,7 +255,7 @@ We **prioritize compliance-aware, auditable patterns** over trendy agent demos; 
 - [x] Hero structure + positioning trim  
 - [x] Narrative voice §4.7  
 - [x] About + founder block *(draft — refine anytime in `web/src/app/page.tsx`)*  
-- [x] Experience *(anonymous posture + NDA note — §5)*  
+- [x] Experience *(mixed attribution: anonymous SaaS CTO/CEO + **Riverfront** named — §5 / `#experience`)*  
 - [x] Expertise / skills clustering *(§6 ↔ page)*  
 - [x] “Why hire” narrative + metrics checklist *(§7)*  
 - [x] **Primary CTA:** email · default **`hello@chartroomai.com`** until confirmed (**§12**)  
@@ -293,7 +294,7 @@ We **prioritize compliance-aware, auditable patterns** over trendy agent demos; 
 - **Repo:** Site code lives at **`https://github.com/cheezd/website`** — local workspace aligned as Git `origin` for pushes & CI/deploy.
 - **2026-05-14 *(TBD sweep — questionnaire)*:** **US remote-first** · **résumé v1** · **speaking/board inbound open** · **conversational offering** → summarized in **§14**.
 - **2026-05-14 *(TBD sweep — spec prose)*:** Filled §5–§10 gaps; §12 minimized; **§14** appendix for draft positioning lines.
-- **2026-05-14:** **Experience** section on the public site (`web` / `#experience`) expanded: grouped subsections (platform, data, AI, commercial & security) plus stronger NDA framing intro; **§5** timeline table remains canonical for names/dates when you add them.
+- **2026-05-14:** Attribution update: **`#experience`** composite themes explicitly span **Riverfront CTO** tenure + anonymous **CTO / acting CEO SaaS** chapter (+ other unnamed CTO employers in third card); spec **§5** table updated accordingly.
 
 ---
 

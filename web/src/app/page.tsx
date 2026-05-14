@@ -180,12 +180,14 @@ export default function Home() {
           <div className="space-y-10">
             <div className="max-w-3xl space-y-4 text-lg leading-relaxed text-chart-ink md:text-xl">
               <p>
-                The work below reflects the kind of environments where AI, data, and software
-                intersect with <strong>capital markets literacy</strong>,{' '}
-                <strong>fiduciary-style duty of care</strong>, and{' '}
-                <strong>long-horizon operational risk</strong>. We stay non-attributive on the
-                public site; org names, logos, and granular timelines are reserved for{' '}
-                <strong>NDA-governed</strong> diligence and reference conversations.
+                The themes below emerge where AI, data, and software collide with{' '}
+                <strong>capital-markets sophistication</strong>, <strong>duty-of-care expectations</strong>,
+                and <strong>durable operational risk</strong>. The{' '}
+                <strong>most recent ~four-year CTO / acting CEO company</strong> stays{' '}
+                <strong>anonymous</strong> on this public surface; concurrently, Marc’s{' '}
+                <strong>Chief Technology Officer</strong> tenure at <strong>Riverfront</strong> is{' '}
+                <strong>named</strong>. Other employers generally remain undisclosed unless you engage
+                under agreement.
               </p>
               <p className="text-base text-chart-ink/90 md:text-lg">
                 When you engage Chart Room AI, you are working with someone who has{' '}
@@ -199,14 +201,19 @@ export default function Home() {
             <div className="space-y-8">
               <article className="rounded-lg border-s-4 border-chart-teal bg-white p-8 shadow-sm md:p-10">
                 <p className="text-sm font-semibold uppercase tracking-[0.16em] text-chart-teal">
-                  Recent decade focus
+                  Recent-decade CTO scope
                 </p>
                 <h3 className="mt-3 text-xl font-bold text-chart-navy md:text-2xl">
                   Chief Technology Officer &amp; Acting CEO — fintech SaaS venture
                 </h3>
                 <p className="mt-2 font-medium text-chart-ink">
-                  Approx. four-year chapter · United States · client base in regulated and
-                  institutionally discerning segments
+                  Approx. four-year CTO &amp; acting CEO chapter · United States · SaaS vendors to
+                  regulated / institutionally discerning buyers
+                </p>
+                <p className="mt-3 rounded-md bg-chart-surface px-4 py-3 text-sm font-medium leading-snug text-chart-navy">
+                  Concurrent public reference — <strong>Chief Technology Officer · Riverfront</strong>{' '}
+                  *(wealth / investment-management technology context; timelines available in
+                  conversation).*
                 </p>
                 <p className="mt-5 leading-relaxed text-chart-ink/95">
                   Dual CTO and acting chief executive accountability for{' '}
@@ -216,6 +223,21 @@ export default function Home() {
                   buyers evaluate depth on <strong>capital markets mechanics</strong>,{' '}
                   <strong>solvency-style analytics</strong>, and{' '}
                   <strong>data integrity</strong>.
+                </p>
+
+                <p className="mt-6 border-l-2 border-chart-teal/70 pl-4 text-base leading-relaxed text-chart-ink/95 md:text-lg">
+                  <strong className="text-chart-navy">Composite reading.</strong> The capability themes
+                  below blend firsthand work Marc led as{' '}
+                  <strong>Chief Technology Officer at Riverfront</strong> and during the subsequent{' '}
+                  <strong>~four-year CTO / acting CEO SaaS chapter</strong>—not every bullet applies
+                  to <em>both</em>. Items such as <strong>interim acting chief executive stretches</strong>,{' '}
+                  <strong>venture-facing diligence,</strong> and certain{' '}
+                  <strong>partnership / commercial narrative arcs</strong> skew toward the unnamed SaaS
+                  vendor; substantive <strong>trading engineering</strong>, <strong>Monte Carlo</strong>{' '}
+                  sophistication, <strong>holistic planning interoperability</strong>,{' '}
+                  <strong>securities-master rigor</strong>, modernization discipline, and
+                  skeptic-proof client demos matured across{' '}
+                  <strong>Riverfront and that later chapter alike.</strong>
                 </p>
 
                 <div className="mt-8 grid gap-8 lg:grid-cols-2">
@@ -288,6 +310,12 @@ export default function Home() {
                     <h4 className="text-xs font-semibold uppercase tracking-[0.2em] text-chart-navy">
                       Commercial narrative, VC &amp; security leadership
                     </h4>
+                    <p className="mt-2 text-xs italic text-chart-ink/80">
+                      Venture-stage demos, diligence narration, interim chief executive breadth, and
+                      certain VC-adjacent storylines principally reflect the anonymous SaaS chapter;
+                      domain-heavy prospect conversations also draw heavily on RI / wealth technology
+                      leadership such as CTO tenure at Riverfront.
+                    </p>
                     <ul className="mt-3 list-disc space-y-2 ps-5 text-chart-ink/95">
                       <li>
                         Repeatedly the <strong>front-line technical voice</strong> in{' '}
@@ -316,23 +344,26 @@ export default function Home() {
                 </div>
 
                 <p className="mt-8 rounded-md border border-chart-navy/10 bg-chart-surface/80 px-4 py-3 text-sm leading-relaxed text-chart-ink">
-                  Specific <strong>outcome metrics</strong>, <strong>headcount timelines</strong>, and{' '}
-                  <strong>employer nomenclature</strong> are deliberately omitted here; we add them when
-                  you authorize public disclosure—or walk through them privately under agreement.
+                  Granular <strong>outcome metrics</strong>, staffing contours, calendars, refined{' '}
+                  <strong>Riverfront</strong> timelines, or identity of the unnamed SaaS company stay
+                  out of public copy unless you authorize them—we expand or walk through nuances under
+                  agreement.
                 </p>
               </article>
 
               <article className="rounded-lg border border-dashed border-chart-navy/25 bg-chart-surface/80 p-8 md:p-10">
                 <h3 className="text-xl font-bold text-chart-navy md:text-2xl">
-                  Earlier CTO tenure — cumulative depth before this chapter
+                  Additional CTO depth — employers beyond Riverfront &amp; the recent SaaS chapter
                 </h3>
                 <p className="mt-4 leading-relaxed text-chart-ink/95">
-                  Across roughly <strong>fourteen additional CTO-years</strong> at multiple employers,
-                  Marc led programs typical of <strong>modernization under live revenue</strong>:{' '}
-                  portfolio consolidation, integrations and migrations,
-                  analytics &amp; data platforms, <strong>cloud adoption choreography</strong>, vendor
-                  governance, cyber-incident preparedness, profitability-driven rationalization,
-                  and <strong>board-ready technology narrative</strong> during stress or inflection.
+                  Riverfront CTO leadership and the ~four-year CTO / acting CEO SaaS chapter anchor the
+                  composite themes shown above. CTO-caliber modernization also unfolded across{' '}
+                  <strong>additional unnamed employers</strong>—without enumerating timelines here—with
+                  recurring arcs of <strong>modernizing live revenue footprints</strong>: portfolio consolidation,
+                  integrations &amp; migrations, analytics capabilities,{' '}
+                  <strong>cloud choreography</strong>, vendor governance, cyber preparedness, prudent
+                  profit-driven rationalization, and{' '}
+                  <strong>board-facing technology narrative during inflection stress</strong>.
                 </p>
                 <ul className="mt-5 list-disc space-y-2 ps-5 leading-relaxed text-chart-ink/95">
                   <li>
