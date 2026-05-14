@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+:root {
+  --chart-navy: #0a2540;
+  --chart-teal: #00b4a8;
+  --chart-gold: #d4af37;
+  --chart-ink: #1e2937;
+  --chart-surface: #f4f7fa;
+  scroll-behavior: smooth;
+}
+
+/* Spec v1: light theme only — no auto dark inversion */
+@theme inline {
+  --color-chart-navy: var(--chart-navy);
+  --color-chart-teal: var(--chart-teal);
+  --color-chart-gold: var(--chart-gold);
+  --color-chart-ink: var(--chart-ink);
+  --color-chart-surface: var(--chart-surface);
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+}
+
+body {
+  background-color: var(--chart-surface);
+  color: var(--chart-ink);
+  font-family: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+}
+
+/* Focus rings — teal accent */
+:focus-visible {
+  outline: 2px solid var(--chart-teal);
+  outline-offset: 2px;
+}

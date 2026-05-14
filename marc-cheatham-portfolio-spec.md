@@ -32,7 +32,7 @@
 | **Canonical domain** | **https://chartroomai.com** — **`chartroom.ai`** → redirect to `.com` *(e.g. **Bulk Redirect / Redirect Rules** in Cloudflare once that zone or hostname exists)* |
 | **Analytics** | **None** at launch |
 | **Static export requirement** | **No hard requirement** documented — *[flag if hosting must avoid edge/Node]* |
-| **Source repo** | **[`cheezd/website`](https://github.com/cheezd/website)** on GitHub *(this folder → `origin`); wire **Cloudflare Pages** or **GitHub Action → host** next* |
+| **Source repo** | **[`cheezd/website`](https://github.com/cheezd/website)** on GitHub *(this monorepo-style root; **`web/`** holds the Next.js app)* |
 
 **Domain confirmed:** **`chartroomai.com`**. Registrar may live at Cloudflare or elsewhere; **`chartroomai.com`** ultimately uses **Cloudflare nameservers** so **records you change at launch live in Cloudflare → DNS.**
 
