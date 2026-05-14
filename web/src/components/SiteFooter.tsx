@@ -1,13 +1,25 @@
+import Link from "next/link";
+import { routes } from "@/lib/site-content";
+
 export function SiteFooter() {
   return (
     <footer className="border-t border-chart-navy/10 bg-chart-navy text-white">
       <div className="mx-auto max-w-5xl space-y-6 px-4 py-12 lg:max-w-6xl">
-        <div className="flex flex-col gap-2 border-b border-white/10 pb-8">
-          <p className="text-lg font-semibold tracking-tight">Chart Room AI LLC</p>
-          <p className="max-w-xl text-sm text-white/75">
-            Virginia · Fractional AI transformation leadership for regulated financial
-            services and technology organizations.
-          </p>
+        <div className="grid gap-8 border-b border-white/10 pb-8 md:grid-cols-[1fr_auto]">
+          <div className="flex flex-col gap-2">
+            <p className="text-lg font-semibold tracking-tight">Chart Room AI LLC</p>
+            <p className="max-w-xl text-sm text-white/75">
+              Virginia - fractional AI transformation leadership for regulated financial
+              services and technology organizations.
+            </p>
+          </div>
+          <nav aria-label="Footer" className="flex flex-wrap gap-x-5 gap-y-2 text-sm text-white/75">
+            {routes.map((route) => (
+              <Link key={route.href} href={route.href} className="hover:text-white hover:underline">
+                {route.label}
+              </Link>
+            ))}
+          </nav>
         </div>
         <div className="space-y-3 text-xs leading-relaxed text-white/60">
           <p>

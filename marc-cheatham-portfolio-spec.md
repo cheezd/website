@@ -60,7 +60,7 @@
 
 ### 4.1 Chart Room AI — positioning *(from brand guidelines; use verbatim on hero / SEO where appropriate)*
 
-> Chart Room AI delivers fractional AI Transformation Leadership from a former fintech CTO and Acting CEO with 31 years of experience. We provide strategic AI roadmaps, seamless business-IT bridging, and executive guidance that helps financial services and technology companies navigate complexity and capture sustainable AI-driven growth.
+> Chart Room AI delivers fractional AI Transformation Leadership from a former Fintech CTO and CEO with 31 years of experience. We provide strategic AI roadmaps, seamless business-IT bridging, and executive guidance that helps financial services and technology companies navigate complexity and capture sustainable AI-driven growth.
 
 ### 4.2 Tagline *(confirmed for hero / parity with LinkedIn & proposals)*
 
