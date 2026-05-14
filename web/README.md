@@ -1,6 +1,7 @@
 # Chart Room AI — marketing site
 
-Next.js App Router application for Chart Room AI (fractional AI transformation advisory).
+Next.js App Router application for Chart Room AI — fractional AI transformation advisory (planned production domain **`chartroomai.com`**).
+
 
 ## Commands
 
