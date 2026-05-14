@@ -109,9 +109,9 @@ export default function Home() {
               </p>
               <p className="mt-4 leading-relaxed text-chart-ink/95">
                 Marc is a seasoned technology executive with thirty-one years of experience,
-                including eighteen years as Chief Technology Officer across multiple firms. Most recently, he served for four years as CTO and Acting CEO of a fintech software
-                startup focused on regulated planning, trading, simulation, and security-master
-                data at institutional scale.
+                including eighteen years as Chief Technology Officer across multiple firms. Most recently, he served for four years as CTO and Acting CEO of{' '}
+                <strong>{siteConfig.priorVentureName}</strong>, a <strong>{siteConfig.priorVentureTagline}</strong>{' '}
+                company focused on regulated planning, trading, simulation, and security-master data at institutional scale.
               </p>
               <p className="mt-4 leading-relaxed text-chart-ink/95">
                 He has guided production multi-agent AI systems in areas such as cash flow analysis,
@@ -182,12 +182,12 @@ export default function Home() {
               <p>
                 The themes below emerge where AI, data, and software collide with{' '}
                 <strong>capital-markets sophistication</strong>, <strong>duty-of-care expectations</strong>,
-                and <strong>durable operational risk</strong>. The{' '}
-                <strong>most recent ~four-year CTO / acting CEO company</strong> stays{' '}
-                <strong>anonymous</strong> on this public surface; concurrently, Marc’s{' '}
-                <strong>Chief Technology Officer</strong> tenure at <strong>Riverfront</strong> is{' '}
-                <strong>named</strong>. Other employers generally remain undisclosed unless you engage
-                under agreement.
+                and <strong>durable operational risk</strong>. Marc’s most recent ~four-year{' '}
+                <strong>CTO / acting CEO</strong> chapter was at <strong>{siteConfig.priorVentureName}</strong>{' '}
+                (<strong>{siteConfig.priorVentureTagline}</strong>); his{' '}
+                <strong>Chief Technology Officer</strong> tenure at <strong>Riverfront</strong> is also
+                expressly referenced below. Additional employers generally stay undisclosed unless you
+                engage under agreement.
               </p>
               <p className="text-base text-chart-ink/90 md:text-lg">
                 When you engage Chart Room AI, you are working with someone who has{' '}
@@ -204,11 +204,11 @@ export default function Home() {
                   Recent-decade CTO scope
                 </p>
                 <h3 className="mt-3 text-xl font-bold text-chart-navy md:text-2xl">
-                  Chief Technology Officer &amp; Acting CEO — fintech SaaS venture
+                  Chief Technology Officer &amp; Acting CEO — {siteConfig.priorVentureName}
                 </h3>
                 <p className="mt-2 font-medium text-chart-ink">
-                  Approx. four-year CTO &amp; acting CEO chapter · United States · SaaS vendors to
-                  regulated / institutionally discerning buyers
+                  Approx. four-year chapter · United States · {siteConfig.priorVentureTagline} · buyers
+                  in regulated / institutionally discerning segments
                 </p>
                 <p className="mt-3 rounded-md bg-chart-surface px-4 py-3 text-sm font-medium leading-snug text-chart-navy">
                   Concurrent public reference — <strong>Chief Technology Officer · Riverfront</strong>{' '}
@@ -228,16 +228,16 @@ export default function Home() {
                 <p className="mt-6 border-l-2 border-chart-teal/70 pl-4 text-base leading-relaxed text-chart-ink/95 md:text-lg">
                   <strong className="text-chart-navy">Composite reading.</strong> The capability themes
                   below blend firsthand work Marc led as{' '}
-                  <strong>Chief Technology Officer at Riverfront</strong> and during the subsequent{' '}
-                  <strong>~four-year CTO / acting CEO SaaS chapter</strong>—not every bullet applies
-                  to <em>both</em>. Items such as <strong>interim acting chief executive stretches</strong>,{' '}
+                  <strong>Chief Technology Officer at Riverfront</strong> and as{' '}
+                  <strong>CTO / acting CEO at {siteConfig.priorVentureName}</strong>—not every bullet applies to{' '}
+                  <em>both</em>. Items such as <strong>interim acting chief executive stretches</strong>,{' '}
                   <strong>venture-facing diligence,</strong> and certain{' '}
-                  <strong>partnership / commercial narrative arcs</strong> skew toward the unnamed SaaS
-                  vendor; substantive <strong>trading engineering</strong>, <strong>Monte Carlo</strong>{' '}
-                  sophistication, <strong>holistic planning interoperability</strong>,{' '}
-                  <strong>securities-master rigor</strong>, modernization discipline, and
-                  skeptic-proof client demos matured across{' '}
-                  <strong>Riverfront and that later chapter alike.</strong>
+                  <strong>partnership / commercial narrative arcs</strong> skew heavily toward{' '}
+                  <strong>{siteConfig.priorVentureName}</strong>; substantive <strong>trading engineering</strong>,{' '}
+                  <strong>Monte Carlo</strong> sophistication, <strong>holistic planning interoperability</strong>,{' '}
+                  <strong>securities-master rigor</strong>, modernization discipline, and skeptic-proof
+                  client demos matured across <strong>Riverfront</strong> and{' '}
+                  <strong>{siteConfig.priorVentureName}</strong> alike.
                 </p>
 
                 <div className="mt-8 grid gap-8 lg:grid-cols-2">
@@ -311,8 +311,8 @@ export default function Home() {
                       Commercial narrative, VC &amp; security leadership
                     </h4>
                     <p className="mt-2 text-xs italic text-chart-ink/80">
-                      Venture-stage demos, diligence narration, interim chief executive breadth, and
-                      certain VC-adjacent storylines principally reflect the anonymous SaaS chapter;
+                      Venture-stage demos, diligence narration, interim chief executive breadth, and certain
+                      VC-adjacent storylines principally reflect <strong>{siteConfig.priorVentureName}</strong>;
                       domain-heavy prospect conversations also draw heavily on RI / wealth technology
                       leadership such as CTO tenure at Riverfront.
                     </p>
@@ -344,20 +344,21 @@ export default function Home() {
                 </div>
 
                 <p className="mt-8 rounded-md border border-chart-navy/10 bg-chart-surface/80 px-4 py-3 text-sm leading-relaxed text-chart-ink">
-                  Granular <strong>outcome metrics</strong>, staffing contours, calendars, refined{' '}
-                  <strong>Riverfront</strong> timelines, or identity of the unnamed SaaS company stay
-                  out of public copy unless you authorize them—we expand or walk through nuances under
-                  agreement.
+                  Granular <strong>outcome metrics</strong>, staffing contours, calendars,{' '}
+                  <strong>Riverfront</strong> chronology refinement, or <strong>{siteConfig.priorVentureName}</strong>{' '}
+                  timelines stay out of public copy unless you authorize them—we expand or walk through nuances
+                  under agreement.
                 </p>
               </article>
 
               <article className="rounded-lg border border-dashed border-chart-navy/25 bg-chart-surface/80 p-8 md:p-10">
                 <h3 className="text-xl font-bold text-chart-navy md:text-2xl">
-                  Additional CTO depth — employers beyond Riverfront &amp; the recent SaaS chapter
+                  Additional CTO depth — employers beyond Riverfront &amp; {siteConfig.priorVentureName}
                 </h3>
                 <p className="mt-4 leading-relaxed text-chart-ink/95">
-                  Riverfront CTO leadership and the ~four-year CTO / acting CEO SaaS chapter anchor the
-                  composite themes shown above. CTO-caliber modernization also unfolded across{' '}
+                  Riverfront CTO leadership and the ~four-year CTO / acting CEO chapter at{' '}
+                  <strong>{siteConfig.priorVentureName}</strong> anchor the composite themes shown above.
+                  CTO-caliber modernization also unfolded across{' '}
                   <strong>additional unnamed employers</strong>—without enumerating timelines here—with
                   recurring arcs of <strong>modernizing live revenue footprints</strong>: portfolio consolidation,
                   integrations &amp; migrations, analytics capabilities,{' '}

@@ -70,11 +70,11 @@
 
 ### 4.3 Elevator pitch *(locked for v1 web; tweak anytime)*
 
-> Seasoned technology executive (31 years) and long-time CTO (18 years), recently CTO and acting CEO of a fintech software startup — now advising financial services and regulated firms on **practical AI adoption** from strategy through delivery.
+> Seasoned technology executive (31 years) and long-time CTO (18 years), recently CTO and acting CEO of **Caravel Concepts** (B2B fintech software) — now advising financial services and regulated firms on **practical AI adoption** from strategy through delivery.
 
 ### 4.4 Professional summary *(Marc — source copy for web; adapt per §4.7)*
 
-Marc is a seasoned technology executive with **31 years** of professional experience, including **18 years as Chief Technology Officer** across multiple firms. Most recently, for **4 years**, he served as **CTO and acting CEO** of a fintech software startup.
+Marc is a seasoned technology executive with **31 years** of professional experience, including **18 years as Chief Technology Officer** across multiple firms. Most recently, for **4 years**, he served as **CTO and acting CEO** of **Caravel Concepts** (B2B fintech software).
 
 In those roles he:
 
@@ -121,16 +121,16 @@ Differentiator framing: **30+ years regulated-industry experience** + **proven A
 
 ---
 
-## 5. Experience Timeline *(mixed public attribution: SaaS CTO/CEO withheld; Riverfront CTO named)*
+## 5. Experience Timeline *(mixed public attribution: Caravel Concepts + Riverfront CTO named)*
 
 | Dates | Role | Company | Public site posture | Highlights *(themes — attribution split on live site)* |
 |-------|------|---------|---------------------|------------------------------------------------------------|
-| **~4 yrs** *(calendar years: Marc may add)* | CTO, Acting CEO | **Independent B2B fintech SaaS** *(name withheld publicly)* | **Anonymous** publicly · specifics under NDA | Venture-scale product & engineering; VC / diligence narration; interim **acting chief executive stretches**; multi-agent workflows & evaluation scaffolding; hardened security-policy posture |
+| **~4 yrs** *(calendar years: Marc may add)* | CTO, Acting CEO | **Caravel Concepts** *(B2B fintech software)* | **Named** publicly · substantive detail still **NDA / conversation** where applicable | Venture-scale product & engineering; VC / diligence narration; interim **acting chief executive stretches**; multi-agent workflows & evaluation scaffolding; hardened security-policy posture |
 | *[Years TBD]* | Chief Technology Officer | **Riverfront** *(wealth / investment-management technology context)* | **Named** publicly · deeper timelines on request | Platform depth across trading-esque workflows, stochastic / capital-market tooling, holistic planning interoperability, expansive securities-master hygiene, modernization discipline |
 | *[Further CTO-span across other firms]* | Chief Technology Officer | **Additional employers — unnamed on site** | **Private absent agreement** | Cloud / modernization, portfolio consolidation, integrations, vendor & audit rhythm—see **`#experience`** “Additional CTO depth…” card |
 | *[Future]* | Advisory / director-style roles | *[When applicable]* | **Publish after clearance** | *[Add rows when relevant]* |
 
-**Companies you’re willing to name publicly:** **Riverfront** *(CTO tenure)* · **recent independent SaaS remains unnamed** *(for now).*  
+**Companies you’re willing to name publicly:** **Caravel Concepts** *(~4 yrs CTO / acting CEO)* · **Riverfront** *(CTO tenure)* · **other CTO employers unnamed on site unless agreed.**  
 
 **NDA / omission policy:** Employer-specific metrics, timelines, or attributions publish only after **written approval**.
 
@@ -255,7 +255,7 @@ We **prioritize compliance-aware, auditable patterns** over trendy agent demos; 
 - [x] Hero structure + positioning trim  
 - [x] Narrative voice §4.7  
 - [x] About + founder block *(draft — refine anytime in `web/src/app/page.tsx`)*  
-- [x] Experience *(mixed attribution: anonymous SaaS CTO/CEO + **Riverfront** named — §5 / `#experience`)*  
+- [x] Experience *(mixed attribution: **Caravel Concepts** + **Riverfront** named · other CTO employers unnamed — §5 / `#experience`)*  
 - [x] Expertise / skills clustering *(§6 ↔ page)*  
 - [x] “Why hire” narrative + metrics checklist *(§7)*  
 - [x] **Primary CTA:** email · default **`hello@chartroomai.com`** until confirmed (**§12**)  
@@ -275,7 +275,7 @@ We **prioritize compliance-aware, auditable patterns** over trendy agent demos; 
 | **LinkedIn URL** | `NEXT_PUBLIC_LINKEDIN_URL` in **`web/.env.local`** |
 | **Résumé PDF** | e.g. `web/public/Marc-Cheatham-Chart-Room-AI.pdf` or external URL env |
 | **Experience years** | Optional: specific **start–end** for ~4 yr chapter + prior CTO ranges *(§5)* |
-| **Named employers** | Only if you **opt in** on the public page |
+| **Named employers** | **Caravel Concepts** + **Riverfront** on site · others only after **opt-in** |
 | **Quantified wins** | Complete §7 proof checkboxes *(anonymized OK)* |
 | **Headshot + logo** | Add under **`web/public/`** |
 | **Visual references** | Optional URLs for future polish |
@@ -294,7 +294,7 @@ We **prioritize compliance-aware, auditable patterns** over trendy agent demos; 
 - **Repo:** Site code lives at **`https://github.com/cheezd/website`** — local workspace aligned as Git `origin` for pushes & CI/deploy.
 - **2026-05-14 *(TBD sweep — questionnaire)*:** **US remote-first** · **résumé v1** · **speaking/board inbound open** · **conversational offering** → summarized in **§14**.
 - **2026-05-14 *(TBD sweep — spec prose)*:** Filled §5–§10 gaps; §12 minimized; **§14** appendix for draft positioning lines.
-- **2026-05-14:** Attribution update: **`#experience`** composite themes explicitly span **Riverfront CTO** tenure + anonymous **CTO / acting CEO SaaS** chapter (+ other unnamed CTO employers in third card); spec **§5** table updated accordingly.
+- **2026-05-14:** **`#experience`** and **§5** updated: **Caravel Concepts** disclosed as **~4 yr CTO / acting CEO** fintech (**B2B software**) chapter (**Riverfront** + additional unnamed CTO employers unchanged).
 
 ---
 

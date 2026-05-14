@@ -16,6 +16,11 @@ export const siteConfig = {
 
   calHref: process.env.NEXT_PUBLIC_BOOKING_URL ?? null,
 
-  /** Absolute URL or root-relative path e.g. `/Marc-Cheatham-Chart-Room-AI.pdf` */
   resumeHref: process.env.NEXT_PUBLIC_RESUME_URL ?? null,
+
+  /** Most recent CTO / acting CEO chapter — employer name disclosed on site */
+  priorVentureName: "Caravel Concepts",
+
+  /** One-line sector label (appears in Experience meta + About) */
+  priorVentureTagline: "B2B fintech software",
 } as const;
