@@ -19,7 +19,7 @@ export const siteConfig = {
   calHref: process.env.NEXT_PUBLIC_BOOKING_URL ?? null,
 
   resumeHref:
-    process.env.NEXT_PUBLIC_RESUME_URL ?? "/Marc-Cheatham-Resume.pdf",
+    process.env.NEXT_PUBLIC_RESUME_URL ?? "/documents/Marc-Cheatham-Resume.pdf",
 
   /** Most recent CTO / acting CEO chapter — employer name disclosed on site */
   priorVentureName: "Caravel Concepts",
