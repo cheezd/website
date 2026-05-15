@@ -43,11 +43,7 @@ export default function ContactPage() {
                 >
                   LinkedIn profile
                 </a>
-              ) : (
-                <span className="inline-flex min-h-11 items-center rounded-md border-2 border-dashed border-chart-navy/35 px-6 py-3 text-base font-medium text-chart-ink/60">
-                  Set <code className="mx-1 text-xs">NEXT_PUBLIC_LINKEDIN_URL</code> to surface LinkedIn
-                </span>
-              )}
+              ) : null}
               {siteConfig.calHref ? (
                 <a
                   href={siteConfig.calHref}
@@ -67,19 +63,8 @@ export default function ContactPage() {
                 >
                   Download resume (PDF)
                 </a>
-              ) : (
-                <span className="inline-flex min-h-11 items-center rounded-md border-2 border-dashed border-chart-navy/25 px-6 py-3 text-base font-medium text-chart-ink/55">
-                  Add <code className="mx-1 rounded bg-chart-navy/5 px-1 py-0.5 text-xs">NEXT_PUBLIC_RESUME_URL</code>
-                </span>
-              )}
+              ) : null}
             </div>
-
-            <p className="text-sm text-chart-ink/70">
-              Public knobs live in <code className="rounded bg-chart-navy/5 px-1.5 py-0.5 text-xs">.env.local</code>:{" "}
-              <code className="rounded bg-chart-navy/5 px-1.5 py-0.5 text-xs">NEXT_PUBLIC_CONTACT_EMAIL</code>,{" "}
-              <code className="rounded bg-chart-navy/5 px-1.5 py-0.5 text-xs">NEXT_PUBLIC_LINKEDIN_URL</code>, and{" "}
-              <code className="rounded bg-chart-navy/5 px-1.5 py-0.5 text-xs">NEXT_PUBLIC_RESUME_URL</code>.
-            </p>
           </div>
         </div>
       </section>

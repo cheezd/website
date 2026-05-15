@@ -12,11 +12,11 @@ export function SiteHeader() {
           className="inline-flex min-h-11 items-center gap-3 font-semibold tracking-tight text-chart-navy transition-opacity hover:opacity-90"
         >
           <Image
-            src="/brand/chart-room-ai-lockup.png"
+            src="/brand/chart-room-ai-header-mark.png"
             alt=""
-            width={42}
-            height={30}
-            className="h-8 w-auto"
+            width={40}
+            height={40}
+            className="h-10 w-10 object-contain"
             priority
           />
           {siteConfig.name}

@@ -10,7 +10,7 @@ export const siteConfig = {
     "Chart Room AI delivers fractional AI Transformation Leadership from a former Fintech CTO and CEO with 31 years of experience. We help financial services and technology companies navigate complexity and capture sustainable, governed AI-driven growth.",
 
   contactEmail:
-    process.env.NEXT_PUBLIC_CONTACT_EMAIL ?? "hello@chartroomai.com",
+    process.env.NEXT_PUBLIC_CONTACT_EMAIL ?? "info@chartroomai.com",
 
   linkedInHref:
     process.env.NEXT_PUBLIC_LINKEDIN_URL ??

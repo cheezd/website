@@ -33,9 +33,6 @@ export function SiteFooter() {
             a broker-dealer or registered investment adviser. Nothing herein is investment
             advice or a solicitation to buy or sell securities or other financial instruments.
           </p>
-          <p className="pt-2 text-white/45">
-            Have counsel review disclaimers before you rely on them in high-stakes contexts.
-          </p>
         </div>
       </div>
     </footer>

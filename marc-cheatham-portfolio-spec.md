@@ -16,7 +16,7 @@
 | **Primary funnel** | **[Confirmed]** **Fractional AI transformation / advisory engagements** via Chart Room AI *(full-time CTO interest can still arrive via LinkedIn — not hero focus)* |
 | Audience | **Financial services & technology executives** navigating AI adoption; secondary: PE operating partners / boards — see **§14.2 industries** |
 | Credibility | Communicate CTO-level depth in fintech, regulated industries, practical AI adoption and transformation leadership |
-| Lead / contact path | **[Confirmed]** **Email-first** hero CTA; LinkedIn (+ optional booking) once URLs supplied — **default public mailbox `hello@chartroomai.com` until you confirm another (§12)** |
+| Lead / contact path | **[Confirmed]** **Email-first** hero CTA via **`info@chartroomai.com`**; LinkedIn (+ optional booking) secondary |
 
 ---
 
@@ -258,7 +258,7 @@ We **prioritize compliance-aware, auditable patterns** over trendy agent demos; 
 - [x] Experience *(mixed attribution: **Caravel Concepts** + **Riverfront** named · other CTO employers unnamed — §5 / `#experience`)*  
 - [x] Expertise / skills clustering *(§6 ↔ page)*  
 - [x] “Why hire” narrative + metrics checklist *(§7)*  
-- [x] **Primary CTA:** email · default **`hello@chartroomai.com`** until confirmed (**§12**)  
+- [x] **Primary CTA:** email · confirmed **`info@chartroomai.com`** (**§12**)  
 - [x] **`mailto:`** plain v1 *(form backlog)*  
 - [x] **Résumé PDF** wired *(`/Marc-Cheatham-Resume.pdf` — §12)*  
 - [x] **LinkedIn** URL supplied *(default in `siteConfig`; env override optional — §12)*  
@@ -271,7 +271,7 @@ We **prioritize compliance-aware, auditable patterns** over trendy agent demos; 
 
 | Item | Action |
 |------|--------|
-| **Public inbox** | Confirm **`hello@chartroomai.com`** *(or substitute)* forwards to you |
+| **Public inbox** | Confirmed: **`info@chartroomai.com`** |
 | **LinkedIn URL** | Confirmed: [`https://www.linkedin.com/in/marc-cheatham-83b35b22/`](https://www.linkedin.com/in/marc-cheatham-83b35b22/) · optional override via `NEXT_PUBLIC_LINKEDIN_URL` |
 | **Résumé PDF** | Confirmed: `web/public/Marc-Cheatham-Resume.pdf` · optional override via `NEXT_PUBLIC_RESUME_URL` |
 | **Experience years** | Optional: specific **start–end** for ~4 yr chapter + prior CTO ranges *(§5)* |
