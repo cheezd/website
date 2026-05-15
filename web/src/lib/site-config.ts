@@ -12,11 +12,14 @@ export const siteConfig = {
   contactEmail:
     process.env.NEXT_PUBLIC_CONTACT_EMAIL ?? "hello@chartroomai.com",
 
-  linkedInHref: process.env.NEXT_PUBLIC_LINKEDIN_URL ?? null,
+  linkedInHref:
+    process.env.NEXT_PUBLIC_LINKEDIN_URL ??
+    "https://www.linkedin.com/in/marc-cheatham-83b35b22/",
 
   calHref: process.env.NEXT_PUBLIC_BOOKING_URL ?? null,
 
-  resumeHref: process.env.NEXT_PUBLIC_RESUME_URL ?? null,
+  resumeHref:
+    process.env.NEXT_PUBLIC_RESUME_URL ?? "/Marc-Cheatham-Resume.pdf",
 
   /** Most recent CTO / acting CEO chapter — employer name disclosed on site */
   priorVentureName: "Caravel Concepts",

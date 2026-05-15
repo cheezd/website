@@ -28,8 +28,8 @@ export default function WhyChartRoomPage() {
           </div>
           <div className="rounded-3xl border border-chart-navy/10 bg-chart-surface p-6">
             <Image
-              src={brandImages.helm}
-              alt="Compass and helm illustration"
+              src={brandImages.sailingConstellation}
+              alt="Sailing ship with compass and constellation illustration"
               width={720}
               height={960}
               className="h-auto w-full rounded-2xl"

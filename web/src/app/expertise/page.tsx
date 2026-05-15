@@ -23,10 +23,10 @@ export default function ExpertisePage() {
         <div className="mx-auto grid max-w-5xl gap-10 px-4 py-16 md:grid-cols-[0.85fr_1.15fr] lg:max-w-6xl">
           <div className="rounded-3xl bg-chart-navy p-6">
             <Image
-              src={brandImages.telescope}
-              alt="Telescope with compass and constellation accents"
+              src={brandImages.sextantBoat}
+              alt="Sextant, ship, compass, and constellation illustration"
               width={900}
-              height={600}
+              height={1350}
               className="h-auto w-full rounded-2xl"
             />
           </div>
@@ -39,6 +39,24 @@ export default function ExpertisePage() {
       </section>
 
       <section className="border-y border-chart-navy/10 bg-chart-surface">
+        <div className="mx-auto max-w-5xl px-4 py-16 lg:max-w-6xl">
+          <p className="text-sm font-semibold uppercase tracking-[0.22em] text-chart-teal">
+            Engineering depth
+          </p>
+          <div className="mt-8 grid gap-6 md:grid-cols-2">
+            <FeatureCard
+              title="Fintech platform depth"
+              body="Capital market assumption and Monte Carlo engines, asset-liability mapping, trading systems, financial planning tools, and security master databases built for regulated financial services environments."
+            />
+            <FeatureCard
+              title="Engineering operating model"
+              body="AI-augmented project management and development workflows, test-driven development, CI/CD pipelines, release discipline, and practical production operations."
+            />
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-white">
         <div className="mx-auto max-w-5xl px-4 py-16 lg:max-w-6xl">
           <p className="text-sm font-semibold uppercase tracking-[0.22em] text-chart-teal">
             Delivery modes

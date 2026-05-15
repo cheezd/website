@@ -48,8 +48,8 @@ export default function AboutPage() {
 
           <div className="rounded-3xl border border-chart-navy/10 bg-chart-surface p-6">
             <Image
-              src={brandImages.helm}
-              alt="Helm and compass mark"
+              src={brandImages.shipsWheelCompass}
+              alt="Ship's wheel and compass rose illustration"
               width={720}
               height={960}
               className="h-auto w-full rounded-2xl"
@@ -80,10 +80,10 @@ export default function AboutPage() {
               <p>
                 Marc is a seasoned technology executive with thirty-one years of experience,
                 including eighteen years as Chief Technology Officer across multiple firms. Most
-                recently, he served for four years as CTO and Acting CEO of{" "}
+                recently, he served for four years as CTO and CEO of{" "}
                 <strong>{siteConfig.priorVentureName}</strong>, a{" "}
-                <strong>{siteConfig.priorVentureTagline}</strong> company focused on regulated
-                planning, trading, simulation, and security-master data at institutional scale.
+                <strong>{siteConfig.priorVentureTagline}</strong> company focused on financial
+                planning and capital market assumptions.
               </p>
               <p>
                 He has guided production multi-agent AI systems in cash flow analysis, tax-aware

@@ -17,6 +17,9 @@ export const brandImages = {
   spyglass: "/brand/spyglass.png",
   helm: "/brand/helm-compass.png",
   telescope: "/brand/telescope.png",
+  sextantBoat: "/brand/sextant-boat.png",
+  shipsWheelCompass: "/brand/ships-wheel-compass-rose.png",
+  sailingConstellation: "/brand/sailing-constellation.png",
 } as const;
 
 export const audience = [
@@ -35,7 +38,7 @@ export const expertiseCards = [
   },
   {
     title: "Engineering and platforms",
-    body: "Fintech platforms, trading workflows, Monte Carlo / CMA engines, planning tools, ALM, security masters, SQL-heavy data foundations, TDD, CI/CD, and production operations.",
+    body: "Fintech systems leadership across capital market assumption engines, Monte Carlo simulation, asset-liability mapping, trading workflows, financial planning tools, and security master databases, supported by TDD, CI/CD, and production delivery discipline.",
   },
   {
     title: "AI systems and automation",

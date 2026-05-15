@@ -68,7 +68,7 @@ export default function Home() {
             />
             <FeatureCard
               title="Bring CTO judgment"
-              body={`Work with a former Fintech CTO and CEO, including a recent chapter at ${siteConfig.priorVentureName}.`}
+              body="Work with a former Fintech CTO and CEO who has also served as CTO and CISO at an asset management firm."
               href="/experience"
             />
           </div>
@@ -88,16 +88,28 @@ export default function Home() {
           </div>
           <div>
             <p className="text-sm font-semibold uppercase tracking-[0.22em] text-chart-teal">
-              The public story
+              Operator perspective
             </p>
             <h2 className="mt-3 max-w-2xl text-3xl font-bold tracking-tight text-chart-navy md:text-4xl">
-              Lighter pages. Clearer routes.
+              From AI ambition to operating reality.
             </h2>
             <p className="mt-5 text-lg leading-relaxed text-chart-ink">
-              The deep background is still here, but it is now distributed across focused pages:
-              About, Expertise, Experience, Why Chart Room AI, and Contact. Each page gives the
-              right audience a shorter path to the material they need.
+              AI initiatives rarely fail because leaders lack ideas. They fail when strategy,
+              architecture, data, security, compliance, and delivery capacity are treated as
+              separate conversations.
             </p>
+            <p className="mt-4 text-lg leading-relaxed text-chart-ink">
+              Chart Room AI brings operator-level judgment to that gap. We help executive
+              sponsors move beyond vendor demos and broad roadmaps toward governed execution:
+              clear priorities, accountable teams, practical controls, and implementation paths
+              built for regulated environments.
+            </p>
+            <Link
+              href="/why-chart-room"
+              className="mt-7 inline-flex min-h-11 items-center rounded-md border-2 border-chart-navy px-6 py-3 text-base font-semibold text-chart-navy transition hover:bg-chart-navy hover:text-white"
+            >
+              Why Chart Room AI
+            </Link>
           </div>
         </div>
       </section>

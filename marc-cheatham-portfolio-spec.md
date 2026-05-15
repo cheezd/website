@@ -197,8 +197,8 @@ We **prioritize compliance-aware, auditable patterns** over trendy agent demos; 
 |-------|------|
 | Professional headshot | **Pending** — business attire · add to **`web/public/`** or URL when ready |
 | Logo / vector | **Pending** — palette already in CSS; drop SVG/PNG when designed |
-| PDF resume / CV | **Include v1** — file in **`web/public/`** OR **`NEXT_PUBLIC_RESUME_URL`** |
-| LinkedIn URL | **Pending** · `NEXT_PUBLIC_LINKEDIN_URL` |
+| PDF resume / CV | **Confirmed** — `web/public/Marc-Cheatham-Resume.pdf` served at `/Marc-Cheatham-Resume.pdf` |
+| LinkedIn URL | **Confirmed** · [`https://www.linkedin.com/in/marc-cheatham-83b35b22/`](https://www.linkedin.com/in/marc-cheatham-83b35b22/) |
 | Booking URL | Optional · `NEXT_PUBLIC_BOOKING_URL` |
 | Speaking / podcasts / publications | **Actively welcome inbound** for advisory / board / speaking — add **published URLs** here as they exist |
 | Recommendations / quotes | **Later** — only with **written permission** |
@@ -260,8 +260,8 @@ We **prioritize compliance-aware, auditable patterns** over trendy agent demos; 
 - [x] “Why hire” narrative + metrics checklist *(§7)*  
 - [x] **Primary CTA:** email · default **`hello@chartroomai.com`** until confirmed (**§12**)  
 - [x] **`mailto:`** plain v1 *(form backlog)*  
-- [ ] **Résumé PDF** wired *(file or `NEXT_PUBLIC_RESUME_URL` — §12)*  
-- [ ] **LinkedIn** URL in env *(§12)*  
+- [x] **Résumé PDF** wired *(`/Marc-Cheatham-Resume.pdf` — §12)*  
+- [x] **LinkedIn** URL supplied *(default in `siteConfig`; env override optional — §12)*  
 - [ ] Optional testimonials  
 - [x] **SEO sketch** in `layout.tsx` — tweak keywords anytime  
 
@@ -272,8 +272,8 @@ We **prioritize compliance-aware, auditable patterns** over trendy agent demos; 
 | Item | Action |
 |------|--------|
 | **Public inbox** | Confirm **`hello@chartroomai.com`** *(or substitute)* forwards to you |
-| **LinkedIn URL** | `NEXT_PUBLIC_LINKEDIN_URL` in **`web/.env.local`** |
-| **Résumé PDF** | e.g. `web/public/Marc-Cheatham-Chart-Room-AI.pdf` or external URL env |
+| **LinkedIn URL** | Confirmed: [`https://www.linkedin.com/in/marc-cheatham-83b35b22/`](https://www.linkedin.com/in/marc-cheatham-83b35b22/) · optional override via `NEXT_PUBLIC_LINKEDIN_URL` |
+| **Résumé PDF** | Confirmed: `web/public/Marc-Cheatham-Resume.pdf` · optional override via `NEXT_PUBLIC_RESUME_URL` |
 | **Experience years** | Optional: specific **start–end** for ~4 yr chapter + prior CTO ranges *(§5)* |
 | **Named employers** | **Caravel Concepts** + **Riverfront** on site · others only after **opt-in** |
 | **Quantified wins** | Complete §7 proof checkboxes *(anonymized OK)* |
@@ -305,7 +305,7 @@ We **prioritize compliance-aware, auditable patterns** over trendy agent demos; 
 | Decision | Choice |
 |----------|--------|
 | **Geography** | **United States — remote-first**; **travel / on-site by arrangement** |
-| **Résumé on site** | **Yes v1** — add file or URL when ready |
+| **Résumé on site** | **Yes v1** — wired at `/Marc-Cheatham-Resume.pdf` |
 | **Speaking / board / advisory** | **Open** — welcome inbound *(triage in email)* |
 | **Offering copy** | **Conversational** public page — **no** heavy SOW language on v1 |
 
