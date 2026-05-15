@@ -10,7 +10,7 @@ const inter = Inter({
 });
 
 const seoDescription =
-  "Chart Room AI delivers fractional AI Transformation Leadership from a former Fintech CTO and CEO with 31 years of experience. Strategic roadmaps & executive guidance.";
+  "Fractional AI transformation leadership for regulated teams turning stalled AI ambition into governed, production-ready execution.";
 
 export const metadata: Metadata = {
   title: {

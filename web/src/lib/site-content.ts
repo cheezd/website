@@ -1,6 +1,6 @@
 import { siteConfig } from "@/lib/site-config";
 
-export const mailHref = `mailto:${siteConfig.contactEmail}?subject=Inquiry%20-%20Chart%20Room%20AI`;
+export const mailHref = `mailto:${siteConfig.contactEmail}?subject=AI%20initiative%20inquiry%20-%20Chart%20Room%20AI`;
 
 export const routes = [
   { href: "/", label: "Home" },
@@ -29,6 +29,61 @@ export const audience = [
   "Insurance carriers and distributors",
   "Fintech vendors serving regulated institutions",
   "Enterprise SaaS teams where auditability, data residency, and model risk matter",
+] as const;
+
+export const proofPoints = [
+  {
+    value: "31",
+    label: "years in technology leadership and regulated delivery",
+  },
+  {
+    value: "18",
+    label: "years serving as Chief Technology Officer across firms",
+  },
+  {
+    value: "CTO / CEO / CISO",
+    label: "operator judgment across delivery, revenue, and risk",
+  },
+  {
+    value: "Production AI",
+    label: "multi-agent systems, evaluations, guardrails, and accountability",
+  },
+] as const;
+
+export const commonSituations = [
+  {
+    title: "AI pilots are stuck in demo mode",
+    body: "The business sees promise, but security, data, compliance, ownership, or operating model questions keep blocking production use.",
+  },
+  {
+    title: "Executives need a defensible roadmap",
+    body: "Sponsors need a practical sequence of use cases, controls, investment decisions, and delivery milestones they can explain to the board.",
+  },
+  {
+    title: "Vendor noise is outrunning judgment",
+    body: "Teams are comparing tools without enough clarity on risk posture, implementation cost, model quality, or durable business value.",
+  },
+] as const;
+
+export const engagementOptions = [
+  {
+    title: "AI readiness diagnostic",
+    body: "A focused review of initiative goals, constraints, stakeholder alignment, risk posture, and the next accountable move.",
+  },
+  {
+    title: "Roadmap and governance sprint",
+    body: "Translate ambition into priorities, decision rights, evaluation discipline, controls, and a delivery path regulated teams can run.",
+  },
+  {
+    title: "Fractional transformation leadership",
+    body: "Ongoing executive and operating support across sponsors, product, engineering, data, security, compliance, and delivery teams.",
+  },
+] as const;
+
+export const fitSignals = [
+  "You operate in financial services, fintech, insurance, wealth, asset management, or regulated enterprise software.",
+  "You need AI adoption to survive audit, security review, stakeholder scrutiny, and real production operations.",
+  "You value operator-led judgment more than generic AI strategy decks or vendor-driven roadmaps.",
 ] as const;
 
 export const expertiseCards = [

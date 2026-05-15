@@ -1,6 +1,5 @@
 import Link from "next/link";
 import { mailHref } from "@/lib/site-content";
-import { siteConfig } from "@/lib/site-config";
 
 type CtaBandProps = {
   title?: string;
@@ -8,8 +7,8 @@ type CtaBandProps = {
 };
 
 export function CtaBand({
-  title = "Start with the business question.",
-  body = "Share the initiative, constraints, stakeholders, and timing. We will help determine whether Chart Room AI is the right partner.",
+  title = "Have an AI initiative that needs executive operating judgment?",
+  body = "Share the business decision, current blockers, stakeholders, and timing. We will help determine whether Chart Room AI is the right partner for the next move.",
 }: CtaBandProps) {
   return (
     <section className="bg-chart-navy text-white">
@@ -23,7 +22,7 @@ export function CtaBand({
             href={mailHref}
             className="inline-flex min-h-11 items-center justify-center rounded-md bg-chart-teal px-6 py-3 text-base font-semibold text-white shadow-md transition hover:brightness-[0.93]"
           >
-            Email {siteConfig.name}
+            Discuss the initiative
           </a>
           <Link
             href="/contact"
