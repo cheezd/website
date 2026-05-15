@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import { SiteFooter } from "@/components/SiteFooter";
+import { SiteHeader } from "@/components/SiteHeader";
 import "./globals.css";
 
 const inter = Inter({
@@ -8,7 +10,7 @@ const inter = Inter({
 });
 
 const seoDescription =
-  "Chart Room AI delivers fractional AI Transformation Leadership from a former fintech CTO and Acting CEO with 31 years of experience. Strategic roadmaps & executive guidance.";
+  "Fractional AI transformation leadership for regulated teams turning stalled AI ambition into governed, production-ready execution.";
 
 export const metadata: Metadata = {
   title: {
@@ -32,7 +34,17 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${inter.variable} h-full scroll-smooth`}>
       <body className="min-h-full flex flex-col font-sans antialiased">
-        {children}
+        <a
+          href="#main"
+          className="fixed left-4 top-4 z-[100] -translate-y-16 rounded bg-chart-teal px-3 py-2 text-sm font-medium text-chart-navy transition-transform focus-visible:translate-y-0"
+        >
+          Skip to content
+        </a>
+        <SiteHeader />
+        <main id="main" className="flex-1">
+          {children}
+        </main>
+        <SiteFooter />
       </body>
     </html>
   );

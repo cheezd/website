@@ -7,16 +7,19 @@ export const siteConfig = {
   tagline: "Helping you navigate your AI Transformation",
 
   positioningShort:
-    "Chart Room AI delivers fractional AI Transformation Leadership from a former fintech CTO and Acting CEO with 31 years of experience. We help financial services and technology companies navigate complexity and capture sustainable, governed AI-driven growth.",
+    "Chart Room AI helps financial services and technology leaders turn stalled AI ambition into governed, production-ready execution.",
 
   contactEmail:
-    process.env.NEXT_PUBLIC_CONTACT_EMAIL ?? "hello@chartroomai.com",
+    process.env.NEXT_PUBLIC_CONTACT_EMAIL ?? "info@chartroomai.com",
 
-  linkedInHref: process.env.NEXT_PUBLIC_LINKEDIN_URL ?? null,
+  linkedInHref:
+    process.env.NEXT_PUBLIC_LINKEDIN_URL ??
+    "https://www.linkedin.com/in/marc-cheatham-83b35b22/",
 
   calHref: process.env.NEXT_PUBLIC_BOOKING_URL ?? null,
 
-  resumeHref: process.env.NEXT_PUBLIC_RESUME_URL ?? null,
+  resumeHref:
+    process.env.NEXT_PUBLIC_RESUME_URL ?? "/documents/Marc-Cheatham-Resume.pdf",
 
   /** Most recent CTO / acting CEO chapter — employer name disclosed on site */
   priorVentureName: "Caravel Concepts",
