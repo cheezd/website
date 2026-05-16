@@ -1,13 +1,15 @@
 import { siteConfig } from "@/lib/site-config";
 
 export const mailHref = `mailto:${siteConfig.contactEmail}?subject=AI%20initiative%20inquiry%20-%20Chart%20Room%20AI`;
+export const bookingHref = siteConfig.bookingHref;
+export const auditHref = siteConfig.auditHref;
 
 export const routes = [
   { href: "/", label: "Home" },
-  { href: "/about", label: "About" },
+  { href: "/why-chart-room", label: "Why us" },
   { href: "/expertise", label: "Expertise" },
   { href: "/experience", label: "Experience" },
-  { href: "/why-chart-room", label: "Why Chart Room AI" },
+  { href: "/about", label: "About" },
   { href: "/contact", label: "Contact" },
 ] as const;
 
@@ -15,7 +17,6 @@ export const brandImages = {
   lockup: "/brand/chart-room-ai-lockup.png",
   ship: "/brand/ship-constellation.png",
   spyglass: "/brand/spyglass.png",
-  helm: "/brand/helm-compass.png",
   telescope: "/brand/telescope.png",
   sextantBoat: "/brand/sextant-boat.png",
   shipsWheelCompass: "/brand/ships-wheel-compass-rose.png",
@@ -33,21 +34,77 @@ export const audience = [
 
 export const proofPoints = [
   {
-    value: "31",
-    label: "years in technology leadership and regulated delivery",
+    value: "25+",
+    label: "years as CTO and CISO in financial industry environments",
   },
   {
-    value: "18",
-    label: "years serving as Chief Technology Officer across firms",
+    value: "$10B",
+    label: "asset manager technology organization built and led",
   },
   {
-    value: "CTO / CEO / CISO",
-    label: "operator judgment across delivery, revenue, and risk",
+    value: "2-3x",
+    label: "developer productivity gains proven in governed internal agentic workflows",
   },
   {
-    value: "Production AI",
-    label: "multi-agent systems, evaluations, guardrails, and accountability",
+    value: "Audit-ready",
+    label: "security policies, controls, evaluations, and production release discipline",
   },
+] as const;
+
+export const heroStats = [
+  "Former CTO and CISO",
+  "Built multi-agent AI and DevOps frameworks before selling them",
+  "Designed enterprise security policies that passed external audits",
+] as const;
+
+export const beforeAfter = {
+  before: [
+    {
+      title: "Project management is broken",
+      body: "Tickets are vague. Engineers resent the documentation treadmill. PMs chase updates while leadership has zero visibility.",
+    },
+    {
+      title: "AI initiatives are stalled",
+      body: "The board wants a roadmap. Pilots exist. Compliance keeps saying too risky. Everyone can see the market moving.",
+    },
+    {
+      title: "DevOps is still decades old",
+      body: "You hear about agentic AI multiplying productivity, but one wrong move can damage your FINRA, SEC, or audit posture.",
+    },
+  ],
+  after: [
+    "Developers stop wasting time on tickets and status updates and get back to real problem-solving.",
+    "Project managers get rich, accurate, real-time visibility instead of chasing ghosts.",
+    "Leadership gets a credible AI program they can take to the board with confidence.",
+  ],
+} as const;
+
+export const outcomeMetrics = [
+  "Developer and project velocity doubles, sometimes triples",
+  "Analysis work drops from hours to minutes",
+  "Predictable bi-weekly production releases",
+  "Scale client service without scaling headcount or replacing your people",
+] as const;
+
+export const proofStories = [
+  {
+    eyebrow: "Caravel Concepts",
+    title: "We ate our own dog food under real regulatory pressure.",
+    body: "Built the exact governed agentic framework we now deliver internally first, then moved from chaotic releases to a reliable bi-weekly cadence.",
+    result: "Doubled-to-tripled developer productivity before asking any client to trust it.",
+  },
+  {
+    eyebrow: "Mid-Western RIA",
+    title: "Manual advisor prep became a safe, auditable workflow.",
+    body: "Advisors were buried in data gathering and low-level plan analysis before every client meeting. We automated the drudgery without removing human judgment.",
+    result: "Hours of repetitive work reduced to minutes so advisors could focus on high-value client work.",
+  },
+] as const;
+
+export const differentiators = [
+  "C-suite strategy, project management, compliance, and deep engineering inside the same regulated environments.",
+  "A tightly integrated special-ops team, not an army of specialists or a single-role hire who needs six months to ramp.",
+  "Momentum in weeks, not quarters, because the operating patterns have already been built and proven.",
 ] as const;
 
 export const commonSituations = [
@@ -68,15 +125,15 @@ export const commonSituations = [
 export const engagementOptions = [
   {
     title: "AI readiness diagnostic",
-    body: "A focused review of initiative goals, constraints, stakeholder alignment, risk posture, and the next accountable move.",
+    body: "A focused operator-to-operator session that surfaces the blockers, governance gaps, delivery risks, and highest-leverage next move.",
   },
   {
     title: "Roadmap and governance sprint",
-    body: "Translate ambition into priorities, decision rights, evaluation discipline, controls, and a delivery path regulated teams can run.",
+    body: "Translate ambition into priorities, decision rights, evaluation discipline, controls, and a delivery path regulated teams can explain to the board.",
   },
   {
     title: "Fractional transformation leadership",
-    body: "Ongoing executive and operating support across sponsors, product, engineering, data, security, compliance, and delivery teams.",
+    body: "Ongoing executive and operating support across sponsors, product, engineering, data, security, compliance, and delivery teams when the work must move.",
   },
 ] as const;
 
@@ -146,7 +203,7 @@ export const experienceHighlights = [
     title: "Commercial, VC, and security leadership",
     items: [
       "Served as the front-line technical voice in sponsor-facing, investor-facing, and large-prospect demos where domain depth had to land with experts.",
-      "Held acting CEO responsibilities during transitional periods while keeping delivery, stakeholder confidence, and internal alignment connected.",
+      "Held CEO responsibilities during transitional periods while keeping delivery, stakeholder confidence, and internal alignment connected.",
       "Established enterprise information security policies bridging fast-moving delivery with audit-friendly behavior.",
     ],
   },

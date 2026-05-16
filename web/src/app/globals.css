@@ -4,6 +4,7 @@
   --chart-navy: #0a2540;
   --chart-teal: #00b4a8;
   --chart-gold: #d4af37;
+  --chart-bronze: #b98245;
   --chart-ink: #1e2937;
   --chart-surface: #f4f7fa;
   scroll-behavior: smooth;
@@ -14,6 +15,7 @@
   --color-chart-navy: var(--chart-navy);
   --color-chart-teal: var(--chart-teal);
   --color-chart-gold: var(--chart-gold);
+  --color-chart-bronze: var(--chart-bronze);
   --color-chart-ink: var(--chart-ink);
   --color-chart-surface: var(--chart-surface);
   --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
@@ -24,6 +26,10 @@ body {
   color: var(--chart-ink);
   font-family: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
   overflow-x: hidden;
+}
+
+::selection {
+  background: rgba(212, 175, 55, 0.35);
 }
 
 /* Focus rings — teal accent */
