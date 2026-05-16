@@ -4,10 +4,12 @@
 
 export const siteConfig = {
   name: "Chart Room AI",
-  tagline: "Helping you navigate your AI Transformation",
+  legalName: "Chart Room AI LLC",
+  url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.chartroomai.com",
+  tagline: "Operator-led AI transformation for regulated financial firms",
 
   positioningShort:
-    "Chart Room AI helps financial services and technology leaders turn stalled AI ambition into governed, production-ready execution.",
+    "Chart Room AI unsticks stalled AI initiatives in regulated financial firms with operator-led strategy, governance, and production delivery.",
 
   contactEmail:
     process.env.NEXT_PUBLIC_CONTACT_EMAIL ?? "info@chartroomai.com",
@@ -16,12 +18,20 @@ export const siteConfig = {
     process.env.NEXT_PUBLIC_LINKEDIN_URL ??
     "https://www.linkedin.com/in/marc-cheatham-83b35b22/",
 
-  calHref: process.env.NEXT_PUBLIC_BOOKING_URL ?? null,
+  bookingHref:
+    process.env.NEXT_PUBLIC_BOOKING_URL ?? "/contact#diagnostic-form",
+
+  auditHref:
+    process.env.NEXT_PUBLIC_AUDIT_URL ?? "/contact#audit",
+
+  formEndpoint:
+    process.env.NEXT_PUBLIC_FORM_ENDPOINT ??
+    "https://formsubmit.co/info@chartroomai.com",
 
   resumeHref:
     process.env.NEXT_PUBLIC_RESUME_URL ?? "/documents/Marc-Cheatham-Resume.pdf",
 
-  /** Most recent CTO / acting CEO chapter — employer name disclosed on site */
+  /** Most recent CTO / CEO chapter — employer name disclosed on site */
   priorVentureName: "Caravel Concepts",
 
   /** One-line sector label (appears in Experience meta + About) */

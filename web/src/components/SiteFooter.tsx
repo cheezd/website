@@ -1,5 +1,6 @@
 import Link from "next/link";
-import { routes } from "@/lib/site-content";
+import { auditHref, bookingHref, routes } from "@/lib/site-content";
+import { siteConfig } from "@/lib/site-config";
 
 export function SiteFooter() {
   return (
@@ -7,11 +8,25 @@ export function SiteFooter() {
       <div className="mx-auto max-w-5xl space-y-6 px-4 py-12 lg:max-w-6xl">
         <div className="grid gap-8 border-b border-white/10 pb-8 md:grid-cols-[1fr_auto]">
           <div className="flex flex-col gap-2">
-            <p className="text-lg font-semibold tracking-tight">Chart Room AI LLC</p>
+            <p className="text-lg font-semibold tracking-tight">{siteConfig.legalName}</p>
             <p className="max-w-xl text-sm text-white/75">
-              Virginia - fractional AI transformation leadership for regulated financial
-              services and technology organizations.
+              Virginia - fractional AI transformation leadership for regulated financial firms
+              that need governed, production-ready execution.
             </p>
+            <div className="mt-4 flex flex-col gap-3 sm:flex-row">
+              <a
+                href={bookingHref}
+                className="inline-flex min-h-11 items-center justify-center rounded-md bg-chart-gold px-5 py-3 text-sm font-semibold text-chart-navy transition hover:brightness-95"
+              >
+                Book a 30-minute diagnostic
+              </a>
+              <a
+                href={auditHref}
+                className="inline-flex min-h-11 items-center justify-center rounded-md border border-white/40 px-5 py-3 text-sm font-semibold text-white transition hover:bg-white hover:text-chart-navy"
+              >
+                Take the free audit
+              </a>
+            </div>
           </div>
           <nav aria-label="Footer" className="flex flex-wrap gap-x-5 gap-y-2 text-sm text-white/75">
             {routes.map((route) => (
