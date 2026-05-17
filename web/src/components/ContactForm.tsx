@@ -20,8 +20,8 @@ export function ContactForm() {
           Tell us where the AI initiative is stuck.
         </h2>
         <p className="mt-3 text-sm leading-relaxed text-chart-ink/75">
-          You will get a candid operator-to-operator response. No pitch sequence, no newsletter
-          trap.
+          We will look for the practical blocker, the governance or delivery gaps, and the next
+          executive move worth making. No pitch sequence, no newsletter trap.
         </p>
       </div>
 
@@ -72,8 +72,14 @@ export function ContactForm() {
         Request AI Readiness Diagnostic
       </button>
       <p className="mt-3 text-xs leading-relaxed text-chart-ink/60">
-        Prefer a live calendar? Set NEXT_PUBLIC_BOOKING_URL to route this CTA directly to
-        Calendly or another scheduler.
+        Prefer to book directly?{" "}
+        <a
+          href={siteConfig.bookingHref}
+          className="font-semibold text-chart-teal underline underline-offset-4 transition hover:text-chart-navy"
+        >
+          Choose a diagnostic time
+        </a>
+        .
       </p>
     </form>
   );
