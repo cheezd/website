@@ -76,7 +76,7 @@ Cons: larger blast radius than this enhancement needs and more likely to mix str
 - Confirm Microsoft Bookings is included in the current Microsoft 365 plan.
 - Create/configure the public Chart Room AI Bookings page and `AI Readiness Diagnostic` service.
 - Confirm duration, availability, meeting location, confirmation/reminder emails, Outlook calendar availability, and branding.
-- Provided candidate Microsoft Bookings service URL for `NEXT_PUBLIC_BOOKING_URL`: `https://outlook.office.com/book/ChartRoomDiagnosticCall@chartroomai.com/s/-C_yUABQzUm4CUFxxyJ9tA2?ismsaljsauthenabled`. Confirm it opens publicly without Microsoft sign-in before treating it as final.
+- Confirmed working Microsoft Bookings service URL for `NEXT_PUBLIC_BOOKING_URL`: `https://bookings.cloud.microsoft/book/ChartRoomAI1@chartroomai.com/?ismsaljsauthenabled`.
 - Confirm whether audit requests should point to the diagnostic form or a dedicated audit URL.
 - Confirm preferred primary CTA language: `Request AI Readiness Diagnostic` or a more outcome-driven alternative.
 

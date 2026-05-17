@@ -109,9 +109,9 @@ Acceptance check: the final public URL opens directly to the intended booking ex
 Current candidate URL:
 
 - Admin/app entry point: `https://bookings.cloud.microsoft`
-- Visitor-facing service URL candidate: `https://outlook.office.com/book/ChartRoomDiagnosticCall@chartroomai.com/s/-C_yUABQzUm4CUFxxyJ9tA2?ismsaljsauthenabled`
+- Visitor-facing service URL: `https://bookings.cloud.microsoft/book/ChartRoomAI1@chartroomai.com/?ismsaljsauthenabled`
 
-Use the visitor-facing `outlook.office.com/book/...` URL for `NEXT_PUBLIC_BOOKING_URL` after confirming it opens in a private browser window without requiring Microsoft sign-in. Do not use `bookings.cloud.microsoft` as the website CTA target because that is the Microsoft Bookings app entry point.
+Use the visitor-facing `bookings.cloud.microsoft/book/...` URL for `NEXT_PUBLIC_BOOKING_URL`. Do not use the root `https://bookings.cloud.microsoft` URL as the website CTA target because that is the Microsoft Bookings app entry point.
 
 ## App Implementation Plan
 
@@ -209,7 +209,7 @@ Acceptance check: no Calendly-specific or developer-facing scheduling copy remai
 
 ## Open Decisions Before Statement Of Work
 
-- Confirm the candidate Microsoft Bookings service URL opens publicly without sign-in and should be treated as the final `NEXT_PUBLIC_BOOKING_URL` value.
+- Confirm the working Microsoft Bookings service URL is configured as the production `NEXT_PUBLIC_BOOKING_URL` value.
 - Confirm whether direct-booking users should go straight to Bookings or be nudged to complete the short intake first.
 - Confirm final primary CTA copy: `Request AI Readiness Diagnostic` or a more outcome-driven phrase.
 - Confirm whether audit requests should always point to the diagnostic form for now.

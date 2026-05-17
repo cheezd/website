@@ -42,8 +42,8 @@ The work will keep the contact page form-first while making Microsoft Bookings a
 ## Configuration Notes
 
 - Admin/app entry point: `https://bookings.cloud.microsoft`
-- Visitor-facing service URL candidate: `https://outlook.office.com/book/ChartRoomDiagnosticCall@chartroomai.com/s/-C_yUABQzUm4CUFxxyJ9tA2?ismsaljsauthenabled`
-- `NEXT_PUBLIC_BOOKING_URL` should use the visitor-facing service URL only after validating it opens in a private browser without Microsoft sign-in.
+- Visitor-facing service URL: `https://bookings.cloud.microsoft/book/ChartRoomAI1@chartroomai.com/?ismsaljsauthenabled`
+- `NEXT_PUBLIC_BOOKING_URL` should use the visitor-facing service URL above.
 
 ## Acceptance Criteria
 
