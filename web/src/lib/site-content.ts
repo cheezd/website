@@ -1,6 +1,7 @@
 import { siteConfig } from "@/lib/site-config";
 
 export const mailHref = `mailto:${siteConfig.contactEmail}?subject=AI%20initiative%20inquiry%20-%20Chart%20Room%20AI`;
+export const diagnosticRequestHref = "/contact#diagnostic-form";
 export const bookingHref = siteConfig.bookingHref;
 export const auditHref = siteConfig.auditHref;
 
