@@ -24,9 +24,7 @@ export const siteConfig = {
   auditHref:
     process.env.NEXT_PUBLIC_AUDIT_URL ?? "/contact#audit",
 
-  formEndpoint:
-    process.env.NEXT_PUBLIC_FORM_ENDPOINT ??
-    "https://formsubmit.co/info@chartroomai.com",
+  formEndpoint: process.env.NEXT_PUBLIC_FORM_ENDPOINT ?? "/api/contact",
 
   resumeHref:
     process.env.NEXT_PUBLIC_RESUME_URL ?? "/documents/Marc-Cheatham-Resume.pdf",
