@@ -22,6 +22,23 @@ Optional environment variables (see `.env.example`):
 
 - `NEXT_PUBLIC_CONTACT_EMAIL`
 - `NEXT_PUBLIC_LINKEDIN_URL`
+- `NEXT_PUBLIC_BOOKING_URL`
+- `NEXT_PUBLIC_FORM_ENDPOINT` (browser-facing submit path; defaults to `/api/contact`)
 - `NEXT_PUBLIC_RESUME_URL` (e.g. `/documents/Marc-Cheatham-Resume.pdf` or `https://…`)
+
+## Contact Form Delivery
+
+The contact form posts to the first-party `/api/contact` route by default. Local and unconfigured environments use no-send mode, so test submissions stay on the site and redirect to `/contact/thank-you` without sending email.
+
+For production on Vercel, configure server-side environment variables:
+
+- `CONTACT_DELIVERY_MODE=microsoft_graph`
+- `MICROSOFT_TENANT_ID`
+- `MICROSOFT_CLIENT_ID`
+- `MICROSOFT_CLIENT_SECRET`
+- `CONTACT_FROM_MAILBOX`
+- `CONTACT_TO_EMAIL`
+
+Do not prefix Microsoft credentials with `NEXT_PUBLIC_`. The app must be deployed as a normal Next.js app so the App Router route handler can run; static export is not supported for contact-form delivery.
 
 Higher-level IA, positioning, and brand tokens are documented at the repo root: `marc-cheatham-portfolio-spec.md`.

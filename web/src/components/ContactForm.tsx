@@ -8,9 +8,12 @@ export function ContactForm() {
       method="POST"
       className="rounded-3xl border border-chart-gold/30 bg-white p-6 shadow-xl shadow-chart-navy/10 md:p-8"
     >
-      <input type="hidden" name="_subject" value="Chart Room AI diagnostic request" />
-      <input type="hidden" name="_captcha" value="false" />
-      <input type="hidden" name="_template" value="table" />
+      <div className="hidden" aria-hidden="true">
+        <label>
+          Company website
+          <input name="company_website" tabIndex={-1} autoComplete="off" />
+        </label>
+      </div>
 
       <div>
         <p className="text-sm font-semibold uppercase tracking-[0.22em] text-chart-teal">
