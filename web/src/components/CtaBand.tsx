@@ -1,4 +1,4 @@
-import { auditHref, bookingHref } from "@/lib/site-content";
+import { auditHref, diagnosticRequestHref } from "@/lib/site-content";
 
 type CtaBandProps = {
   title?: string;
@@ -25,16 +25,16 @@ export function CtaBand({
         </div>
         <div className="flex flex-col gap-3 sm:flex-row md:justify-end">
           <a
-            href={bookingHref}
+            href={diagnosticRequestHref}
             className="inline-flex min-h-11 items-center justify-center rounded-md bg-chart-gold px-6 py-3 text-base font-semibold text-chart-navy shadow-md transition hover:brightness-[0.95]"
           >
-            Book Your Diagnostic Call
+            Request AI Readiness Diagnostic
           </a>
           <a
             href={auditHref}
             className="inline-flex min-h-11 items-center justify-center rounded-md border border-white/50 px-6 py-3 text-base font-semibold text-white transition hover:bg-white hover:text-chart-navy"
           >
-            Take the Free Audit
+            Request the friction audit
           </a>
         </div>
       </div>

@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { routes } from "@/lib/site-content";
+import { diagnosticRequestHref, routes } from "@/lib/site-content";
 import { siteConfig } from "@/lib/site-config";
 
 export function SiteHeader() {
@@ -40,10 +40,10 @@ export function SiteHeader() {
             </Link>
           ))}
           <a
-            href={siteConfig.bookingHref}
+            href={diagnosticRequestHref}
             className="inline-flex min-h-10 items-center justify-center rounded-full bg-chart-gold px-4 text-sm font-semibold text-chart-navy shadow-sm transition hover:brightness-95"
           >
-            Book Diagnostic
+            Request AI Readiness Diagnostic
           </a>
         </nav>
         <details className="group relative shrink-0 md:hidden">
@@ -64,10 +64,10 @@ export function SiteHeader() {
               </Link>
             ))}
             <a
-              href={siteConfig.bookingHref}
+              href={diagnosticRequestHref}
               className="mt-2 flex min-h-11 items-center justify-center rounded-md bg-chart-navy px-3 font-semibold text-white transition hover:bg-chart-navy/90"
             >
-              Book AI Readiness Diagnostic
+              Request AI Readiness Diagnostic
             </a>
           </nav>
         </details>

@@ -5,7 +5,7 @@ import {
   auditHref,
   beforeAfter,
   brandImages,
-  bookingHref,
+  diagnosticRequestHref,
   differentiators,
   engagementOptions,
   heroStats,
@@ -44,10 +44,10 @@ export default function Home() {
             </p>
             <div className="mt-9 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
               <a
-                href={bookingHref}
+                href={diagnosticRequestHref}
                 className="inline-flex min-h-12 items-center justify-center rounded-md bg-chart-gold px-7 py-3 text-base font-semibold text-chart-navy shadow-xl shadow-black/20 transition hover:brightness-95"
               >
-                Book AI Readiness Diagnostic
+                Request AI Readiness Diagnostic
               </a>
               <Link
                 href="/why-chart-room"
@@ -60,7 +60,7 @@ export default function Home() {
               href={auditHref}
               className="mt-4 inline-flex text-sm font-semibold text-chart-gold underline underline-offset-4 transition hover:text-white"
             >
-              Or take the free 5-minute Agentic Workflow Friction Audit
+              Or request the 5-minute Agentic Workflow Friction Audit
             </a>
           </div>
 
@@ -210,10 +210,10 @@ export default function Home() {
                 stakeholder alignment are optional.
               </p>
               <a
-                href={bookingHref}
+                href={diagnosticRequestHref}
                 className="mt-7 inline-flex min-h-11 items-center justify-center rounded-md bg-chart-navy px-6 py-3 text-base font-semibold text-white shadow-md transition hover:bg-chart-navy/90"
               >
-                Book the diagnostic
+                Request AI Readiness Diagnostic
               </a>
             </div>
             <div className="grid gap-6">
@@ -222,10 +222,10 @@ export default function Home() {
                   <h3 className="text-xl font-bold tracking-tight text-chart-navy">{item.title}</h3>
                   <p className="mt-3 leading-relaxed text-chart-ink/85">{item.body}</p>
                   <a
-                    href={bookingHref}
+                    href={diagnosticRequestHref}
                     className="mt-5 inline-flex min-h-11 items-center text-sm font-semibold text-chart-teal underline underline-offset-4 transition hover:text-chart-navy"
                   >
-                    Start here
+                    Request AI Readiness Diagnostic
                   </a>
                 </article>
               ))}
@@ -271,7 +271,7 @@ export default function Home() {
             href={auditHref}
             className="inline-flex min-h-12 items-center justify-center rounded-md bg-chart-gold px-7 py-3 text-base font-semibold text-chart-navy shadow-md transition hover:brightness-95"
           >
-            Take the Free Audit
+            Request the friction audit
           </a>
         </div>
       </section>
@@ -279,10 +279,10 @@ export default function Home() {
       <CtaBand />
 
       <a
-        href={bookingHref}
+        href={diagnosticRequestHref}
         className="fixed bottom-4 left-4 right-4 z-40 inline-flex min-h-12 items-center justify-center rounded-full bg-chart-gold px-6 py-3 text-sm font-bold text-chart-navy shadow-2xl shadow-chart-navy/30 transition hover:brightness-95 md:left-auto md:right-6 md:w-auto"
       >
-        Book a 20-min Call
+        Request AI Readiness Diagnostic
       </a>
     </>
   );
