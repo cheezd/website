@@ -43,8 +43,8 @@ export const proofPoints = [
     label: "asset manager technology organization built and led",
   },
   {
-    value: "2-3x",
-    label: "developer productivity gains proven in governed internal agentic workflows",
+    value: "Several-fold",
+    label: "increase in completed project-management work after governed workflow maturity",
   },
   {
     value: "Audit-ready",
@@ -81,24 +81,46 @@ export const beforeAfter = {
 } as const;
 
 export const outcomeMetrics = [
-  "Developer and project velocity doubles, sometimes triples",
-  "Analysis work drops from hours to minutes",
-  "Predictable bi-weekly production releases",
-  "Scale client service without scaling headcount or replacing your people",
+  {
+    title: "Business visibility",
+    before: "Sprint tickets did not consistently show why the work mattered.",
+    after: "Project work links back to critical business needs with less documentation drag.",
+  },
+  {
+    title: "Advisor prep",
+    before: "First-pass plan analysis took multiple hours of screen-by-screen review.",
+    after: "Advisor prep time drops from hours to minutes.",
+  },
+  {
+    title: "Release confidence",
+    before: "Sparse handoffs and unfinished sprint work made release confidence harder to defend.",
+    after: "Predictable bi-weekly production releases.",
+  },
+  {
+    title: "Service scale",
+    before: "More client work meant more manual analysis, status chasing, and coordination load.",
+    after: "Scale client service without scaling headcount or replacing your people.",
+  },
 ] as const;
 
 export const proofStories = [
   {
     eyebrow: "Caravel Concepts",
-    title: "We ate our own dog food under real regulatory pressure.",
-    body: "Built the exact governed agentic framework we now deliver internally first, then moved from chaotic releases to a reliable bi-weekly cadence.",
-    result: "Doubled-to-tripled developer productivity before asking any client to trust it.",
+    title: "The operating model was proven internally before it became an offering.",
+    body: "Sprint work was moving through a traditional agile process, but ticket detail stayed sparse and management could not reliably connect day-to-day work back to critical business needs. Caravel connected its project-management system to the agentic developer workspace so context flowed in and implementation detail flowed back out.",
+    control:
+      "Research, statement-of-work, implementation, and merge-request phases all required sign-off, with branch approval before merge.",
+    result:
+      "Completed project-management work increased several-fold after workflow maturity while leadership gained clearer visibility and faster release confidence.",
   },
   {
-    eyebrow: "Mid-Western RIA",
-    title: "Manual advisor prep became a safe, auditable workflow.",
-    body: "Advisors were buried in data gathering and low-level plan analysis before every client meeting. We automated the drudgery without removing human judgment.",
-    result: "Hours of repetitive work reduced to minutes so advisors could focus on high-value client work.",
+    eyebrow: "Independent RIA",
+    title: "Manual advisor prep became controlled plan analysis.",
+    body: "After running a client plan, the advisor spent multiple hours moving through screens, gathering cash-flow, tax, and planning details, and forming the first-pass analysis. The agentic workflow retrieved approved plan data, including persisted data behind the screens, and produced the initial quantitative readout.",
+    control:
+      "Plan-level access checks, read-only source data, sandboxed what-if analysis, and advisor review protected the original plan.",
+    result:
+      "Advisor prep time dropped from hours to minutes, helping the advisor reach higher-level planning judgment faster.",
   },
 ] as const;
 

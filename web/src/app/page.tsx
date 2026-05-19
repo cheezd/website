@@ -38,9 +38,9 @@ export default function Home() {
               We unstick stalled AI initiatives in regulated financial firms.
             </h1>
             <p className="mt-6 max-w-2xl text-lg leading-relaxed text-white/80 md:text-xl">
-              I&apos;m Marc Cheatham - former CTO and CISO who&apos;s actually run these exact
-              battles. No consultants. No slide decks. Just governed, production-ready AI that
-              survives board and audit scrutiny.
+              I&apos;m Marc Cheatham - former CTO and CISO who has had to solve these
+              problems inside regulated financial environments. We bring that operating skill to
+              deliver governed, production-ready AI that survives board and audit scrutiny.
             </p>
             <div className="mt-9 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
               <a
@@ -158,9 +158,15 @@ export default function Home() {
             </div>
             <div className="grid gap-4 sm:grid-cols-2">
               {outcomeMetrics.map((item) => (
-                <div key={item} className="rounded-2xl border border-chart-navy/10 bg-chart-surface p-5">
+                <div key={item.title} className="rounded-2xl border border-chart-navy/10 bg-chart-surface p-5">
                   <span className="mb-4 block h-1.5 w-12 rounded-full bg-chart-gold" />
-                  <p className="font-semibold leading-relaxed text-chart-navy">{item}</p>
+                  <h3 className="text-lg font-bold text-chart-navy">{item.title}</h3>
+                  <p className="mt-3 text-sm leading-relaxed text-chart-ink/75">
+                    <span className="font-semibold text-chart-navy">Before:</span> {item.before}
+                  </p>
+                  <p className="mt-3 text-sm leading-relaxed text-chart-ink">
+                    <span className="font-semibold text-chart-navy">After:</span> {item.after}
+                  </p>
                 </div>
               ))}
             </div>
@@ -186,6 +192,9 @@ export default function Home() {
                 </p>
                 <h3 className="mt-3 text-2xl font-bold tracking-tight text-chart-navy">{story.title}</h3>
                 <p className="mt-4 leading-relaxed text-chart-ink/80">{story.body}</p>
+                <p className="mt-5 rounded-xl border border-chart-navy/10 bg-chart-surface p-4 text-sm font-semibold leading-relaxed text-chart-ink">
+                  Control: {story.control}
+                </p>
                 <p className="mt-5 rounded-xl border border-chart-gold/35 bg-chart-surface p-4 font-semibold leading-relaxed text-chart-navy">
                   Result: {story.result}
                 </p>
