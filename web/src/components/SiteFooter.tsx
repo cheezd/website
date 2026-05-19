@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { auditHref, diagnosticRequestHref, routes } from "@/lib/site-content";
+import { diagnosticRequestHref, routes } from "@/lib/site-content";
 import { siteConfig } from "@/lib/site-config";
 
 export function SiteFooter() {
@@ -19,12 +19,6 @@ export function SiteFooter() {
                 className="inline-flex min-h-11 items-center justify-center rounded-md bg-chart-gold px-5 py-3 text-sm font-semibold text-chart-navy transition hover:brightness-95"
               >
                 Request AI Readiness Diagnostic
-              </a>
-              <a
-                href={auditHref}
-                className="inline-flex min-h-11 items-center justify-center rounded-md border border-white/40 px-5 py-3 text-sm font-semibold text-white transition hover:bg-white hover:text-chart-navy"
-              >
-                Request the friction audit
               </a>
             </div>
           </div>

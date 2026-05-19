@@ -22,7 +22,7 @@ export const siteConfig = {
     process.env.NEXT_PUBLIC_BOOKING_URL ?? "/contact#diagnostic-form",
 
   auditHref:
-    process.env.NEXT_PUBLIC_AUDIT_URL ?? "/contact#audit",
+    process.env.NEXT_PUBLIC_AUDIT_URL ?? "/contact#diagnostic-form",
 
   formEndpoint: process.env.NEXT_PUBLIC_FORM_ENDPOINT ?? "/api/contact",
 

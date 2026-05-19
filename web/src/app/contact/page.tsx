@@ -65,12 +65,6 @@ export default function ContactPage() {
                       LinkedIn profile
                     </a>
                   ) : null}
-                  <a
-                    href="#audit"
-                    className="text-chart-teal underline underline-offset-4 transition hover:text-chart-navy"
-                  >
-                    About the friction audit
-                  </a>
                   {siteConfig.resumeHref ? (
                     <a
                       href={siteConfig.resumeHref}
@@ -88,39 +82,6 @@ export default function ContactPage() {
             </div>
 
             <ContactForm />
-          </div>
-        </div>
-      </section>
-
-      <section id="audit" className="border-y border-chart-navy/10 bg-chart-surface">
-        <div className="mx-auto grid max-w-5xl gap-8 px-4 py-16 md:grid-cols-[0.9fr_1.1fr] lg:max-w-6xl">
-          <div>
-            <p className="text-sm font-semibold uppercase tracking-[0.22em] text-chart-teal">
-              Low-friction entry
-            </p>
-            <h2 className="mt-3 text-3xl font-bold tracking-tight text-chart-navy">
-              Free 5-minute Agentic Workflow Friction Audit
-            </h2>
-            <p className="mt-4 text-lg leading-relaxed text-chart-ink">
-              The audit is a lightweight way to surface where project flow, AI pilots, or delivery
-              operations are leaking time, money, and momentum.
-            </p>
-          </div>
-          <div className="rounded-2xl border border-chart-navy/10 bg-white p-6 shadow-sm">
-            <p className="text-lg font-semibold text-chart-navy">
-              The 5-minute Agentic Workflow Friction Audit is being offered selectively while the
-              scoring model is refined.
-            </p>
-            <p className="mt-3 leading-relaxed text-chart-ink/80">
-              Request access through the diagnostic form and we will send the current version when
-              it is available for your situation.
-            </p>
-            <a
-              href="#diagnostic-form"
-              className="mt-5 inline-flex min-h-11 items-center justify-center rounded-md bg-chart-navy px-5 py-3 text-sm font-semibold text-white transition hover:bg-chart-navy/90"
-            >
-              Ask for the audit link
-            </a>
           </div>
         </div>
       </section>
