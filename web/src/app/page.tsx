@@ -2,7 +2,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { CtaBand } from "@/components/CtaBand";
 import {
-  auditHref,
   beforeAfter,
   brandImages,
   diagnosticRequestHref,
@@ -56,12 +55,6 @@ export default function Home() {
                 Learn More
               </Link>
             </div>
-            <a
-              href={auditHref}
-              className="mt-4 inline-flex text-sm font-semibold text-chart-gold underline underline-offset-4 transition hover:text-white"
-            >
-              Or request the 5-minute Agentic Workflow Friction Audit
-            </a>
           </div>
 
           <div className="rounded-[2rem] border border-chart-gold/35 bg-white/[0.07] p-5 shadow-2xl shadow-black/25 backdrop-blur">
@@ -258,30 +251,6 @@ export default function Home() {
               ))}
             </div>
           </div>
-        </div>
-      </section>
-
-      <section className="border-y border-chart-navy/10 bg-chart-surface">
-        <div className="mx-auto grid max-w-5xl gap-8 px-4 py-16 md:grid-cols-[1fr_auto] md:items-center lg:max-w-6xl">
-          <div>
-            <p className="text-sm font-semibold uppercase tracking-[0.22em] text-chart-teal">
-              Free lead magnet
-            </p>
-            <h2 className="mt-3 text-3xl font-bold tracking-tight text-chart-navy">
-              Free 5-minute Agentic Workflow Friction Audit
-            </h2>
-            <p className="mt-4 max-w-3xl text-lg leading-relaxed text-chart-ink">
-              Answer 8 quick questions about your current project flow, AI pilots, and DevOps
-              reality. Get a plain-English report showing where you are leaking time, money, and
-              momentum.
-            </p>
-          </div>
-          <a
-            href={auditHref}
-            className="inline-flex min-h-12 items-center justify-center rounded-md bg-chart-gold px-7 py-3 text-base font-semibold text-chart-navy shadow-md transition hover:brightness-95"
-          >
-            Request the friction audit
-          </a>
         </div>
       </section>
 
