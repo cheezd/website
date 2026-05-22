@@ -43,7 +43,7 @@ export function SiteHeader() {
             href={diagnosticRequestHref}
             className="inline-flex min-h-10 items-center justify-center rounded-full bg-chart-gold px-4 text-sm font-semibold text-chart-navy shadow-sm transition hover:brightness-95"
           >
-            Request AI Readiness Diagnostic
+            Unlock AI for your Firm
           </a>
         </nav>
         <details className="group relative shrink-0 md:hidden">
@@ -67,7 +67,7 @@ export function SiteHeader() {
               href={diagnosticRequestHref}
               className="mt-2 flex min-h-11 items-center justify-center rounded-md bg-chart-navy px-3 font-semibold text-white transition hover:bg-chart-navy/90"
             >
-              Request AI Readiness Diagnostic
+              Unlock AI for your Firm
             </a>
           </nav>
         </details>
