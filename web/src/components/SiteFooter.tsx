@@ -18,7 +18,7 @@ export function SiteFooter() {
                 href={diagnosticRequestHref}
                 className="inline-flex min-h-11 items-center justify-center rounded-md bg-chart-gold px-5 py-3 text-sm font-semibold text-chart-navy transition hover:brightness-95"
               >
-                Request AI Readiness Diagnostic
+                Unlock AI for your Firm
               </a>
             </div>
           </div>

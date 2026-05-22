@@ -46,7 +46,7 @@ export default function Home() {
                 href={diagnosticRequestHref}
                 className="inline-flex min-h-12 items-center justify-center rounded-md bg-chart-gold px-7 py-3 text-base font-semibold text-chart-navy shadow-xl shadow-black/20 transition hover:brightness-95"
               >
-                Request AI Readiness Diagnostic
+                Unlock AI for your Firm
               </a>
               <Link
                 href="/why-chart-room"
@@ -215,7 +215,7 @@ export default function Home() {
                 href={diagnosticRequestHref}
                 className="mt-7 inline-flex min-h-11 items-center justify-center rounded-md bg-chart-navy px-6 py-3 text-base font-semibold text-white shadow-md transition hover:bg-chart-navy/90"
               >
-                Request AI Readiness Diagnostic
+                Unlock AI for your Firm
               </a>
             </div>
             <div className="grid gap-6">
@@ -227,7 +227,7 @@ export default function Home() {
                     href={diagnosticRequestHref}
                     className="mt-5 inline-flex min-h-11 items-center text-sm font-semibold text-chart-teal underline underline-offset-4 transition hover:text-chart-navy"
                   >
-                    Request AI Readiness Diagnostic
+                    Unlock AI for your Firm
                   </a>
                 </article>
               ))}
@@ -260,7 +260,7 @@ export default function Home() {
         href={diagnosticRequestHref}
         className="fixed bottom-4 left-4 right-4 z-40 inline-flex min-h-12 items-center justify-center rounded-full bg-chart-gold px-6 py-3 text-sm font-bold text-chart-navy shadow-2xl shadow-chart-navy/30 transition hover:brightness-95 md:left-auto md:right-6 md:w-auto"
       >
-        Request AI Readiness Diagnostic
+        Unlock AI for your Firm
       </a>
     </>
   );

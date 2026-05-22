@@ -72,7 +72,7 @@ export function ContactForm() {
         type="submit"
         className="mt-6 inline-flex min-h-12 w-full items-center justify-center rounded-md bg-chart-navy px-6 py-3 text-base font-semibold text-white shadow-md transition hover:bg-chart-navy/90"
       >
-        Request AI Readiness Diagnostic
+        Unlock AI for your Firm
       </button>
       <p className="mt-3 text-xs leading-relaxed text-chart-ink/60">
         Prefer to book directly?{" "}

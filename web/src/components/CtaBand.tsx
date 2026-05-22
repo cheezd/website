@@ -28,7 +28,7 @@ export function CtaBand({
             href={diagnosticRequestHref}
             className="inline-flex min-h-11 items-center justify-center rounded-md bg-chart-gold px-6 py-3 text-base font-semibold text-chart-navy shadow-md transition hover:brightness-[0.95]"
           >
-            Request AI Readiness Diagnostic
+            Unlock AI for your Firm
           </a>
         </div>
       </div>
