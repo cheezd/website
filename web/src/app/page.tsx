@@ -37,7 +37,7 @@ export default function Home() {
               We unstick stalled AI initiatives in regulated financial firms.
             </h1>
             <p className="mt-6 max-w-2xl text-lg leading-relaxed text-white/80 md:text-xl">
-              I&apos;m Marc Cheatham - former CTO and CISO who has had to solve these
+              Founder Marc Cheatham - former CTO and CISO who has had to solve these
               problems inside regulated financial environments. We bring that operating skill to
               deliver governed, production-ready AI that survives board and audit scrutiny.
             </p>
