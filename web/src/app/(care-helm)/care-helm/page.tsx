@@ -223,7 +223,7 @@ export default function CareHelmPage() {
             </blockquote>
           </figure>
           <Link
-            href="/"
+            href={careHelmConfig.parentSiteUrl}
             className="mt-8 inline-flex min-h-11 items-center gap-2 rounded-md border border-white/20 px-5 text-sm font-semibold text-white transition hover:border-chart-teal hover:bg-white/5"
           >
             {careHelmTrust.linkLabel}

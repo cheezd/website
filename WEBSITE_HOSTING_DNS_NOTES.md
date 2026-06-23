@@ -7,6 +7,8 @@ These notes describe how `chartroomai.com` is hosted and where DNS authority liv
 - Primary URL: `https://www.chartroomai.com`
 - Apex URL: `https://chartroomai.com`
 - Expected behavior: `chartroomai.com` redirects to `www.chartroomai.com`
+- Care Helm product URL: `https://carehelm.chartroomai.com`
+- Expected behavior: `carehelm.chartroomai.com` serves the Care Helm landing page (same content as `/care-helm` on the main site)
 
 ## Hosting Authority
 
@@ -49,9 +51,17 @@ These records point the domain to Vercel.
 Type   Name               Value                  Proxy Status
 A      chartroomai.com    76.76.21.21            DNS only
 CNAME  www                cname.vercel-dns.com   DNS only
+CNAME  carehelm           cname.vercel-dns.com   DNS only
 ```
 
-Keep both records as `DNS only` while Vercel is verifying the domain. Do not proxy them through Cloudflare unless intentionally changing the setup later.
+Vercel may also recommend an `A` record for the Care Helm subdomain instead of `CNAME`:
+
+```text
+Type   Name               Value                  Proxy Status
+A      carehelm           76.76.21.21            DNS only
+```
+
+Use one approach, not both. Keep the record as `DNS only` (grey cloud).
 
 ## Email DNS Records
 
@@ -72,21 +82,24 @@ These are separate from web hosting and should remain in place.
 
 ## Vercel Domain Setup
 
-The Vercel project should have both domains attached:
+The Vercel project should have these domains attached:
 
 ```text
 chartroomai.com
 www.chartroomai.com
+carehelm.chartroomai.com
 ```
 
 Current intended routing:
 
 ```text
-chartroomai.com      -> redirects to www.chartroomai.com
-www.chartroomai.com  -> production deployment
+chartroomai.com           -> redirects to www.chartroomai.com
+www.chartroomai.com       -> production deployment (Chart Room AI site)
+carehelm.chartroomai.com  -> production deployment (Care Helm landing via middleware rewrite)
+www.chartroomai.com/care-helm -> same Care Helm landing page
 ```
 
-After DNS changes, use Vercel Project Settings > Domains and click `Refresh` for both domains until Vercel reports valid configuration.
+After adding `carehelm.chartroomai.com` in Vercel, add the Cloudflare CNAME record above and click `Refresh` on the domain in Vercel Project Settings > Domains until valid.
 
 ## Deployment Checklist
 
@@ -94,10 +107,12 @@ After DNS changes, use Vercel Project Settings > Domains and click `Refresh` for
 2. Confirm Vercel deploys the `website` project from `web`.
 3. Confirm build logs include `next build` and route generation for `/`, `/about`, `/contact`, `/experience`, `/expertise`, and `/why-chart-room`.
 4. Test `https://www.chartroomai.com`.
-5. Test `https://chartroomai.com` redirects to `www`.
-6. Test contact email links.
-7. Test resume download at `/documents/Marc-Cheatham-Resume.pdf`.
-8. Check desktop and mobile layouts.
+5. Test `https://www.chartroomai.com/care-helm`.
+6. Test `https://carehelm.chartroomai.com` serves the Care Helm landing page.
+7. Test `https://chartroomai.com` redirects to `www`.
+8. Test contact email links.
+9. Test resume download at `/documents/Marc-Cheatham-Resume.pdf`.
+10. Check desktop and mobile layouts.
 
 ## Troubleshooting Notes
 
