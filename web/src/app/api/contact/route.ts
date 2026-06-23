@@ -3,6 +3,7 @@ type ContactRequest = {
   email: string;
   firmRole: string;
   initiative: string;
+  formContext: string;
 };
 
 type GraphTokenResponse = {
@@ -49,6 +50,7 @@ function parseContactRequest(formData: FormData): ContactRequest | null {
   const email = getField(formData, "email");
   const firmRole = getField(formData, "firm_role");
   const initiative = getField(formData, "initiative");
+  const formContext = getField(formData, "form_context");
 
   if (!name || !isLikelyEmail(email) || !initiative) {
     return null;
@@ -59,6 +61,7 @@ function parseContactRequest(formData: FormData): ContactRequest | null {
     email,
     firmRole,
     initiative,
+    formContext,
   };
 }
 
@@ -90,7 +93,10 @@ async function sendWithMicrosoftGraph(contactRequest: ContactRequest) {
       },
       body: JSON.stringify({
         message: {
-          subject: `Chart Room AI diagnostic request from ${contactRequest.name}`,
+          subject:
+            contactRequest.formContext === "care-helm"
+              ? `Care Helm demo request from ${contactRequest.name}`
+              : `Chart Room AI diagnostic request from ${contactRequest.name}`,
           body: {
             contentType: "Text",
             content: buildEmailBody(contactRequest),
@@ -166,14 +172,21 @@ function requiredEnv(name: string) {
 }
 
 function buildEmailBody(contactRequest: ContactRequest) {
+  const heading =
+    contactRequest.formContext === "care-helm"
+      ? "New Care Helm demo request"
+      : "New Chart Room AI diagnostic request";
+
   return [
-    "New Chart Room AI diagnostic request",
+    heading,
     "",
     `Name: ${contactRequest.name}`,
     `Email: ${contactRequest.email}`,
     `Firm / role: ${contactRequest.firmRole || "Not provided"}`,
     "",
-    "What needs momentum?",
+    contactRequest.formContext === "care-helm"
+      ? "What would you like to explore?"
+      : "What needs momentum?",
     contactRequest.initiative,
   ].join("\n");
 }
