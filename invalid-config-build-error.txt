@@ -1,0 +1,11 @@
+  Finished TypeScript in 2.3s ...
+  Collecting page data using 7 workers ...
+Error: Client config "swap-demo" is invalid:
+✖ Invalid email address
+  → at contact.email
+✖ Use a 6-digit hex color, for example #2f5d3a
+  → at brand.colors.primary
+    at <unknown> (.next/server/chunks/[root-of-the-server]__0r_ovmu._.js:68:78965)
+    at module evaluation (.next/server/chunks/[root-of-the-server]__0r_ovmu._.js:69:153)
+    at instantiateModule (.next/server/chunks/[turbopack]_runtime.js:853:9)
+    at getOrInstantiateModuleFromParent (.next/server/chunks/[turbopack]_runtime.js:877:12)

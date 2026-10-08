@@ -1,0 +1,50 @@
+import type { ClientConfigInput } from "../schema";
+
+/**
+ * THROWAWAY swap demo for PR proof only (not committed). Made-up business,
+ * 555 number, example.com. Proves CLIENT_CONFIG swaps name, colors, logo,
+ * fonts and copy with no component changes.
+ */
+const img = "/clients/swap-demo";
+
+export const swapDemo = {
+  id: "swap-demo",
+  sample: true,
+  design: "classic",
+  business: { name: "Redbud Plumbing Co.", tagline: "Plumbing repair and installs (swap demo)" },
+  brand: {
+    colors: { primary: "#7a2e2e", accent: "#f2c14e", surface: "#fffaf3", text: "#2a1d1d" },
+    logo: { src: `${img}/logo.svg`, alt: "Redbud Plumbing logo (placeholder)", width: 48, height: 48 },
+    fonts: { heading: "montserrat", body: "source-sans-3" },
+  },
+  hero: {
+    headline: "Leaks fixed today, not next week.",
+    subheadline: "Swap-demo copy: same-day repairs, water heaters and fixture installs from licensed plumbers.",
+    image: { src: `${img}/hero.svg`, alt: "Placeholder photo: plumber at work", width: 1200, height: 900 },
+    quoteCtaLabel: "Book a repair",
+  },
+  services: [
+    { name: "Leak repair", summary: "Fast fixes for drips, burst pipes and running toilets." },
+    { name: "Water heaters", summary: "Tank and tankless installs and repairs." },
+    { name: "Drain cleaning", summary: "Clogs cleared without the mess." },
+  ],
+  gallery: [],
+  reviews: [
+    { author: "Demo customer X", rating: 5, text: "Swap-demo review: arrived in an hour and fixed it." },
+    { author: "Demo customer Y", rating: 5, text: "Swap-demo review: fair price, clean work." },
+  ],
+  about: { heading: "Family plumbers", paragraphs: ["Swap-demo about copy."] },
+  contact: {
+    phone: "(555) 555-0199",
+    email: "service@example.com",
+    address: { city: "Example City", region: "VA", postalCode: "00000" },
+    provider: "gmail",
+  },
+  serviceArea: { summary: "Serving Example County.", places: ["Example City", "Sampleton"] },
+  social: [],
+  seo: {
+    siteUrl: "https://swap-demo.example.com",
+    title: "Redbud Plumbing Co. (swap demo)",
+    description: "Throwaway swap demo for the client site template.",
+  },
+} satisfies ClientConfigInput;
