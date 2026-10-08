@@ -8,12 +8,11 @@ import {
   bosunDay,
   bosunFaq,
   bosunHero,
-  bosunHostingOnly,
   bosunInCharge,
   bosunPlanNotes,
   bosunPlans,
+  bosunPricingCta,
   bosunProblem,
-  bosunStartupFees,
   bosunSteps,
   bosunTrustBar,
   bosunWebsite,
@@ -218,8 +217,8 @@ export default function BosunPage() {
             <p className="text-xs font-semibold uppercase tracking-[0.22em] text-bosun-rope">
               Simple website
             </p>
-            <p className="mt-3 font-display text-5xl font-semibold">{bosunWebsite.price}</p>
-            <p className="mt-2 text-white/75">{bosunWebsite.priceNote}</p>
+            <p className="mt-3 font-display text-3xl font-semibold">{bosunWebsite.pricingLabel}</p>
+            <p className="mt-2 text-white/75">{bosunWebsite.pricingNote}</p>
             <a
               href="#get-started"
               className="mt-6 inline-flex min-h-11 items-center justify-center rounded-md bg-bosun-brass px-5 py-3 text-sm font-semibold text-chart-navy transition hover:brightness-105"
@@ -258,7 +257,8 @@ export default function BosunPage() {
           <p className={eyebrowOnLight}>Plans</p>
           <h2 className={headingOnLight}>Support plans</h2>
           <p className="mt-5 max-w-3xl text-lg leading-relaxed text-chart-ink/85">
-            Pay monthly, or prepay the year and get 2 months free.
+            Every plan keeps Bosun checked up and your website looked after. Pick the level of
+            help that fits your business.
           </p>
           <div className="mt-10 grid gap-6 lg:grid-cols-3">
             {bosunPlans.map((plan) => (
@@ -276,28 +276,20 @@ export default function BosunPage() {
                   </p>
                 ) : null}
                 <h3 className="font-display text-2xl font-semibold text-chart-navy">{plan.name}</h3>
-                <p className="mt-4">
-                  <span className="font-display text-4xl font-semibold text-chart-navy">
-                    {plan.monthly}
-                  </span>
-                  <span className="text-chart-ink/70">/month</span>
+                <p className="mt-3 text-sm font-semibold text-bosun-deep-brass">
+                  {bosunPricingCta.label}
                 </p>
-                <p className="mt-1 text-sm text-chart-ink/75">or {plan.prepaidYear} prepaid for the year</p>
                 <dl className="mt-6 grid gap-3 border-t border-chart-navy/10 pt-5 text-sm">
                   <div className="flex justify-between gap-4">
                     <dt className="text-chart-ink/70">Included help</dt>
                     <dd className="text-right font-semibold text-chart-navy">{plan.includedHelp}</dd>
                   </div>
                   <div className="flex justify-between gap-4">
-                    <dt className="text-chart-ink/70">Hourly rate</dt>
-                    <dd className="text-right font-semibold text-chart-navy">{plan.hourlyRate}</dd>
-                  </div>
-                  <div className="flex justify-between gap-4">
                     <dt className="text-chart-ink/70">Response</dt>
                     <dd className="text-right font-semibold text-chart-navy">{plan.response}</dd>
                   </div>
                 </dl>
-                <ul className="mt-6 space-y-2 border-t border-chart-navy/10 pt-5 text-sm text-chart-ink/85">
+                <ul className="mt-6 flex-1 space-y-2 border-t border-chart-navy/10 pt-5 text-sm text-chart-ink/85">
                   {plan.features.map((feature) => (
                     <li key={feature} className="flex gap-2">
                       <span aria-hidden className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-bosun-deep-brass" />
@@ -305,58 +297,36 @@ export default function BosunPage() {
                     </li>
                   ))}
                 </ul>
+                <a
+                  href="#get-started"
+                  className={
+                    plan.recommended
+                      ? "mt-6 inline-flex min-h-11 items-center justify-center rounded-md bg-bosun-brass px-5 py-3 text-sm font-semibold text-chart-navy transition hover:brightness-105"
+                      : "mt-6 inline-flex min-h-11 items-center justify-center rounded-md border-2 border-chart-navy/80 px-5 py-3 text-sm font-semibold text-chart-navy transition hover:bg-chart-navy hover:text-white"
+                  }
+                >
+                  {bosunPricingCta.button}
+                </a>
               </article>
             ))}
           </div>
 
-          <div className="mt-6 rounded-2xl border border-chart-navy/10 bg-bosun-sailcloth p-5 text-sm text-chart-ink/85">
-            <p>
-              <strong className="text-chart-navy">{bosunHostingOnly.name}:</strong>{" "}
-              {bosunHostingOnly.monthly}/month or {bosunHostingOnly.prepaidYear} prepaid for the
-              year. Included help: {bosunHostingOnly.includedHelp.toLowerCase()}. Hourly rate{" "}
-              {bosunHostingOnly.hourlyRate}. Response: {bosunHostingOnly.response.toLowerCase()}.
-            </p>
-          </div>
-
-          <div className="mt-10 grid gap-8 md:grid-cols-[1fr_1fr] md:items-start">
-            <div className="overflow-hidden rounded-2xl border border-chart-navy/10 bg-white shadow-sm">
-              <table className="w-full text-left text-sm">
-                <caption className="bg-chart-navy px-5 py-4 text-left text-white">
-                  <span className="block font-display text-lg font-semibold">
-                    {bosunStartupFees.title}
-                  </span>
-                  <span className="mt-1 block text-xs text-white/75">{bosunStartupFees.note}</span>
-                </caption>
-                <thead className="bg-bosun-sailcloth text-chart-navy">
-                  <tr>
-                    <th scope="col" className="px-5 py-3 font-semibold">
-                      Plan
-                    </th>
-                    <th scope="col" className="px-5 py-3 text-right font-semibold">
-                      Startup fee
-                    </th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {bosunStartupFees.rows.map((row) => (
-                    <tr key={row.plan} className="border-t border-chart-navy/10">
-                      <th scope="row" className="px-5 py-3 font-medium text-chart-ink">
-                        {row.plan}
-                      </th>
-                      <td className="px-5 py-3 text-right font-semibold text-chart-navy">{row.fee}</td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
-            <ul className="space-y-3 text-chart-ink/85">
+          <div className="mt-10 flex flex-col gap-6 rounded-2xl bg-chart-navy p-6 text-white shadow-xl shadow-chart-navy/15 md:flex-row md:items-center md:justify-between md:p-8">
+            <div>
+              <p className="font-display text-2xl font-semibold">{bosunPricingCta.label}</p>
+              <p className="mt-2 max-w-2xl text-white/80">{bosunPricingCta.body}</p>
               {bosunPlanNotes.map((note) => (
-                <li key={note} className="flex gap-3">
-                  <span aria-hidden className="mt-2 h-2 w-2 shrink-0 rounded-full bg-bosun-brass" />
-                  <span>{note}</span>
-                </li>
+                <p key={note} className="mt-3 text-sm text-bosun-rope">
+                  {note}
+                </p>
               ))}
-            </ul>
+            </div>
+            <a
+              href="#get-started"
+              className="inline-flex min-h-12 shrink-0 items-center justify-center rounded-md bg-bosun-brass px-7 py-3 text-base font-semibold text-chart-navy shadow-xl shadow-black/20 transition hover:brightness-105"
+            >
+              {bosunPricingCta.button}
+            </a>
           </div>
         </div>
       </section>

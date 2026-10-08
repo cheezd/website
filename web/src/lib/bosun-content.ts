@@ -111,8 +111,8 @@ export const bosunCapabilities = {
 export const bosunWebsite = {
   title: "A website that wins bigger jobs.",
   body: "A simple website makes a small crew look established. We build it from Chart Room's template, with a quote form that sends requests straight to your email.",
-  price: "$1,500",
-  priceNote: "fixed price, up to 10 hours",
+  pricingLabel: "Pricing on a quick call",
+  pricingNote: "We'll scope your site and quote it on a free 15-minute call.",
   points: [
     "4 to 5 pages built from Chart Room's template",
     "A quote form that sends to your email",
@@ -137,10 +137,7 @@ export const bosunSteps = [
 
 export type BosunPlan = {
   name: string;
-  monthly: string;
-  prepaidYear: string;
   includedHelp: string;
-  hourlyRate: string;
   response: string;
   features: readonly string[];
   recommended?: boolean;
@@ -155,19 +152,13 @@ const everyPlanIncludes = [
 export const bosunPlans: readonly BosunPlan[] = [
   {
     name: "Basic",
-    monthly: "$49",
-    prepaidYear: "$490",
     includedHelp: "None",
-    hourlyRate: "$125",
     response: "Within 2 business days",
     features: everyPlanIncludes,
   },
   {
     name: "Standard",
-    monthly: "$99",
-    prepaidYear: "$990",
     includedHelp: "30 min",
-    hourlyRate: "$110",
     response: "Next business day",
     recommended: true,
     features: [
@@ -178,10 +169,7 @@ export const bosunPlans: readonly BosunPlan[] = [
   },
   {
     name: "Plus",
-    monthly: "$199",
-    prepaidYear: "$1,990",
     includedHelp: "1 hr (includes a 30-min screen-share)",
-    hourlyRate: "$100",
     response: "Same business day if received by noon",
     features: [
       ...everyPlanIncludes,
@@ -191,29 +179,13 @@ export const bosunPlans: readonly BosunPlan[] = [
   },
 ];
 
-export const bosunHostingOnly = {
-  name: "Hosting only",
-  monthly: "$39",
-  prepaidYear: "$390",
-  includedHelp: "None",
-  hourlyRate: "$150",
-  response: "Next business day, outages only",
-} as const;
-
-export const bosunStartupFees = {
-  title: "One-time startup fee",
-  note: "Covers your website build and Bosun setup.",
-  rows: [
-    { plan: "Month-to-month", fee: "$1,800" },
-    { plan: "Basic, annual", fee: "$1,500" },
-    { plan: "Standard, annual", fee: "$1,000" },
-    { plan: "Plus, annual", fee: "$500" },
-  ],
+export const bosunPricingCta = {
+  label: "Pricing on a quick call",
+  body: "We'll walk through pricing for each plan, and for your website, on a free 15-minute call.",
+  button: "Book a free 15-minute call",
 } as const;
 
 export const bosunPlanNotes = [
-  "Price locked for 12 months on annual plans.",
-  "A prepaid year gets 2 months free and is not refunded.",
   "Annual plans add a seasonal refresh twice a year, up to 1 hour each.",
 ] as const;
 
@@ -244,12 +216,12 @@ export const bosunFaq = [
   {
     question: "Do I own my website?",
     answer:
-      "Yes. You own your domain and your content. If you ever want to move your site elsewhere, the handoff fee is $250.",
+      "Yes. You own your domain and your content. If you ever want to move your site elsewhere, we'll hand it off. We cover the details on your call.",
   },
   {
     question: "What if I cancel?",
     answer:
-      "Leaving an annual plan early costs that plan's discount plus 50% of the remaining months. A prepaid year is not refunded.",
+      "Plan terms, including what happens if you leave early, are covered on your free 15-minute call before you sign up.",
   },
   {
     question: "Is support available around the clock?",
@@ -259,7 +231,7 @@ export const bosunFaq = [
   {
     question: "How do I pay?",
     answer:
-      "Zelle or ACH at no extra cost. Credit cards carry a 2.9% surcharge; debit and prepaid cards have none.",
+      "Zelle, ACH, or card. We'll go over payment details on your free 15-minute call.",
   },
 ] as const;
 
