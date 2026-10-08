@@ -1,12 +1,13 @@
+import { Turnstile } from "@/components/Turnstile";
 import { bosunConfig } from "@/lib/bosun-config";
 
 /**
  * Posts to the shared contact route (siteConfig.formEndpoint, default /api/contact),
- * the same path as the main contact form and the Care Helm demo form. There is no
- * separate email path. Markup mirrors the Care Helm demo form on main. When this
- * branch is rebased onto main after PR #18 merges, this form gets the same two
- * changes #18 makes to the other forms (the <Turnstile /> widget and #18's honeypot
- * field), because #18's route rejects submissions without a Turnstile token.
+ * the same path as the main contact form and the Care Helm demo form, with the same
+ * bot-protection contract from #16/#18: off-screen `fax_number` honeypot, Turnstile
+ * widget (which also emits `form_started_at`), and `form_context` outside the
+ * aria-hidden wrapper. The route sends `form_context=bosun` leads with a Bosun
+ * subject and redirects them to /bosun/thank-you.
  */
 export function BosunContactForm() {
   return (
@@ -14,15 +15,18 @@ export function BosunContactForm() {
       id="bosun-contact-form"
       action={bosunConfig.formEndpoint}
       method="POST"
-      className="rounded-3xl border border-bosun-brass/40 bg-white p-6 shadow-xl shadow-chart-navy/10 md:p-8"
+      className="relative rounded-3xl border border-bosun-brass/40 bg-white p-6 shadow-xl shadow-chart-navy/10 md:p-8"
     >
-      <div className="hidden" aria-hidden="true">
+      <div
+        className="pointer-events-none absolute -left-[9999px] top-0 h-0 w-0 overflow-hidden"
+        aria-hidden="true"
+      >
         <label>
-          Company website
-          <input name="company_website" tabIndex={-1} autoComplete="off" />
+          Fax number
+          <input name="fax_number" tabIndex={-1} autoComplete="off" />
         </label>
-        <input type="hidden" name="form_context" value="bosun" />
       </div>
+      <input type="hidden" name="form_context" value="bosun" />
 
       <div>
         <p className="text-sm font-semibold uppercase tracking-[0.22em] text-bosun-deep-brass">
@@ -76,6 +80,8 @@ export function BosunContactForm() {
           />
         </label>
       </div>
+
+      <Turnstile />
 
       <button
         type="submit"

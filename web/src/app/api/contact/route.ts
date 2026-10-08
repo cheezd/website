@@ -18,6 +18,7 @@ type TurnstileVerifyResponse = {
 };
 
 const THANK_YOU_PATH = "/contact/thank-you";
+const BOSUN_THANK_YOU_PATH = "/bosun/thank-you";
 const ERROR_PATH = "/contact/error";
 const HONEYPOT_FIELD = "fax_number";
 const MIN_SUBMIT_MS = 3000;
@@ -53,6 +54,9 @@ const URL_PATTERN = /https?:\/\/[^\s]+/gi;
 export async function POST(request: Request) {
   try {
     const formData = await request.formData();
+    // Every thank-you redirect (real or silent spam reject) uses the same page per
+    // form, so the redirect target never reveals which check a bot tripped.
+    const thankYouPath = getThankYouPath(formData);
 
     const turnstileResult = await verifyTurnstile(request, formData);
     if (!turnstileResult.ok) {
@@ -61,15 +65,15 @@ export async function POST(request: Request) {
 
     // Spam-class rejects: silent thank-you (do not tip bots).
     if (getField(formData, HONEYPOT_FIELD)) {
-      return redirectTo(request, THANK_YOU_PATH);
+      return redirectTo(request, thankYouPath);
     }
 
     if (isSubmittedTooFast(formData)) {
-      return redirectTo(request, THANK_YOU_PATH);
+      return redirectTo(request, thankYouPath);
     }
 
     if (!isAllowedOrigin(request)) {
-      return redirectTo(request, THANK_YOU_PATH);
+      return redirectTo(request, thankYouPath);
     }
 
     const contactRequest = parseContactRequest(formData);
@@ -79,7 +83,7 @@ export async function POST(request: Request) {
     }
 
     if (!passesLengthCaps(contactRequest) || hasSpamLinks(contactRequest.initiative)) {
-      return redirectTo(request, THANK_YOU_PATH);
+      return redirectTo(request, thankYouPath);
     }
 
     const deliveryMode = process.env.CONTACT_DELIVERY_MODE ?? "noop";
@@ -92,7 +96,7 @@ export async function POST(request: Request) {
       console.info("Contact form submission accepted in noop mode.");
     }
 
-    return redirectTo(request, THANK_YOU_PATH);
+    return redirectTo(request, thankYouPath);
   } catch (error) {
     console.error("Contact form submission failed:", getSafeErrorMessage(error));
     return redirectTo(request, ERROR_PATH);
@@ -306,6 +310,37 @@ function hasSpamLinks(message: string) {
   return BLOCKED_LINK_HOSTS.some((host) => lower.includes(host));
 }
 
+function getThankYouPath(formData: FormData) {
+  return getField(formData, "form_context") === "bosun" ? BOSUN_THANK_YOU_PATH : THANK_YOU_PATH;
+}
+
+function getFormCopy(formContext: string) {
+  if (formContext === "care-helm") {
+    return {
+      subject: "Care Helm demo request",
+      heading: "New Care Helm demo request",
+      roleLabel: "Firm / role",
+      question: "What would you like to explore?",
+    };
+  }
+
+  if (formContext === "bosun") {
+    return {
+      subject: "Bosun inquiry",
+      heading: "New Bosun inquiry",
+      roleLabel: "Business and trade",
+      question: "What would help most?",
+    };
+  }
+
+  return {
+    subject: "Chart Room AI diagnostic request",
+    heading: "New Chart Room AI diagnostic request",
+    roleLabel: "Firm / role",
+    question: "What needs momentum?",
+  };
+}
+
 function getField(formData: FormData, fieldName: string) {
   const value = formData.get(fieldName);
   return typeof value === "string" ? value.trim() : "";
@@ -335,10 +370,7 @@ async function sendWithMicrosoftGraph(contactRequest: ContactRequest) {
       },
       body: JSON.stringify({
         message: {
-          subject:
-            contactRequest.formContext === "care-helm"
-              ? `Care Helm demo request from ${contactRequest.name}`
-              : `Chart Room AI diagnostic request from ${contactRequest.name}`,
+          subject: `${getFormCopy(contactRequest.formContext).subject} from ${contactRequest.name}`,
           body: {
             contentType: "Text",
             content: buildEmailBody(contactRequest),
@@ -420,21 +452,16 @@ function requiredEnv(name: string) {
 }
 
 function buildEmailBody(contactRequest: ContactRequest) {
-  const heading =
-    contactRequest.formContext === "care-helm"
-      ? "New Care Helm demo request"
-      : "New Chart Room AI diagnostic request";
+  const copy = getFormCopy(contactRequest.formContext);
 
   return [
-    heading,
+    copy.heading,
     "",
     `Name: ${contactRequest.name}`,
     `Email: ${contactRequest.email}`,
-    `Firm / role: ${contactRequest.firmRole || "Not provided"}`,
+    `${copy.roleLabel}: ${contactRequest.firmRole || "Not provided"}`,
     "",
-    contactRequest.formContext === "care-helm"
-      ? "What would you like to explore?"
-      : "What needs momentum?",
+    copy.question,
     contactRequest.initiative,
   ].join("\n");
 }

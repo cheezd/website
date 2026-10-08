@@ -37,7 +37,7 @@ export function BosunHeader() {
             </a>
           ))}
           <a
-            href="#get-started"
+            href={`${bosunConfig.path}#get-started`}
             className="inline-flex min-h-10 items-center justify-center rounded-full bg-bosun-brass px-4 text-sm font-semibold text-chart-navy shadow-sm transition hover:brightness-105"
           >
             Get Started

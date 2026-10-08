@@ -1,12 +1,12 @@
 import { bosunConfig } from "@/lib/bosun-config";
 
 export const bosunNav = [
-  { href: "#problem", label: "The Problem" },
-  { href: "#what-it-does", label: "What It Does" },
-  { href: "#websites", label: "Websites" },
-  { href: "#how-it-works", label: "How It Works" },
-  { href: "#plans", label: "Plans" },
-  { href: "#get-started", label: "Get Started" },
+  { href: "/bosun#problem", label: "The Problem" },
+  { href: "/bosun#what-it-does", label: "What It Does" },
+  { href: "/bosun#websites", label: "Websites" },
+  { href: "/bosun#how-it-works", label: "How It Works" },
+  { href: "/bosun#plans", label: "Plans" },
+  { href: "/bosun#get-started", label: "Get Started" },
 ] as const;
 
 export const bosunHero = {

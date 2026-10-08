@@ -61,10 +61,7 @@ export default function BosunPage() {
             </p>
             <div className="mt-6">
               <BosunLockup size="hero" />
-              <p className="mt-2 text-sm text-white/70">
-                {bosunConfig.productName} ({bosunConfig.pronunciation}) ·{" "}
-                {bosunConfig.displayAddress}
-              </p>
+              <p className="mt-2 text-sm text-white/70">{bosunConfig.displayAddress}</p>
             </div>
             <h1 className="mt-8 text-balance font-display text-4xl font-semibold tracking-tight md:text-5xl lg:text-[3.5rem] lg:leading-[1.05]">
               {bosunHero.headlineLead}{" "}
