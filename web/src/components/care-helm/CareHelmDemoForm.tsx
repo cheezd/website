@@ -1,4 +1,5 @@
 import { careHelmConfig } from "@/lib/care-helm-config";
+import { Turnstile } from "@/components/Turnstile";
 
 export function CareHelmDemoForm() {
   return (
@@ -6,15 +7,18 @@ export function CareHelmDemoForm() {
       id="care-helm-demo-form"
       action={careHelmConfig.formEndpoint}
       method="POST"
-      className="rounded-3xl border border-chart-teal/30 bg-white p-6 shadow-xl shadow-chart-navy/10 md:p-8"
+      className="relative rounded-3xl border border-chart-teal/30 bg-white p-6 shadow-xl shadow-chart-navy/10 md:p-8"
     >
-      <div className="hidden" aria-hidden="true">
+      <div
+        className="pointer-events-none absolute -left-[9999px] top-0 h-0 w-0 overflow-hidden"
+        aria-hidden="true"
+      >
         <label>
-          Company website
-          <input name="company_website" tabIndex={-1} autoComplete="off" />
+          Fax number
+          <input name="fax_number" tabIndex={-1} autoComplete="off" />
         </label>
-        <input type="hidden" name="form_context" value="care-helm" />
       </div>
+      <input type="hidden" name="form_context" value="care-helm" />
 
       <div>
         <p className="text-sm font-semibold uppercase tracking-[0.22em] text-chart-teal">
@@ -69,6 +73,8 @@ export function CareHelmDemoForm() {
           />
         </label>
       </div>
+
+      <Turnstile />
 
       <button
         type="submit"

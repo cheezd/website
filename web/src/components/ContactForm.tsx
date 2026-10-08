@@ -1,4 +1,5 @@
 import { siteConfig } from "@/lib/site-config";
+import { Turnstile } from "@/components/Turnstile";
 
 export function ContactForm() {
   return (
@@ -6,12 +7,15 @@ export function ContactForm() {
       id="diagnostic-form"
       action={siteConfig.formEndpoint}
       method="POST"
-      className="rounded-3xl border border-chart-gold/30 bg-white p-6 shadow-xl shadow-chart-navy/10 md:p-8"
+      className="relative rounded-3xl border border-chart-gold/30 bg-white p-6 shadow-xl shadow-chart-navy/10 md:p-8"
     >
-      <div className="hidden" aria-hidden="true">
+      <div
+        className="pointer-events-none absolute -left-[9999px] top-0 h-0 w-0 overflow-hidden"
+        aria-hidden="true"
+      >
         <label>
-          Company website
-          <input name="company_website" tabIndex={-1} autoComplete="off" />
+          Fax number
+          <input name="fax_number" tabIndex={-1} autoComplete="off" />
         </label>
       </div>
 
@@ -67,6 +71,8 @@ export function ContactForm() {
           />
         </label>
       </div>
+
+      <Turnstile />
 
       <button
         type="submit"
