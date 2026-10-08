@@ -11,11 +11,11 @@ export const bosunNav = [
 
 export const bosunHero = {
   eyebrow: "Meet Bosun, your office teammate",
-  headlineLead: "Get your",
-  headlineHighlight: "evenings",
-  headlineTail: "back.",
+  headlineLead: "Grow with an",
+  headlineHighlight: "AI team",
+  headlineTail: "in your corner.",
   subheadline:
-    "An office teammate that handles your email, calendar, and bills, so you can stay on the job. You just tell it what you need in plain English.",
+    "From the front office to the back office, we find where AI saves you time and make it happen.",
   primaryCta: "Book a free 15-minute call",
   secondaryCta: "See plans",
 } as const;
