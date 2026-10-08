@@ -34,12 +34,10 @@ export default function Home() {
               Fractional AI transformation leadership for regulated financial services
             </p>
             <h1 className="mt-6 text-balance text-4xl font-bold tracking-tight md:text-6xl lg:text-[4.25rem] lg:leading-[1.02]">
-              We unstick stalled AI initiatives in regulated financial firms.
+              Your AI team, on your side.
             </h1>
             <p className="mt-6 max-w-2xl text-lg leading-relaxed text-white/80 md:text-xl">
-              Founder Marc Cheatham - former CTO and CISO who has had to solve these
-              problems inside regulated financial environments. We bring that operating skill to
-              deliver governed, production-ready AI that survives board and audit scrutiny.
+              We help you put AI to work across your whole business, not just one tool.
             </p>
             <div className="mt-9 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
               <a
