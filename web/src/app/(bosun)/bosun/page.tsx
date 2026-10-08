@@ -9,6 +9,7 @@ import {
   bosunFaq,
   bosunHero,
   bosunInCharge,
+  bosunOnePager,
   bosunPlanNotes,
   bosunPlans,
   bosunPlansAnchor,
@@ -396,6 +397,27 @@ export default function BosunPage() {
                 className="font-semibold text-bosun-deep-brass underline underline-offset-4 hover:text-chart-navy"
               >
                 {bosunConfig.contactEmail}
+              </a>
+            </p>
+            <p className="mt-3 text-sm text-chart-ink/70">
+              <a
+                href={bosunOnePager.href}
+                download
+                className="inline-flex min-h-11 items-center gap-2 rounded-md font-semibold text-chart-navy underline decoration-bosun-brass decoration-2 underline-offset-4 hover:text-bosun-deep-brass"
+              >
+                <svg
+                  aria-hidden
+                  viewBox="0 0 24 24"
+                  className="h-4 w-4 shrink-0 fill-none stroke-bosun-deep-brass stroke-2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <path d="M12 3v12M7 10l5 5 5-5M5 21h14" />
+                </svg>
+                <span>
+                  {bosunOnePager.label}{" "}
+                  <span className="font-normal text-chart-ink/70">{bosunOnePager.meta}</span>
+                </span>
               </a>
             </p>
           </div>

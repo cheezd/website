@@ -240,6 +240,12 @@ export const bosunFaq = [
   },
 ] as const;
 
+export const bosunOnePager = {
+  href: "/bosun/bosun-by-chart-room-ai.pdf",
+  label: "Download the one-pager",
+  meta: "(PDF, 300 KB)",
+} as const;
+
 export const bosunCta = {
   title: "Ready for a teammate who handles the office?",
   body: "Let's talk about setting up Bosun for your business. Share a few details and we will follow up to set up a free 15-minute call.",
