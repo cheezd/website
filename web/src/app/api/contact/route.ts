@@ -29,6 +29,10 @@ const DEFAULT_ALLOWED_HOSTNAMES = [
   "carehelm.chartroomai.com",
 ];
 
+// Preview URLs for the `website` project in the `chart-room` Vercel team,
+// e.g. website-git-<branch>-chart-room.vercel.app or website-<hash>-chart-room.vercel.app.
+const VERCEL_PREVIEW_HOSTNAME = /^website-[a-z0-9-]+-chart-room\.vercel\.app$/;
+
 const BLOCKED_LINK_HOSTS = [
   "tinyurl.com",
   "bit.ly",
@@ -204,8 +208,11 @@ function isAllowedHostname(hostname: string) {
     return true;
   }
 
-  // Preview deployments on Vercel.
-  if (normalized.endsWith(".vercel.app")) {
+  // This project's own Vercel preview deployments only, and never in production.
+  if (
+    process.env.VERCEL_ENV !== "production" &&
+    VERCEL_PREVIEW_HOSTNAME.test(normalized)
+  ) {
     return true;
   }
 
