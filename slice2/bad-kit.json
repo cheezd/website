@@ -1,0 +1,9 @@
+{
+  "kitVersion": 1,
+  "source": { "generator": "beacon-brand-interview", "createdAt": "yesterday" },
+  "palette": { "primary": "#2f5d3a", "surface": "white", "text": "#1f2a22", "accnet": "#d9822b" },
+  "fonts": { "heading": { "family": "Garamond", "category": "serif" }, "body": { "family": "Comic Sans" } },
+  "logo": { "variant": "combo", "showName": true, "alt": "Example logo", "onLight": { "file": "Logos/Logo.PNG", "width": 240, "height": 64 } },
+  "iconStyle": { "style": "filled" },
+  "swatch": { "file": "swatch.png", "width": 1200, "height": 400 }
+}

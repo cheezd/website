@@ -1,0 +1,9 @@
+✗ /tmp/bad-kit.json: 8 problem(s)
+  - source.createdAt: Invalid ISO datetime
+  - palette.accent: missing (required, expected string)
+  - palette.surface: Use a 6-digit hex color, for example #2f5d3a
+  - palette: unknown field(s) "accnet"
+  - fonts.body.family: Unsupported font "Comic Sans". Use one of: Inter, Source Sans 3, Open Sans, Roboto, Nunito, DM Sans, Work Sans, Manrope, Montserrat, Raleway, Lora, Merriweather, Libre Baskerville, Roboto Slab, EB Garamond, Fraunces, Playfair Display, Oswald; or add "category" (serif, sans-serif or display) to map it to the nearest supported font
+  - logo.onLight.file: Use a lowercase file name like logo.svg (svg, png, jpg, jpeg or webp), no folders
+  - iconStyle.style: Invalid option: expected one of "outline"|"solid"|"duotone"
+  - imageDirection: missing (required, expected object)
