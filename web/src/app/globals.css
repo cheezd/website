@@ -7,6 +7,12 @@
   --chart-bronze: #b98245;
   --chart-ink: #1e2937;
   --chart-surface: #f4f7fa;
+  /* Bosun by Chart Room AI (used only under /bosun) */
+  --bosun-harbor: #1f4e79;
+  --bosun-brass: #b98245;
+  --bosun-deep-brass: #8a5a2b;
+  --bosun-rope: #e3c79f;
+  --bosun-sailcloth: #f6f2ea;
   scroll-behavior: smooth;
 }
 
@@ -18,6 +24,12 @@
   --color-chart-bronze: var(--chart-bronze);
   --color-chart-ink: var(--chart-ink);
   --color-chart-surface: var(--chart-surface);
+  --color-bosun-harbor: var(--bosun-harbor);
+  --color-bosun-brass: var(--bosun-brass);
+  --color-bosun-deep-brass: var(--bosun-deep-brass);
+  --color-bosun-rope: var(--bosun-rope);
+  --color-bosun-sailcloth: var(--bosun-sailcloth);
+  --font-display: var(--font-fraunces), ui-serif, Georgia, serif;
   --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
 }
 
