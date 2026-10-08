@@ -323,7 +323,7 @@ async function sendWithMicrosoftGraph(contactRequest: ContactRequest) {
   const accessToken = await getMicrosoftGraphAccessToken();
   const fromMailbox = requiredEnv("CONTACT_FROM_MAILBOX");
   const toEmail = requiredEnv("CONTACT_TO_EMAIL");
-  const fromName = process.env.CONTACT_FROM_NAME?.trim() || "Chart Room AI";
+  const fromName = process.env.CONTACT_FROM_NAME?.trim() || "Marc Cheatham";
 
   const response = await fetch(
     `https://graph.microsoft.com/v1.0/users/${encodeURIComponent(fromMailbox)}/sendMail`,
