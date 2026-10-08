@@ -1,0 +1,61 @@
+import type { BrandKitInput } from "../brand-kit";
+import type { ClientConfigInput } from "../schema";
+import brandKit from "./swap-demo.brand-kit.json";
+
+/**
+ * THROWAWAY swap demo for PR #34 proof only (not committed). Made-up business,
+ * 555 number, example.com, placeholder SVGs. Kit: solid icons, sharp corners,
+ * 16:9 hero and 1:1 gallery crops.
+ */
+export const swapDemo = {
+  id: "swap-demo",
+  sample: true,
+  design: "classic",
+  business: { name: "Redbud Plumbing Co.", tagline: "Plumbing repair and installs (swap demo)" },
+  brand: brandKit as BrandKitInput,
+  hero: {
+    headline: "Leaks fixed today, not next week.",
+    subheadline: "Swap-demo copy: same-day repairs, water heaters and fixture installs from licensed plumbers.",
+    image: { file: "hero.svg", alt: "Placeholder photo: plumber at work", width: 1200, height: 900 },
+    quoteCtaLabel: "Book a repair",
+  },
+  services: [
+    { name: "Leak repair", icon: "drop", summary: "Fast fixes for drips, burst pipes and running toilets.", details: ["Pipe and joint repair", "Toilet and faucet leaks", "Slab leak detection"] },
+    { name: "Water heaters", icon: "thermometer", summary: "Tank and tankless installs and repairs.", details: ["Same-day replacement", "Tankless upgrades", "Annual flush"] },
+    { name: "Drain cleaning", icon: "wrench", summary: "Clogs cleared without the mess." },
+    { name: "Bathroom fixtures", icon: "bathtub", summary: "Tubs, showers, sinks and toilets installed.", details: ["Fixture swaps", "Shower valves"] },
+  ],
+  gallery: [
+    { file: "gallery-1.svg", alt: "Placeholder photo: new water heater", width: 800, height: 600, caption: "Water heater swap (demo)" },
+    { file: "gallery-2.svg", alt: "Placeholder photo: kitchen sink install", width: 800, height: 600, caption: "Kitchen sink (demo)" },
+    { file: "gallery-3.svg", alt: "Placeholder photo: tankless unit", width: 800, height: 600 },
+    { file: "gallery-4.svg", alt: "Placeholder photo: copper repipe", width: 800, height: 600, caption: "Repipe (demo)" },
+    { file: "gallery-5.svg", alt: "Placeholder photo: bathroom fixtures", width: 800, height: 600 },
+    { file: "gallery-6.svg", alt: "Placeholder photo: sump pump", width: 800, height: 600, caption: "Sump pump (demo)" },
+  ],
+  reviews: [
+    { author: "Demo customer X", rating: 5, text: "Swap-demo review: arrived in an hour and fixed it." },
+    { author: "Demo customer Y", location: "Sampleton", rating: 4, text: "Swap-demo review: fair price, clean work, and they explained the options before starting anything." },
+    { author: "Demo customer Z", rating: 5, text: "Swap-demo review: new water heater in by lunch." },
+  ],
+  about: {
+    heading: "Family plumbers since forever (demo)",
+    paragraphs: ["Swap-demo about copy: a small family crew.", "Second swap-demo paragraph about licensing and warranties."],
+    highlights: ["Demo: licensed and insured", "Demo: upfront pricing", "Demo: same-day service", "Demo: 1-year labor warranty"],
+    image: { file: "about.svg", alt: "Placeholder photo: service van", width: 1200, height: 900 },
+  },
+  contact: {
+    phone: "(555) 555-0199",
+    email: "service@example.com",
+    address: { city: "Example City", region: "VA", postalCode: "00000" },
+    hours: ["Mon–Sat 7:00 AM – 7:00 PM"],
+    provider: "gmail",
+  },
+  serviceArea: { summary: "Serving Example County.", places: ["Example City", "Sampleton", "Demo Falls"] },
+  social: [{ platform: "yelp", url: "https://www.example.com/placeholder-yelp" }],
+  seo: {
+    siteUrl: "https://swap-demo.example.com",
+    title: "Redbud Plumbing Co. (swap demo)",
+    description: "Throwaway swap demo for the client site template.",
+  },
+} satisfies ClientConfigInput;

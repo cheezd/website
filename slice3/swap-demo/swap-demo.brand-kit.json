@@ -1,0 +1,15 @@
+{
+  "$schema": "../brand-kit.schema.json",
+  "kitVersion": 1,
+  "source": { "generator": "forge-swap-demo", "createdAt": "2026-10-08T19:30:00-04:00", "notes": "THROWAWAY swap demo kit for PR #34 proof. Not committed." },
+  "palette": { "primary": "#7a2e2e", "accent": "#f2c14e", "surface": "#fffaf3", "text": "#2a1d1d" },
+  "fonts": { "heading": { "family": "Montserrat", "category": "sans-serif" }, "body": { "family": "Source Sans 3", "category": "sans-serif" } },
+  "logo": {
+    "variant": "combo", "showName": false, "alt": "Redbud Plumbing Co. logo (placeholder)",
+    "onLight": { "file": "logo.svg", "width": 200, "height": 48 },
+    "onDark": { "file": "logo-on-dark.svg", "width": 200, "height": 48 },
+    "icon": { "file": "icon.svg", "width": 512, "height": 512 }
+  },
+  "iconStyle": { "style": "solid", "weight": "bold", "corners": "sharp" },
+  "imageDirection": { "mood": "Clean, quick, trustworthy", "aspectRatios": { "hero": "16:9", "gallery": "1:1" } }
+}
