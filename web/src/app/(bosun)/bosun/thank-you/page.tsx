@@ -24,8 +24,7 @@ export default function BosunThankYouPage() {
             Thanks. We&apos;ve got it.
           </h1>
           <p className="mt-6 max-w-2xl text-lg leading-relaxed text-white/80">
-            Your note about {bosunConfig.fullName} came through. We&apos;ll follow up by email to
-            set up your free 15-minute call.
+            {`Your note about ${bosunConfig.fullName} came through. We'll follow up by email to set up your free 15-minute call.`}
           </p>
         </div>
         <div aria-hidden className="relative h-1.5 bg-[linear-gradient(90deg,var(--bosun-brass)_0_72%,var(--chart-teal)_72%_100%)]" />

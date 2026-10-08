@@ -11,8 +11,10 @@ import {
   bosunInCharge,
   bosunPlanNotes,
   bosunPlans,
+  bosunPlansAnchor,
   bosunPricingCta,
   bosunProblem,
+  bosunSecurity,
   bosunSteps,
   bosunTrustBar,
   bosunWebsite,
@@ -214,7 +216,7 @@ export default function BosunPage() {
             <p className="text-xs font-semibold uppercase tracking-[0.22em] text-bosun-rope">
               Simple website
             </p>
-            <p className="mt-3 font-display text-3xl font-semibold">{bosunWebsite.pricingLabel}</p>
+            <p className="mt-3 font-display text-3xl font-semibold">{bosunWebsite.priceAnchor}</p>
             <p className="mt-2 text-white/75">{bosunWebsite.pricingNote}</p>
             <a
               href="#get-started"
@@ -257,6 +259,9 @@ export default function BosunPage() {
             Every plan keeps Bosun checked up and your website looked after. Pick the level of
             help that fits your business.
           </p>
+          <p className="mt-4 inline-flex rounded-full border border-bosun-brass/50 bg-bosun-sailcloth px-4 py-2 font-display text-lg font-semibold text-chart-navy">
+            {bosunPlansAnchor}
+          </p>
           <div className="mt-10 grid gap-6 lg:grid-cols-3">
             {bosunPlans.map((plan) => (
               <article
@@ -274,7 +279,7 @@ export default function BosunPage() {
                 ) : null}
                 <h3 className="font-display text-2xl font-semibold text-chart-navy">{plan.name}</h3>
                 <p className="mt-3 text-sm font-semibold text-bosun-deep-brass">
-                  {bosunPricingCta.label}
+                  {plan.priceAnchor ?? bosunPricingCta.label}
                 </p>
                 <dl className="mt-6 grid gap-3 border-t border-chart-navy/10 pt-5 text-sm">
                   <div className="flex justify-between gap-4">
@@ -352,7 +357,22 @@ export default function BosunPage() {
         </div>
       </section>
 
-      {/* 10. FAQ */}
+      {/* 10. Security (Pilot draft, for Marc's review) */}
+      <section id="security" className="scroll-mt-28 border-b border-chart-navy/10 bg-white">
+        <div className="mx-auto grid max-w-5xl gap-10 px-4 py-16 md:grid-cols-[0.9fr_1.1fr] md:items-start lg:max-w-6xl">
+          <div>
+            <p className={eyebrowOnLight}>{bosunSecurity.eyebrow}</p>
+            <h2 className={headingOnLight}>{bosunSecurity.title}</h2>
+          </div>
+          <div className="rounded-2xl border border-chart-navy/10 bg-bosun-sailcloth p-6 shadow-sm">
+            <span aria-hidden className="mb-4 block h-1.5 w-12 rounded-full bg-bosun-brass" />
+            <p className="text-lg leading-relaxed text-chart-ink/85">{bosunSecurity.body}</p>
+            <p className="mt-5 text-xs leading-relaxed text-chart-ink/65">{bosunSecurity.finePrint}</p>
+          </div>
+        </div>
+      </section>
+
+      {/* 11. FAQ */}
       <section id="faq" className="scroll-mt-28">
         <div className="mx-auto max-w-3xl px-4 py-16">
           <p className={eyebrowOnLight}>FAQ</p>
@@ -376,7 +396,7 @@ export default function BosunPage() {
         </div>
       </section>
 
-      {/* 11. Final CTA */}
+      {/* 12. Final CTA */}
       <section id="get-started" className="scroll-mt-28 border-t border-chart-navy/10 bg-white">
         <div className="mx-auto grid max-w-5xl gap-10 px-4 py-16 md:grid-cols-[0.95fr_1.05fr] md:items-start lg:max-w-6xl">
           <div>

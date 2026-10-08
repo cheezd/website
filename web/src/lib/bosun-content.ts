@@ -111,7 +111,7 @@ export const bosunCapabilities = {
 export const bosunWebsite = {
   title: "A website that wins bigger jobs.",
   body: "A simple website makes a small crew look established. We build it from Chart Room's template, with a quote form that sends requests straight to your email.",
-  pricingLabel: "Pricing on a quick call",
+  priceAnchor: "Websites from $1,500",
   pricingNote: "We'll scope your site and quote it on a free 15-minute call.",
   points: [
     "4 to 5 pages built from Chart Room's template",
@@ -137,6 +137,8 @@ export const bosunSteps = [
 
 export type BosunPlan = {
   name: string;
+  /** Anchor price shown on the card (Marc, 2:57 PM ET Oct 8, 2026: Basic only). */
+  priceAnchor?: string;
   includedHelp: string;
   response: string;
   features: readonly string[];
@@ -152,6 +154,7 @@ const everyPlanIncludes = [
 export const bosunPlans: readonly BosunPlan[] = [
   {
     name: "Basic",
+    priceAnchor: "From $49/month",
     includedHelp: "None",
     response: "Within 2 business days",
     features: everyPlanIncludes,
@@ -178,6 +181,8 @@ export const bosunPlans: readonly BosunPlan[] = [
     ],
   },
 ];
+
+export const bosunPlansAnchor = "Plans start at $49/month";
 
 export const bosunPricingCta = {
   label: "Pricing on a quick call",
@@ -207,11 +212,24 @@ export const bosunInCharge = {
   ],
 } as const;
 
+export const bosunSecurity = {
+  eyebrow: "Security",
+  title: "Your passwords stay yours.",
+  body: "When Bosun needs to sign in to a website for you, we strongly recommend 1Password. You approve each sign-in, and 1Password fills in the saved login, so Bosun never sees or stores your password. Want to cut off access? Remove the login from the shared vault, and it's done.",
+  finePrint:
+    "1Password is a separate subscription you pay for directly. Chart Room AI is not affiliated with 1Password.",
+} as const;
+
 export const bosunFaq = [
   {
     question: "What do I pay for separately?",
     answer:
       "Bosun runs on an AI assistant set up on your own account. You pay for that account and its assistant upgrade directly, along with your email service. Those aren't billed by Chart Room AI.",
+  },
+  {
+    question: "Do I have to give you my passwords?",
+    answer:
+      "No. Never send passwords by email or chat. We recommend keeping the logins Bosun needs in 1Password, where you approve each sign-in and can remove access anytime.",
   },
   {
     question: "Do I own my website?",
