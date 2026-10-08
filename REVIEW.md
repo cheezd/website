@@ -10,12 +10,31 @@ Nobody edits it directly on `main`.
 | Step | Who | What |
 |------|-----|------|
 | Build | **Forge** | Builds the change on a branch, opens a PR linked to its issue with `Closes #N`, and attaches evidence from the PR's Vercel preview. Forge never merges. |
-| Review | **Surveyor** | Runs the SPEC and STANDARDS passes below and submits a formal GitHub review: **Approve** or **Request changes**. |
+| Review | **Surveyor** | Runs the SPEC and STANDARDS passes below and posts its verdict: **Approve** or **Request changes** (as a COMMENT review; see "GitHub identity limit" below). |
 | Release | **Launch** | Merges approved PRs, watches the Vercel production deploy, verifies the live site, and rolls back if something breaks. |
-| Owner | **Marc** | Must approve every `needs-marc` PR on GitHub before Launch merges. |
+| Owner | **Marc** | Must approve every `needs-marc` PR before Launch merges (section 6). |
 
 Tickets are GitHub Issues in this repo and on the board:
 https://github.com/users/cheezd/projects/13
+
+### GitHub identity limit
+
+Surveyor and Forge both act on GitHub as `cheezd`, and GitHub does not let a PR's author
+formally approve (or request changes on) their own PR. So:
+
+- Surveyor submits its verdict as a **COMMENT** review whose first line is exactly
+  `SURVEYOR VERDICT: APPROVE` or `SURVEYOR VERDICT: REQUEST CHANGES`, and which names the
+  head SHA it reviewed.
+- **Launch treats that COMMENT as the review gate:** it looks for the exact verdict line, and
+  a `SURVEYOR VERDICT: APPROVE` counts as Surveyor's approval.
+- Marc's GitHub account is also `cheezd`, so GitHub blocks him from formally approving these
+  PRs too. **While every PR is authored by `cheezd`, Marc's chat approval recorded on the PR
+  is the normal path.**
+  Whichever of Forge or Surveyor received it posts it as a PR comment with Marc's quoted
+  words, the time in ET, and the head SHA it applies to.
+- **Approvals are tied to a commit.** Launch merges only if the PR's current head SHA matches
+  the SHA named in Surveyor's APPROVE verdict and (for `needs-marc`) in Marc's recorded
+  approval. Any commit pushed after that SHA needs a fresh verdict and approval.
 
 ### Repo facts reviewers rely on
 
@@ -115,10 +134,15 @@ apply; not every lens applies to every change.
   - data deletion
 - Also applied **whenever a change turns out bigger than its ticket**. Surveyor may add the
   label.
-- `needs-marc` PRs get a **second-model review**: an independent review by a different model
-  using this same file. Findings flagged by **both** models become **Act On**.
-- **Marc must approve `needs-marc` PRs on GitHub before Launch merges.** Surveyor's approval
-  alone is not enough.
+- On `needs-marc` PRs, **Marc's review is the second review.** Surveyor posts its full
+  verdict (section 7), and Marc then approves: on GitHub if it allows, otherwise (the
+  normal case while PRs are authored by `cheezd`) in chat, recorded on the PR as described
+  in "GitHub identity limit" in section 1.
+- **Marc must approve `needs-marc` PRs before Launch merges.** Surveyor's approval alone is
+  not enough.
+- **Interim rule (decided by Marc, 2026-10-08):** this replaces the earlier requirement for an
+  independent second-model review. Automating a true second-model review is tracked in
+  https://github.com/cheezd/website/issues/27.
 
 ## 7. Verdict format
 
@@ -129,8 +153,9 @@ Every review ends with:
 - **Consider:** optional improvements.
 - **Dismissed:** findings that were considered and rejected, each with a one-line reason.
 
-Any Act On item means **Request changes**. Approve only when Act On is empty, the proof rule
-is satisfied, and (for `needs-marc`) the second-model review is done.
+Any Act On item means **Request changes**. Approve only when Act On is empty and the proof
+rule is satisfied. For `needs-marc` PRs, Launch also needs Marc's approval (section 6); no
+separate second-model review is needed while the interim rule in section 6 stands.
 
 ## 8. Improvement loop
 
