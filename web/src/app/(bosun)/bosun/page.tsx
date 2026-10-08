@@ -14,7 +14,6 @@ import {
   bosunPlansAnchor,
   bosunPricingCta,
   bosunProblem,
-  bosunSecurity,
   bosunSteps,
   bosunTrustBar,
   bosunWebsite,
@@ -357,22 +356,7 @@ export default function BosunPage() {
         </div>
       </section>
 
-      {/* 10. Security (Pilot draft, for Marc's review) */}
-      <section id="security" className="scroll-mt-28 border-b border-chart-navy/10 bg-white">
-        <div className="mx-auto grid max-w-5xl gap-10 px-4 py-16 md:grid-cols-[0.9fr_1.1fr] md:items-start lg:max-w-6xl">
-          <div>
-            <p className={eyebrowOnLight}>{bosunSecurity.eyebrow}</p>
-            <h2 className={headingOnLight}>{bosunSecurity.title}</h2>
-          </div>
-          <div className="rounded-2xl border border-chart-navy/10 bg-bosun-sailcloth p-6 shadow-sm">
-            <span aria-hidden className="mb-4 block h-1.5 w-12 rounded-full bg-bosun-brass" />
-            <p className="text-lg leading-relaxed text-chart-ink/85">{bosunSecurity.body}</p>
-            <p className="mt-5 text-xs leading-relaxed text-chart-ink/65">{bosunSecurity.finePrint}</p>
-          </div>
-        </div>
-      </section>
-
-      {/* 11. FAQ */}
+      {/* 10. FAQ */}
       <section id="faq" className="scroll-mt-28">
         <div className="mx-auto max-w-3xl px-4 py-16">
           <p className={eyebrowOnLight}>FAQ</p>
@@ -396,7 +380,7 @@ export default function BosunPage() {
         </div>
       </section>
 
-      {/* 12. Final CTA */}
+      {/* 11. Final CTA */}
       <section id="get-started" className="scroll-mt-28 border-t border-chart-navy/10 bg-white">
         <div className="mx-auto grid max-w-5xl gap-10 px-4 py-16 md:grid-cols-[0.95fr_1.05fr] md:items-start lg:max-w-6xl">
           <div>

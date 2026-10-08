@@ -167,7 +167,7 @@ export const bosunPlans: readonly BosunPlan[] = [
     features: [
       ...everyPlanIncludes,
       "Monthly quote-request summary",
-      "Facebook post drafts (2 a month)",
+      "Social media post drafts (2 a month)",
     ],
   },
   {
@@ -177,7 +177,7 @@ export const bosunPlans: readonly BosunPlan[] = [
     features: [
       ...everyPlanIncludes,
       "Monthly quote-request summary",
-      "Facebook post drafts (4 a month)",
+      "Social media post drafts (4 a month)",
     ],
   },
 ];
@@ -212,24 +212,11 @@ export const bosunInCharge = {
   ],
 } as const;
 
-export const bosunSecurity = {
-  eyebrow: "Security",
-  title: "Your passwords stay yours.",
-  body: "When Bosun needs to sign in to a website for you, we strongly recommend 1Password. You approve each sign-in, and 1Password fills in the saved login, so Bosun never sees or stores your password. Want to cut off access? Remove the login from the shared vault, and it's done.",
-  finePrint:
-    "1Password is a separate subscription you pay for directly. Chart Room AI is not affiliated with 1Password.",
-} as const;
-
 export const bosunFaq = [
   {
     question: "What do I pay for separately?",
     answer:
       "Bosun runs on an AI assistant set up on your own account. You pay for that account and its assistant upgrade directly, along with your email service. Those aren't billed by Chart Room AI.",
-  },
-  {
-    question: "Do I have to give you my passwords?",
-    answer:
-      "No. Never send passwords by email or chat. We recommend keeping the logins Bosun needs in 1Password, where you approve each sign-in and can remove access anytime.",
   },
   {
     question: "Do I own my website?",
