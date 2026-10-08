@@ -1,0 +1,2 @@
+✗ /tmp/comic-neue-kit.json: 1 problem(s)
+  - fonts.body.family: Unsupported font "Comic Neue". Supported sans-serif fonts: Inter, Source Sans 3, Open Sans, Roboto, Nunito, DM Sans, Work Sans, Manrope, Montserrat, Raleway

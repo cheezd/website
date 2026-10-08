@@ -1,0 +1,22 @@
+> client-template@0.1.0 prebuild
+> tsx scripts/check-config.ts
+
+  contrast (WCAG AA):
+    FAIL text on surface                       2.58:1  (min 4.5:1)  #9a9a9a on #f7f5ef
+    FAIL muted on surface                      2.39:1  (min 4.5:1)  #a0a0a0 on #f7f5ef
+    FAIL text on card                          2.72:1  (min 4.5:1)  #9a9a9a on #fcfbf9
+    FAIL muted on card                         2.52:1  (min 4.5:1)  #a0a0a0 on #fcfbf9
+    ok   on-primary on primary                 7.64:1  (min 4.5:1)  #ffffff on #2f5d3a
+    ok   on-accent on accent                   6.45:1  (min 4.5:1)  #111111 on #d9822b
+    ok   on-secondary on secondary             6.05:1  (min 4.5:1)  #2f5d3a on #e3e6dd
+    ok   primary headings on surface (large)   7.01:1  (min 3.0:1)  #2f5d3a on #f7f5ef
+    ok   primary headings on card (large)      7.39:1  (min 3.0:1)  #2f5d3a on #fcfbf9
+    warn border on surface (non-text)          1.30:1  (min 3.0:1)  #dcd8cc on #f7f5ef
+    warn input border on white (non-text)      1.69:1  (min 3.0:1)  #c7c7c7 on #ffffff
+    warn focus ring on surface (non-text)      2.58:1  (min 3.0:1)  #9a9a9a on #f7f5ef
+    ok   focus ring on primary (non-text)      7.64:1  (min 3.0:1)  #ffffff on #2f5d3a
+✗ Client config "dry-creek-sample": 4 problem(s)
+  - brand.palette: text on surface is 2.58:1, needs 4.5:1
+  - brand.palette: muted on surface is 2.39:1, needs 4.5:1
+  - brand.palette: text on card is 2.72:1, needs 4.5:1
+  - brand.palette: muted on card is 2.52:1, needs 4.5:1

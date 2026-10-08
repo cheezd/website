@@ -1,0 +1,18 @@
+> client-template@0.1.0 prebuild
+> tsx scripts/check-config.ts
+
+  contrast (WCAG AA):
+    ok   text on surface                      13.63:1  (min 4.5:1)  #1f2a22 on #f7f5ef
+    ok   muted on surface                      5.93:1  (min 4.5:1)  #55615a on #f7f5ef
+    ok   text on card                         14.37:1  (min 4.5:1)  #1f2a22 on #fcfbf9
+    ok   muted on card                         6.25:1  (min 4.5:1)  #55615a on #fcfbf9
+    ok   on-primary on primary                 7.64:1  (min 4.5:1)  #ffffff on #2f5d3a
+    ok   on-accent on accent                   6.45:1  (min 4.5:1)  #111111 on #d9822b
+    ok   on-secondary on secondary             6.05:1  (min 4.5:1)  #2f5d3a on #e3e6dd
+    ok   primary headings on surface (large)   7.01:1  (min 3.0:1)  #2f5d3a on #f7f5ef
+    ok   primary headings on card (large)      7.39:1  (min 3.0:1)  #2f5d3a on #fcfbf9
+    warn border on surface (non-text)          1.30:1  (min 3.0:1)  #dcd8cc on #f7f5ef
+    ok   input border on white (non-text)      3.52:1  (min 3.0:1)  #848a85 on #ffffff
+    ok   focus ring on surface (non-text)     13.63:1  (min 3.0:1)  #1f2a22 on #f7f5ef
+    ok   focus ring on primary (non-text)      7.64:1  (min 3.0:1)  #ffffff on #2f5d3a
+✓ Client config "dry-creek-sample" is valid (design: classic; brand kit v1; assets OK; contrast: 9/9 text pairs pass, 1 non-text warning(s))
