@@ -20,6 +20,7 @@ type TurnstileVerifyResponse = {
 const THANK_YOU_PATH = "/contact/thank-you";
 const BOSUN_THANK_YOU_PATH = "/bosun/thank-you";
 const ERROR_PATH = "/contact/error";
+const BOSUN_ERROR_PATH = "/bosun/error";
 const HONEYPOT_FIELD = "fax_number";
 const MIN_SUBMIT_MS = 3000;
 const TURNSTILE_ACTION = "contact";
@@ -52,15 +53,19 @@ const FIELD_LIMITS = {
 const URL_PATTERN = /https?:\/\/[^\s]+/gi;
 
 export async function POST(request: Request) {
+  // Default until form_context is known; Bosun submissions switch to /bosun/error.
+  let errorPath = ERROR_PATH;
+
   try {
     const formData = await request.formData();
     // Every thank-you redirect (real or silent spam reject) uses the same page per
     // form, so the redirect target never reveals which check a bot tripped.
     const thankYouPath = getThankYouPath(formData);
+    errorPath = getErrorPath(formData);
 
     const turnstileResult = await verifyTurnstile(request, formData);
     if (!turnstileResult.ok) {
-      return redirectTo(request, ERROR_PATH);
+      return redirectTo(request, errorPath);
     }
 
     // Spam-class rejects: silent thank-you (do not tip bots).
@@ -79,7 +84,7 @@ export async function POST(request: Request) {
     const contactRequest = parseContactRequest(formData);
 
     if (!contactRequest) {
-      return redirectTo(request, ERROR_PATH);
+      return redirectTo(request, errorPath);
     }
 
     if (!passesLengthCaps(contactRequest) || hasSpamLinks(contactRequest.initiative)) {
@@ -99,7 +104,7 @@ export async function POST(request: Request) {
     return redirectTo(request, thankYouPath);
   } catch (error) {
     console.error("Contact form submission failed:", getSafeErrorMessage(error));
-    return redirectTo(request, ERROR_PATH);
+    return redirectTo(request, errorPath);
   }
 }
 
@@ -312,6 +317,10 @@ function hasSpamLinks(message: string) {
 
 function getThankYouPath(formData: FormData) {
   return getField(formData, "form_context") === "bosun" ? BOSUN_THANK_YOU_PATH : THANK_YOU_PATH;
+}
+
+function getErrorPath(formData: FormData) {
+  return getField(formData, "form_context") === "bosun" ? BOSUN_ERROR_PATH : ERROR_PATH;
 }
 
 function getFormCopy(formContext: string) {
