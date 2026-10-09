@@ -1,5 +1,7 @@
 # Proof for PR #34 (#21 client site template, first slice)
 
+`web/vercel.json` and `template/vercel.json` (`{"git":{"deploymentEnabled":false}}`) turn off Vercel builds for this proof-only branch; without them both projects try to build it and fail, because it has no app.
+
 Local `next start` runs of `template/` at head 988095b (no template Vercel project yet; that needs Marc's OK).
 
 - `sample-*`: built with the default config, `dry-creek-sample` (placeholder content).
